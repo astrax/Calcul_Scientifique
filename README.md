@@ -8,7 +8,7 @@
 
 <center><h4>École Supérieure PRivée d'Ingénierie et de Technologies ; Année Universitaire 2023/2024</h4></center>
  <center>
- <img src="logo_python.png" width="200"
+ <img src="Signature-01.jpg" width="200"
      height="100">
 </center>
 
