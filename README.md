@@ -14,9 +14,9 @@
 # Programme
 ## Initiation à la programmation sous Python
 ### Cours : Introduction à Python
-* [PDF (pur impression)](https://github.com/astrax/Calcul_Scientifique/pub/cours0/cours0.pdf)
-* [Beamer](https://github.com/astrax/Calcul_Scientifique/pub/cours0/cours0-beamer.pdf)
-* [HTML-bs](https://github.com/astrax/Calcul_Scientifique/pub/cours0/cours0-bs.html)
-* [HTML-deck](https://github.com/astrax/Calcul_Scientifique/pub/cours0/cours0-deck.html)
+* [PDF (pur impression)](https://astrax.github.io/Calcul_Scientifique/pub/cours0/cours0.pdf)
+* [Beamer](https://astrax.github.io/Calcul_Scientifique/pub/cours0/cours0-beamer.pdf)
+* [HTML-bs](https://astrax.github.io/Calcul_Scientifique/pub/cours0/cours0-bs.html)
+* [HTML-deck](https://astrax.github.io/Calcul_Scientifique/pub/cours0/cours0-deck.html)
 * [Jupyter Notebook](https://colab.research.google.com/github/astrax/Calcul_Scientifique/blob/main/docs/pub/cours0/cours0.ipynb)
 
