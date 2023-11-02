@@ -2,13 +2,13 @@
 \contentsline {paragraph}{Algorithme}{2}{section*.2}%
 \contentsline {section}{\numberline {2}Situation standard que nous rencontrons quotidiennement}{2}{section.2}%
 \contentsline {section}{\numberline {3}Langage Python}{2}{section.3}%
-\contentsline {section}{\numberline {4}Installation d'un environnement Python scientifique}{4}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Installation sur ordinateur}{4}{subsection.4.1}%
-\contentsline {paragraph}{Qu\IeC {\textquoteright }est ce que Anaconda ?}{4}{section*.3}%
+\contentsline {section}{\numberline {4}Installation d'un environnement Python scientifique}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Installation sur ordinateur}{3}{subsection.4.1}%
+\contentsline {paragraph}{Qu\IeC {\textquoteright }est ce que Anaconda ?}{3}{section*.3}%
 \contentsline {paragraph}{Pr\IeC {\'e}parer la formation: t\IeC {\'e}l\IeC {\'e}chargement d\IeC {\textquoteright }Anaconda.}{4}{section*.4}%
-\contentsline {section}{\numberline {5}Introduction: "Hello World!"}{5}{section.5}%
+\contentsline {section}{\numberline {5}Introduction: "Hello World!"}{4}{section.5}%
 \contentsline {section}{\numberline {6}Commentaires}{5}{section.6}%
 \contentsline {section}{\numberline {7}Nombres}{5}{section.7}%
 \contentsline {section}{\numberline {8}Affectations (ou assignation)}{6}{section.8}%
 \contentsline {subsection}{\numberline {8.1}variables}{6}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Noms de variables r\IeC {\'e}serv\IeC {\'e}s (keywords)}{8}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.2}Noms de variables r\IeC {\'e}serv\IeC {\'e}s (keywords)}{7}{subsection.8.2}%

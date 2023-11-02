@@ -58,10 +58,6 @@ _Avantages_ :
   * Documentation intégré avec le code.
 * De nombreuses bibliothèques standards, et de nombreux packages add-on.
 
-# !split
-# FIGURE: [imgs/python_easy.png, width=600 frac=0.6]
-
-
 !split
 ======= Installation d'un environnement Python scientifique =======
 
@@ -174,6 +170,7 @@ Si une variable est nécessaire, pensez à un nom et commencez à l'utiliser com
 
 !split
 Pour calculer l'aire d'un rectangle par exemple: `largeur` x `hauteur`:
+
 !bc ipy
 In [15]: largeur = 25
     ...: hauteur = 40
@@ -181,8 +178,8 @@ In [15]: largeur = 25
 Out[15]: 25
 !ec
 
-
 on peut également utiliser la fonction `print()` pour afficher la valeur de la variable `largeur`
+
 !bc ipy
 In [16]: print(largeur)
 25
