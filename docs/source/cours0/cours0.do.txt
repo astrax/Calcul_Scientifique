@@ -1,4 +1,4 @@
-TITLE: Introduction à Python (I)
+TITLE: Introduction à Python
 AUTHOR: UP Mathématiques {copyright|ESPRIT} at École Supérieure PRivée d'Ingénierie et de Technologies.
 DATE: 2 novembre 2023
 

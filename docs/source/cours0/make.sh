@@ -62,8 +62,10 @@ system doconce replace '\maketitle' '\subtitle{Modeling, Algorithms, Analysis, P
 doconce replace 'texttt{>>>}' 'Verb!>>>!' $name.tex # require fix for latex
 
 doconce replace '11pt]{' '11pt,french]{' $name.tex
+system common_replacements $name.tex
 # package [norsk]{label} requires texlive-lang-norwegian package
 doconce subst '% insert custom LaTeX commands...' '\usepackage[french]{babel}\n\n% insert custom LaTeX commands...' $name.tex
+
 system pdflatex -shell-escape $name
 #system bibtex $name
 system makeindex $name
@@ -85,20 +87,31 @@ system pdflatex -shell-escape ${name}-beamer
 rawgit="--html_raw_github_url=raw.github"
 ## deck
 html=${name}-deck
-system doconce format html $name --pygments_html_style=perldoc --keep_pygments_html_bg --html_links_in_new_window --html_output=$html $rawgit
-common_replacements $name.html
-system doconce slides_html $html deck --html_slide_theme=sandstone.default --copyright=everypage
+system doconce format html $name --pygments_html_style='monokai' --keep_pygments_html_bg --html_links_in_new_window --html_output=$html $rawgit $options
+common_replacements $html.html
+system doconce slides_html $html deck --html_slide_theme=sandstone.aurora --copyright=everypage
 editfix $html.html
 
+# Remark slides
+system doconce format pandoc $name --github_md SLIDE_TYPE=remark SLIDE_THEME=light $options
+system doconce slides_markdown $name remark --slide_theme=light
+cp $name.html ${name}_remark_light.html
+common_replacements ${name}_remark_light.html
+
+system doconce format pandoc $name --github_md SLIDE_TYPE=remark SLIDE_THEME=dark $options
+system doconce slides_markdown $name remark --slide_theme=dark
+cp $name.html ${name}_remark_dark.html
+common_replacements ${name}_remark_dark.html
+
 # Plain HTML documents
-# html=${name}-solarized
-# system doconce format html $name --pygments_html_style=perldoc --html_style=solarized3 --html_links_in_new_window --html_output=$html $options
-# system doconce split_html $html.html --method=space10
-# common_replacements $html.html
+html=${name}-solarized
+system doconce format html $name --pygments_html_style=perldoc --html_style=solarized3 --html_links_in_new_window --html_output=$html $options
+system doconce split_html $html.html --method=space10
+common_replacements $html.html
 
 # HTML bootstrap
 html=${name}-bs
-system doconce format html $name --html_style=bootswatch_journal "--html_body_style=font-size:20px;line-height:1.5" --pygments_html_style=default --html_admon=bootstrap_panel --html_output=$html $options
+system doconce format html $name --html_style=bootswatch_cyborg --pygments_html_style='monokai' --html_admon=bootstrap_alert --html_output=$html $options --keep_pygments_html_bg --html_code_style=inherit --html_pre_style=inherit
 common_replacements $html.html
 #system doconce split_html $html.html --pagination
 

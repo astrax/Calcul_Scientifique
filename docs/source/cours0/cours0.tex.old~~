@@ -331,7 +331,7 @@ final,                   % draft: marks overfull hboxes, figures with paths
 \begin{center}
 {\LARGE\bf
 \begin{spacing}{1.25}
-Introduction à Python (I)
+Introduction à Python
 \end{spacing}
 }
 \end{center}
