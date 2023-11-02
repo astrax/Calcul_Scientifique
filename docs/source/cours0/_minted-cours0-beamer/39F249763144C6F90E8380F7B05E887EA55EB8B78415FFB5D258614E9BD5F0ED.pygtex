@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{17}\PYG{p}{]:} \PYG{n}{largeur} \PYG{o}{*} \PYG{n}{hauteur}  \PYG{c+c1}{\PYGZsh{} donne l\PYGZsq{}aire du rectangle}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{17}\PYG{p}{]:} \PYG{l+m+mi}{1000}
+\end{Verbatim}

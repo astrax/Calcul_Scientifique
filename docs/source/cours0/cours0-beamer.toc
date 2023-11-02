@@ -1,0 +1,9 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Objectifs généraux en premier}{2}{0}{1}
+\beamer@sectionintoc {2}{Situation standard que nous rencontrons quotidiennement}{4}{0}{2}
+\beamer@sectionintoc {3}{Langage Python}{6}{0}{3}
+\beamer@sectionintoc {4}{Installation d'un environnement Python scientifique}{11}{0}{4}
+\beamer@sectionintoc {5}{Introduction: "Hello World!"}{17}{0}{5}
+\beamer@sectionintoc {6}{Commentaires}{19}{0}{6}
+\beamer@sectionintoc {7}{Nombres}{21}{0}{7}
+\beamer@sectionintoc {8}{Affectations (ou assignation)}{24}{0}{8}

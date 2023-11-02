@@ -1,0 +1,578 @@
+TITLE: Introduction à Python I : Présentation & installation
+AUTHOR: UP Mathématiques {copyright|MIT} at ESPRIT.
+DATE: 2 novembre 2023
+
+TOC: on
+
+!split
+======= Objectifs généraux en premier =======
+
+Une partie essentielle de ce cours est de vous permettre de faire de la science par des expériences numériques et de développer des projets qui vous permettent d'étudier des systèmes complexes. Le but est d'améliorer ce que nous appelons la pensée algorithmique.
+
+__Algorithme__
+Un ensemble fini d'instructions non ambiguës qui, étant donné un ensemble de conditions initiales, peuvent être effectuées dans une séquence prescrite pour atteindre un certain but.
+
+!split
+======= Situation standard que nous rencontrons quotidiennement =======
+
+La situation standard que nous rencontrons presque tous les séances de cours:
+
+* Théorie + expérience + simulation est presque la norme dans la recherche et l'industrie.
+* Être capable de modéliser des systèmes complexes. Résoudre de vrais problèmes.
+* Accent la compréhension des principes fondamentaux et des lois dans les sciences.
+* Être capable de visualiser, présenter, discuter, interpréter et venir avec une analyse critique des résultats, et développer une attitude éthique saine pour son propre travail.
+* Améliorer le raisonnement sur la méthode scientifique.
+
+Une bonne présentation des résultats obtenus via de bons rapports scientifiques, aide à inclure tous les aspects ci-dessus.
+
+!split
+======= Langage Python =======
+
+"Python": "http://www.python.org/" est un langage de programmation moderne de haut niveau, orienté objet et d'usage général.
+
+_Caractéristiques générales de Python_ :
+
+* Langage simple:
+  * facile à lire et à apprendre avec une syntaxe minimaliste.
+* Langage concis et expressif:
+  * moins de lignes de code
+  * moins de bugs
+  * plus facile à maintenir.
+
+!split
+_Détails techniques_ :
+
+* Typé dynamiquement:
+  * Pas besoin de définir le type des variables, les arguments ou le type des fonctions.
+* La gestion automatique de la mémoire:
+  * Aucune nécessité d'allouer explicitement et désallouer la mémoire pour les variables et les tableaux de données. Aucun bug de fuite de mémoire.
+* Interprété:
+  * Pas besoin de compiler le code. L'interpréteur Python lit et exécute le code python directement.
+
+!split
+_Avantages_ :
+
+* Le principal avantage est la facilité de programmation, qui minimise le temps nécessaire pour développer, déboguer et maintenir le code.
+* Langage bien conçu qui encourage les bonnes pratiques de programmation:
+  * Modulaire et orientée objet, permet l'encapsulation  et la réutilisation de code. Il en résulte souvent un code plus transparent, plus facile à améliorer et sans bug.
+  * Documentation intégré avec le code.
+* De nombreuses bibliothèques standards, et de nombreux packages add-on.
+
+!split
+FIGURE: [imgs/python_easy.png, width=600 frac=0.6]
+
+
+!split
+======= Installation d'un environnement Python scientifique =======
+
+===== Installation sur ordinateur =====
+
+=== Qu’est ce que Anaconda ? ===
+
+L’installation d’un environnement Python complet peut-être une vraie galère. Déjà, il faut télécharger Python et l’installer. Par la suite, télécharger un à un les packages dont on a besoin. Parfois, le nombre de ces librairies peut-être grand.
+
+Par ailleurs, il faut s’assurer de la compatibilité entre les versions des différentes packages qu’on a à télécharger. Bref, ce n’est pas amusant.
+
+!split
+"Anaconda": "https://www.anaconda.com/download/" est  une distribution Python. A son installation, Anaconda installera Python ainsi qu'une multitude de packages (voir "liste de packages anaconda": "https://docs.anaconda.com/anaconda/packages/pkg-docs#python-3-6").  Cela nous évite de nous ruer dans les problèmes d’incompatibilités entre les différents packages.
+
+Finalement, Anaconda propose un outil de gestion de packages appelé "conda": "https://conda.io/docs/". Ce dernier permettra de mettre à jour et installer facilement les librairies dont on aura besoin pour nos développements.
+
+!split
+=== Préparer la formation: téléchargement d’Anaconda ===
+
+Nous demandons à tous les étudiants de télécharger Anaconda. Pour cela, il faut télécharger un installeur à partir de https://www.anaconda.com/download/, correspondant à votre système d’exploitation (Windows, Mac OS X, Linux). Il faut choisir entre 32 bits ou 64 bits (pour la version *Python 3*) selon que votre système d’exploitation est 32 bits ou 64 bits.
+!split
+
+FIGURE: [imgs/AnacondaNavigator, width=600 frac=0.7] Interface graphique du navigateur Anaconda sur Windows
+
+!split
+!bnotice
+Anaconda installe plusieurs exécutables pour développer en Python dans le répertoire *anaconda/bin*, sans toujours créer des raccourcis sur le bureau ou dans un menu. Nous nous occuperons au tout début de la formation de créer des raccourcis pour pouvoir lancer l'application web *Jupyter notebook*. Vous pouvez lancer le notebook depuis le navigateur Anaconda.
+!enotice
+
+!split
+======= Introduction: "Hello World!" =======
+C'est devenu une tradition que lorsque vous apprenez un nouveau langage de programmation, vous démarrez avec un programme permettant à l'ordinateur d'imprimer le message *"Hello World!"*.
+
+!bc ipy
+In [1]: print("Hello World!")
+Hello World!
+!ec
+
+Félicitation! tout à l'heure vous avez fait votre ordinateur saluer le monde en anglais! La fonction `print()` est utilisée pour imprimer l’instruction entre les parenthèses. De plus, l'utilisation de guillemets simples `print('Hello World!')` affichera le même résultat. Le délimiteur de début et de fin doit être le même.
+
+!bc ipy
+In [2]: print('Hello World!')
+Hello World!
+!ec
+
+======= Commentaires =======
+
+Au fur et à mesure que vos programmes deviennent plus grands et plus compliqués, ils deviennent plus difficiles à lire et à regarder un morceau de code et à comprendre ce qu'il fait ou pourquoi. Pour cette raison, il est conseillé d’ajouter des notes à vos programmes pour expliquer en langage naturel ce qu’il fait. Ces notes s'appellent des commentaires et commencent par le symbole `#`.
+
+Voyez ce qui se passe lorsque nous ajoutons un commentaire au code précédent:
+
+!bc ipy
+In [3]: print('Hello World!') # Ceci est mon premier commentaire
+Hello World!
+!ec
+Rien ne change dans la sortie? Oui, et c’est très normal, l’interprète Python ignore cette ligne et ne renvoie rien. La raison en est que les commentaires sont écrits pour les humains, pour comprendre leurs codes, et non pour les machines.
+
+======= Nombres =======
+
+L'interpréteur Python agit comme une simple calculatrice: vous pouvez y taper une expression et l'interpréteur restituera la valeur. La syntaxe d'expression est simple: les opérateurs +, -, * et / fonctionnent comme dans la plupart des autres langages (par exemple, Pascal ou C); les parenthèses (`()`) peuvent être utilisées pour le regroupement. Par exemple:
+
+!bc ipy
+In [4]: 5+3
+Out[4]: 8
+In [5]: 2 - 9      # les espaces sont optionnels
+Out[5]: -7
+In [6]: 7 + 3 * 4  #la hiérarchie des opérations mathématique
+Out[6]: 19
+In [7]: (7 + 3) * 4  # est-elle respectées?
+Out[7]: 40
+# en python3 la division retourne toujours un nombre en virgule flottante
+In [8]: 20 / 3
+Out[8]: 6.666666666666667
+In [9]: 7 // 2      # une division entière
+Out[9]: 3
+!ec
+On peut noter l’existence de l’opérateur `%` (appelé opérateur modulo). Cet opérateur fournit le reste de la division entière d’un nombre par un autre. Par exemple :
+
+!bc ipy
+In [10]: 7 % 2       # donne le reste de la division
+Out[10]: 1
+In [11]: 6 % 2
+Out[11]: 0
+!ec
+
+Les exposants peuvent être calculés à l'aide de doubles astérisques `**`.
+
+!bc ipy
+In [12]: 3**2
+Out[12]: 9
+!ec
+
+Les puissances de dix peuvent être calculées comme suit:
+
+!bc ipy
+In [13]: 3 * 2e3   # vaut 3 * 2000
+Out[13]: 6000.0
+!ec
+
+======= Affectations (ou assignation) =======
+
+===== variables =====
+Dans presque tous les programmes Python que vous allez écrire, vous aurez des variables. Les variables agissent comme des espaces réservés pour les données. Ils peuvent aider à court terme, ainsi qu’à la logique, les variables pouvant changer, d’où leur nom. C’est beaucoup plus facile en Python car aucune déclaration de variables n’est requise. Les noms de variable (ou tout autre objet Python tel que fonction, classe, module, etc.) commencent par une lettre majuscule ou minuscule (A-Z ou a-z). Ils sont sensibles à la casse (`VAR1` et `var1` sont deux variables distinctes). Depuis Python, vous pouvez utiliser n’importe quel caractère Unicode, il est préférable d’ignorer les caractères ASCII (donc pas de caractères accentués).
+
+Si une variable est nécessaire, pensez à un nom et commencez à l'utiliser comme une variable, comme dans l'exemple ci-dessous:
+
+Pour calculer l'aire d'un rectangle par exemple: `largeur` x `hauteur`:
+!bc ipy
+In [15]: largeur = 25
+    ...: hauteur = 40
+    ...: largeur    # essayer d'accéder à la valeur de la variable largeur
+Out[15]: 25
+!ec
+
+on peut également utiliser la fonction `print()` pour afficher la valeur de la variable `largeur`
+!bc ipy
+In [16]: print(largeur)
+25
+!ec
+Le produit de ces deux variables donne l'aire du rectangle:
+!bc ipy
+In [17]: largeur * hauteur  # donne l'aire du rectangle
+Out[17]: 1000
+!ec
+!bnotice
+Notez ici que le signe égal (`=`) dans l'affectation ne doit pas être considéré comme _"est égal à"_. Il doit être _"lu"_ ou interprété comme _"est définie par"_, ce qui signifie dans notre exemple:
+!bquote
+La variable `largeur` est définie par la valeur 25 et la variable `hauteur` est définie par la valeur 40.
+!equote
+!enotice
+
+!bwarning
+Si une variable n'est pas *définie* (assignée à une valeur), son utilisation vous donnera une erreur:
+
+!bc ipy
+In [18]: aire     # essayer d'accéder à une variable non définie
+-----------------------------------------------------------------------
+NameError                            Traceback (most recent call last)
+<ipython-input-18-1b03529c1ce5> in <module>()
+----> 1 aire     # essayer d'accéder à une variable non définie
+
+NameError: name 'aire' is not defined
+!ec
+!ewarning
+
+Laissez-nous résoudre ce problème informatique (ou _bug_ tout simplement)!. En d'autres termes, assignons la variable `aire` à sa valeur.
+
+!bc ipy
+In [19]: aire = largeur * hauteur
+    ...: aire  # et voila!
+Out[19]: 1000
+!ec
+
+===== Noms de variables réservés (keywords) =====
+Certains noms de variables ne sont pas disponibles, ils sont réservés à python lui-même. Les mots-clés suivants (que vous pouvez afficher dans l'interpréteur avec la commande `help("keywords")`) sont réservés et ne peuvent pas être utilisés pour définir vos propres identifiants (variables, noms de fonctions, classes, etc.).
+
+!bc ipy
+In [20]: help("keywords")
+
+Here is a list of the Python keywords.  Enter any keyword to get more help.
+
+False               def                 if                  raise
+None                del                 import              return
+True                elif                in                  try
+and                 else                is                  while
+as                  except              lambda              with
+assert              finally             nonlocal            yield
+break               for                 not
+class               from                or
+continue            global              pass
+
+# par exemple pour éviter d'écraser le nom réservé lambda
+In [22]: lambda_ = 630e-9
+    ...: lambda_
+Out[22]: 6.3e-07
+!ec
+
+===== Les types =====
+Les types utilisés dans Python sont: integers, long integers, floats (double prec.), complexes, strings, booleans. La fonction `type()` donne le type de son argument
+=== Le type int (integer : nombres entiers) ===
+Pour affecter (on peut dire aussi assigner) la valeur 20 à la variable nommée `age` :
+
+!bc ipy
+age = 20
+!ec
+La fonction `print()` affiche la valeur de la variable :
+
+!bc ipy
+In [24]: print(age)
+20
+!ec
+La fonction `type()` retourne le type de la variable :
+!bc ipy
+type(age)
+Out[25]: int
+!ec
+=== Le type float (nombres en virgule flottante) ===
+
+!bc ipy
+b = 17.0  # le séparateur décimal est un point (et non une virgule)
+b
+Out[26]: 17.0
+In [27]: type(b)
+Out[27]: float
+In [28]: c = 14.0/3.0
+    ...: c
+Out[28]: 4.666666666666667
+!ec
+Notation scientifique :
+!bc ipy
+In [29]: a = -1.784892e4
+    ...: a
+Out[29]: -17848.92
+!ec
+=== Les fonctions mathématiques ===
+
+Pour utiliser les fonctions mathématiques, il faut commencer par importer le module `math` :
+
+!bc ipy
+import math
+!ec
+La fonction `help()` retourne la liste des fonctions et données d'un module.
+
+Soit par exemple: `help('math')`
+
+Pour appeler une fonction d'un module, la syntaxe est la suivante : `module.fonction(arguments)`
+
+Pour accéder à une donnée d'un module : `module.data`
+
+!bc ipy
+ # donnée pi du module math (nombre pi)
+In [32]: math.pi
+Out[32]: 3.141592653589793
+# fonction sin() du module math (sinus)
+In [33]: math.sin(math.pi/4.0)
+Out[33]: 0.7071067811865475
+# fonction sqrt() du module math (racine carrée)
+In [34]: math.sqrt(2.0)
+Out[34]: 1.4142135623730951
+# fonction exp() du module math (exponentielle)
+In [35]: math.exp(-3.0)
+Out[35]: 0.049787068367863944
+# fonction log() du module math (logarithme népérien)
+In [36]: math.log(math.e)
+Out[36]: 1.0
+!ec
+
+=== Le type complexe ===
+Python possède par défaut un type pour manipuler les nombres complexes. La partie imaginaire est indiquée grâce à la lettre « `j` » ou « `J` ». La lettre mathématique utilisée habituellement, le « `i` », n’est pas utilisée en Python car la variable i est souvent utilisée dans les boucles.
+
+!bc ipy
+In [37]: a = 2 + 3j
+    ...: type(a)
+Out[37]: complex
+In [38]: a
+Out[38]: (2+3j)
+!ec
+!bwarning
+
+!bc ipy
+In [39]: b = 1 + j
+--------------------------------------------------------------
+NameError                      Traceback (most recent call last)
+<ipython-input-39-0f22d953f29e> in <module>()
+----> 1 b = 1 + j
+
+NameError: name 'j' is not defined
+!ec
+Dans ce cas, on doit écrire la variable `b` comme suit:
+!bc ipy
+In [41]: b = 1 + 1j
+    ...: b
+Out[41]: (1+1j)
+!ec
+sinon Python va considérer `j` comme variable non définie.
+!ewarning
+On peut faire l'addition des variables complexes:
+!bc ipy
+In [42]: a + b
+Out[42]: (3+4j)
+!ec
+
+=== Le type str (string : chaîne de caractères) ===
+
+!bc ipy
+
+In [43]: nom = 'Tounsi' # entre apostrophes
+    ...: nom
+Out[43]: 'Tounsi'
+In [44]: type(nom)
+Out[44]: str
+In [45]: prenom = "Ali"  # on peut aussi utiliser les guillemets
+    ...: prenom
+Out[45]: 'Ali'
+In [46]: print(nom, prenom)  # ne pas oublier la virgule
+Tounsi Ali
+!ec
+
+La concaténation désigne la mise bout à bout de plusieurs chaînes de caractères.
+La concaténation utilise l'opérateur `+`:
+!bc ipy
+In [47]: chaine = nom + prenom  # concaténation de deux chaînes de caractères
+    ...: chaine
+Out[47]: 'TounsiAli'
+!ec
+Vous voyez dans cet exemple que le nom et le prénom sont collé. Pour ajouter une espace entre ces deux chaînes de caractères:
+!bc ipy
+In [48]: chaine = prenom + ' ' + nom
+    ...: chaine # et voila
+Out[48]: 'Ali Tounsi'
+!ec
+On peut modifier/ajouter une nouvelle chaîne à notre variable `chaine` par:
+!bc ipy
+In [49]: chaine = chaine + ' 22 ans'  # en plus court : chaine += ' 22 ans'
+    ...: chaine
+Out[49]: 'Ali Tounsi 22 ans'
+!ec
+
+La fonction `len()` renvoie la longueur (*length*) de la chaîne de caractères :
+
+!bc ipy
+In [53]: print(nom)
+    ...: len(nom)
+Tounsi
+Out[53]: 6
+!ec
+
+__Indexage et slicing :__
+
+!bc
+ +---+---+---+---+---+---+
+|------------------------|
+ | T | o | u | n | s | i |
+ +---+---+---+---+---+---+
+ |------------------------|
+ 0   1   2   3   4   5   6
+ --->
+-6  -5  -4  -3  -2  -1
+                   <----
+!ec
+
+!bc ipy
+In [55]: nom[0]  # premier caractère (indice 0)
+Out[55]: 'T'
+
+In [56]: nom[:] # toute la chaine
+Out[56]: 'Tounsi'
+
+In [57]: nom[1] # deuxième caractère (indice 1)
+Out[57]: 'o'
+
+In [58]: nom[1:4]   # slicing
+Out[58]: 'oun'
+
+In [59]: nom[2:]  # slicing
+Out[59]: 'unsi'
+
+In [60]: nom[-1]   # dernier caractère (indice -1)
+Out[60]: 'i'
+
+In [61]: nom[-3:]    # slicing
+Out[61]: 'nsi'
+
+!ec
+
+!bwarning
+
+On ne peut pas mélanger le type `str` et type `int`.
+
+Soit par exemple:
+!bc ipy
+In [63]: chaine = '22'
+    ...: annee_naissance = 2018 - chaine
+----------------------------------------------------------
+TypeError                  Traceback (most recent call last)
+<ipython-input-63-8607078f78d2> in <module>()
+      1 chaine = '22'
+----> 2 annee_naissance = 2018 - chaine
+
+TypeError: unsupported operand type(s) for -: 'int' and 'str'
+!ec
+
+Pour corriger cette erreur, la fonction `int()` permet de convertir un type `str` en type `int`:
+
+!bc ipy
+
+In [64]: nombre = int(chaine)
+    ...: type(nombre) # et voila!
+Out[64]: int
+!ec
+Maintenant on peut trouver `annee_naissance` sans aucun problème:
+!bc ipy
+In [65]: annee_naissance = 2018 - nombre
+    ...: annee_naissance
+Out[65]: 1996
+!ec
+
+!ewarning
+
+__Interaction avec l'utilisateur (la fonction `input()`)__
+
+La fonction `input()` lance une case pour saisir une chaîne de caractères.
+
+!bc ipy
+In [66]: prenom = input('Entrez votre prénom : ')
+    ...: age = input('Entrez votre age : ')
+
+Entrez votre prénom : Foulen
+
+Entrez votre age : 25
+!ec
+
+__ Formatage des chaînes__
+
+Un problème qui se retrouve souvent, c’est le besoin d’afficher un message qui contient des valeurs de variables.
+
+Soit le message: Bonjour Mr/Mme `prenom`, votre age est `age`.
+
+La solution est d'utiliser la méthode `format()` de l'objet chaîne `str()` et le `{}` pour définir la valeur à afficher.
+
+!bc ipy
+print(" Bonjour Mr/Mme {}, votre age est {}.".format(prenom, age))
+!ec
+
+
+__Le type list (liste)__
+
+Une liste est une structure de données.
+
+Le premier élément d'une liste possède l'indice (l'index) 0.
+
+Dans une liste, on peut avoir des éléments de plusieurs types.
+
+!bc ipy
+In [1]: info = ['Tunisie', 'Afrique', 3000, 36.8, 10.08]
+
+In [2]: type(info)
+Out[2]: list
+!ec
+La liste info contient 5 éléments de types str, str, int, float et float
+
+!bc ipy
+In [3]: info
+Out[3]: ['Tunisie', 'Afrique', 3000, 36.8, 10.08]
+
+In [4]: print('Pays : ', info[0])    # premier élément (indice 0)
+Pays :  Tunisie
+
+In [5]: print('Age : ', info[2])     # le troisième élément a l'indice 2
+Age :  3000
+
+In [6]: print('Latitude : ', info[3]) # le quatrième élément a l'indice 3
+Latitude :  36.8
+!ec
+
+La fonction `range()` crée une liste d'entiers régulièrement espacés :
+
+!bc ipy
+In [7]: maliste = range(10) # équivalent à range(0,10,1)
+   ...: type(maliste)
+Out[7]: range
+!ec
+Pour convertir une range en une liste, on applique la fonction `list()` à notre variable:
+!bc ipy
+In [8]: list(maliste)   # pour convertir range en une liste
+Out[8]: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+!ec
+On peut spécifier le début, la fin et l'intervalle d'une range:
+!bc ipy
+In [9]: maliste = range(1,10,2)   # range(début,fin non comprise,intervalle)
+   ...: list(maliste)
+Out[9]: [1, 3, 5, 7, 9]
+
+In [10]: maliste[2] # le troisième élément a l'indice 2
+Out[10]: 5
+!ec
+
+On peut créer une liste de listes, qui s'apparente à un tableau à 2 dimensions (ligne, colonne) :
+
+!bc
+0   1   2
+10  11  12
+20  21  22
+!ec
+
+!bc ipy
+In [11]: maliste = [[0, 1, 2], [10, 11, 12], [20, 21, 22]]
+    ...: maliste[0]
+Out[11]: [0, 1, 2]
+
+In [12]: maliste[0][0]
+Out[12]: 0
+
+In [13]: maliste[2][1] # élément à la troisième ligne et deuxième colonne
+Out[13]: 21
+
+In [14]: maliste[2][1] = 78   # nouvelle affectation
+
+In [15]: maliste
+Out[15]: [[0, 1, 2], [10, 11, 12], [20, 78, 22]]
+!ec
+
+=== Le type bool (booléen) ===
+
+Deux valeurs sont possibles : `True` et `False`
+
+!bc ipy
+In [16]: choix = True # NOTE: "True" différent de "true"
+    ...: type(choix)
+Out[16]: bool
+!ec
+
+Les opérateurs de comparaison :
+

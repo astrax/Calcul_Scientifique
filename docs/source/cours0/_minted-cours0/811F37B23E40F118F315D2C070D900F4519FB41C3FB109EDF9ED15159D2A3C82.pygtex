@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{19}\PYG{p}{]:} \PYG{n}{aire} \PYG{o}{=} \PYG{n}{largeur} \PYG{o}{*} \PYG{n}{hauteur}
+    \PYG{o}{...}\PYG{p}{:} \PYG{n}{aire}  \PYG{c+c1}{\PYGZsh{} et voila!}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{19}\PYG{p}{]:} \PYG{l+m+mi}{1000}
+\end{Verbatim}

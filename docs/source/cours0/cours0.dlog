@@ -1,0 +1,696 @@
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** made directory latex_figs for admon figures
+output in cours0.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format html
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format ipynb
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+output in cours0.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format html
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format ipynb
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+output in cours0.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format html
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format ipynb
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+output in cours0.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format html
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format ipynb
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format html
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format html
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format ipynb
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format html
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format html
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format html
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format html
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format ipynb
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format html
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format html
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format ipynb
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format html
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format html
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format html
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format ipynb
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format pdflatex
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format html
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format html
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format html
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/pydroid3_2:
+    can use imgs/pydroid3_2.png for format ipynb
+figure file imgs/pydroid3_1:
+    can use imgs/pydroid3_1.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen  cours0.do.txt > tmp_preprocess__cours0.do.txt
+Could not run preprocessor:
+preprocess -DFORMAT=pdflatex -DDEVICE=screen  cours0.do.txt > tmp_preprocess__cours0.do.txt
+preprocess: error: could not find #include'd file "table1.do.txt" on include path: []
+
+return code from preprocess: 1
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen  cours0.do.txt > tmp_preprocess__cours0.do.txt
+Could not run preprocessor:
+preprocess -DFORMAT=pdflatex -DDEVICE=screen  cours0.do.txt > tmp_preprocess__cours0.do.txt
+preprocess: error: could not find #include'd file "table1.do.txt" on include path: []
+
+return code from preprocess: 1
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb

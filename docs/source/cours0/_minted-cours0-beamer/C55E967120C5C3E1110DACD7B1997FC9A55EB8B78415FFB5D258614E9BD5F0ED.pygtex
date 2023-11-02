@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{15}\PYG{p}{]:} \PYG{n}{largeur} \PYG{o}{=} \PYG{l+m+mi}{25}
+    \PYG{o}{...}\PYG{p}{:} \PYG{n}{hauteur} \PYG{o}{=} \PYG{l+m+mi}{40}
+    \PYG{o}{...}\PYG{p}{:} \PYG{n}{largeur}    \PYG{c+c1}{\PYGZsh{} essayer d\PYGZsq{}accéder à la valeur de la variable largeur}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{15}\PYG{p}{]:} \PYG{l+m+mi}{25}
+\end{Verbatim}

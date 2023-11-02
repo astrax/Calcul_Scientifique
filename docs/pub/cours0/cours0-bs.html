@@ -1,0 +1,548 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/doconce/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Introduction à Python (I)">
+
+<title>Introduction à Python (I)</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+body { font-size:20px;line-height:1.5; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table des matières',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Objectifs généraux en premier', 1, None, '___sec0'),
+              ('Situation standard que nous rencontrons quotidiennement',
+               1,
+               None,
+               '___sec1'),
+              ('Langage Python', 1, None, '___sec2'),
+              ("Installation d'un environnement Python scientifique",
+               1,
+               None,
+               '___sec3'),
+              ('Installation sur ordinateur', 2, None, '___sec4'),
+              ('Qu’est ce que Anaconda ?', 3, None, '___sec5'),
+              ('Préparer la formation: téléchargement d’Anaconda',
+               3,
+               None,
+               '___sec6'),
+              ('Introduction: "Hello World!"', 1, None, '___sec7'),
+              ('Commentaires', 1, None, '___sec8'),
+              ('Nombres', 1, None, '___sec9'),
+              ('Affectations (ou assignation)', 1, None, '___sec10'),
+              ('variables', 2, None, '___sec11'),
+              ('Noms de variables réservés (keywords)', 2, None, '___sec12')]}
+end of tocinfo -->
+
+<body>
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="cours0-bs.html">Introduction à Python (I)</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contenu <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="#table_of_contents" style="font-size: 80%;"><b>Table des matières</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec0" style="font-size: 80%;"><b>Objectifs généraux en premier</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec1" style="font-size: 80%;"><b>Situation standard que nous rencontrons quotidiennement</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec2" style="font-size: 80%;"><b>Langage Python</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec3" style="font-size: 80%;"><b>Installation d'un environnement Python scientifique</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Installation sur ordinateur</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qu’est ce que Anaconda ?</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Préparer la formation: téléchargement d’Anaconda</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec7" style="font-size: 80%;"><b>Introduction: "Hello World!"</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec8" style="font-size: 80%;"><b>Commentaires</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec9" style="font-size: 80%;"><b>Nombres</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec10" style="font-size: 80%;"><b>Affectations (ou assignation)</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;variables</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Noms de variables réservés (keywords)</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<!-- ------------------- main content ---------------------- -->
+
+
+
+<div class="jumbotron">
+<center><h1>Introduction &#224; Python (I)</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): UP Math&#233;matiques -->
+
+<center>
+<b>UP Math&#233;matiques</b> 
+</center>
+
+<p>
+<!-- institution -->
+
+<center><b>&#201;cole Sup&#233;rieure PRiv&#233;e d'Ing&#233;nierie et de Technologies.</b></center>
+<br>
+<p>
+<center><h4>2 novembre 2023</h4></center> <!-- date -->
+<br>
+<p>
+</div> <!-- end jumbotron -->
+
+<h1 id="table_of_contents">Table des matières</h2>
+
+<p>
+<a href="#___sec0"> Objectifs g&#233;n&#233;raux en premier </a><br>
+<a href="#___sec1"> Situation standard que nous rencontrons quotidiennement </a><br>
+<a href="#___sec2"> Langage Python </a><br>
+<a href="#___sec3"> Installation d'un environnement Python scientifique </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec4"> Installation sur ordinateur </a><br>
+<a href="#___sec7"> Introduction: "Hello World!" </a><br>
+<a href="#___sec8"> Commentaires </a><br>
+<a href="#___sec9"> Nombres </a><br>
+<a href="#___sec10"> Affectations (ou assignation) </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec11"> variables </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec12"> Noms de variables r&#233;serv&#233;s (keywords) </a><br>
+</p>
+<p>
+<!-- !split -->
+
+<h1 id="___sec0" class="anchor">Objectifs g&#233;n&#233;raux en premier </h1>
+
+<p>
+Une partie essentielle de ce cours est de vous permettre de faire de la science par des exp&#233;riences num&#233;riques et de d&#233;velopper des projets qui vous permettent d'&#233;tudier des syst&#232;mes complexes. Le but est d'am&#233;liorer ce que nous appelons la pens&#233;e algorithmique.
+
+<p>
+<b>Algorithme</b>
+Un ensemble fini d'instructions non ambigu&#235;s qui, &#233;tant donn&#233; un ensemble de conditions initiales, peuvent &#234;tre effectu&#233;es dans une s&#233;quence prescrite pour atteindre un certain but.
+
+<p>
+<!-- !split -->
+
+<h1 id="___sec1" class="anchor">Situation standard que nous rencontrons quotidiennement </h1>
+
+<p>
+La situation standard que nous rencontrons presque tous les s&#233;ances de cours:
+
+<ul>
+<li> Th&#233;orie + exp&#233;rience + simulation est presque la norme dans la recherche et l'industrie.</li>
+<li> &#202;tre capable de mod&#233;liser des syst&#232;mes complexes. R&#233;soudre de vrais probl&#232;mes.</li>
+<li> Accent la compr&#233;hension des principes fondamentaux et des lois dans les sciences.</li>
+<li> &#202;tre capable de visualiser, pr&#233;senter, discuter, interpr&#233;ter et venir avec une analyse critique des r&#233;sultats, et d&#233;velopper une attitude &#233;thique saine pour son propre travail.</li>
+<li> Am&#233;liorer le raisonnement sur la m&#233;thode scientifique.</li>
+</ul>
+
+Une bonne pr&#233;sentation des r&#233;sultats obtenus via de bons rapports scientifiques, aide &#224; inclure tous les aspects ci-dessus.
+
+<p>
+<!-- !split -->
+
+<h1 id="___sec2" class="anchor">Langage Python </h1>
+
+<p>
+<a href="http://www.python.org/" target="_self">Python</a> est un langage de programmation moderne de haut niveau, orient&#233; objet et d'usage g&#233;n&#233;ral.
+
+<p>
+<b>Caract&#233;ristiques g&#233;n&#233;rales de Python</b> :
+
+<ul>
+<li> Langage simple:</li>
+
+<ul>
+  <li> facile &#224; lire et &#224; apprendre avec une syntaxe minimaliste.</li>
+</ul>
+
+<li> Langage concis et expressif:</li>
+
+<ul>
+  <li> moins de lignes de code</li>
+  <li> moins de bugs</li>
+  <li> plus facile &#224; maintenir.</li>
+</ul>
+
+</ul>
+
+<!-- !split -->
+<b>D&#233;tails techniques</b> :
+
+<ul>
+<li> Typ&#233; dynamiquement:</li>
+
+<ul>
+  <li> Pas besoin de d&#233;finir le type des variables, les arguments ou le type des fonctions.</li>
+</ul>
+
+<li> La gestion automatique de la m&#233;moire:</li>
+
+<ul>
+  <li> Aucune n&#233;cessit&#233; d'allouer explicitement et d&#233;sallouer la m&#233;moire pour les variables et les tableaux de donn&#233;es. Aucun bug de fuite de m&#233;moire.</li>
+</ul>
+
+<li> Interpr&#233;t&#233;:</li>
+
+<ul>
+  <li> Pas besoin de compiler le code. L'interpr&#233;teur Python lit et ex&#233;cute le code python directement.</li>
+</ul>
+
+</ul>
+
+<!-- !split -->
+<b>Avantages</b> :
+
+<ul>
+<li> Le principal avantage est la facilit&#233; de programmation, qui minimise le temps n&#233;cessaire pour d&#233;velopper, d&#233;boguer et maintenir le code.</li>
+<li> Langage bien con&#231;u qui encourage les bonnes pratiques de programmation:</li>
+
+<ul>
+  <li> Modulaire et orient&#233;e objet, permet l'encapsulation  et la r&#233;utilisation de code. Il en r&#233;sulte souvent un code plus transparent, plus facile &#224; am&#233;liorer et sans bug.</li>
+  <li> Documentation int&#233;gr&#233; avec le code.</li>
+</ul>
+
+<li> De nombreuses biblioth&#232;ques standards, et de nombreux packages add-on.</li>
+</ul>
+
+<!-- !split -->
+<br /><br /><center><p><img src="imgs/python_easy.png" align="bottom" width=600></p></center><br /><br />
+
+<p>
+<!-- !split -->
+
+<h1 id="___sec3" class="anchor">Installation d'un environnement Python scientifique </h1>
+
+<h2 id="___sec4" class="anchor">Installation sur ordinateur </h2>
+
+<h3 id="___sec5" class="anchor">Qu&#8217;est ce que Anaconda ? </h3>
+
+<p>
+L&#8217;installation d&#8217;un environnement Python complet peut-&#234;tre une vraie gal&#232;re. D&#233;j&#224;, il faut t&#233;l&#233;charger Python et l&#8217;installer. Par la suite, t&#233;l&#233;charger un &#224; un les packages dont on a besoin. Parfois, le nombre de ces librairies peut-&#234;tre grand.
+
+<p>
+Par ailleurs, il faut s&#8217;assurer de la compatibilit&#233; entre les versions des diff&#233;rentes packages qu&#8217;on a &#224; t&#233;l&#233;charger. Bref, ce n&#8217;est pas amusant.
+
+<p>
+<!-- !split -->
+<a href="https://www.anaconda.com/download/" target="_self">Anaconda</a> est  une distribution Python. A son installation, Anaconda installera Python ainsi qu'une multitude de packages (voir <a href="https://docs.anaconda.com/anaconda/packages/pkg-docs#python-3-6" target="_self">liste de packages anaconda</a>).  Cela nous &#233;vite de nous ruer dans les probl&#232;mes d&#8217;incompatibilit&#233;s entre les diff&#233;rents packages.
+
+<p>
+Finalement, Anaconda propose un outil de gestion de packages appel&#233; <a href="https://conda.io/docs/" target="_self">conda</a>. Ce dernier permettra de mettre &#224; jour et installer facilement les librairies dont on aura besoin pour nos d&#233;veloppements.
+
+<p>
+<!-- !split -->
+
+<h3 id="___sec6" class="anchor">Pr&#233;parer la formation: t&#233;l&#233;chargement d&#8217;Anaconda </h3>
+
+<p>
+Nous demandons &#224; tous les &#233;tudiants de t&#233;l&#233;charger Anaconda. Pour cela, il faut t&#233;l&#233;charger un installeur &#224; partir de <a href="https://www.anaconda.com/download/" target="_self"><tt>https://www.anaconda.com/download/</tt></a>, correspondant &#224; votre syst&#232;me d&#8217;exploitation (Windows, Mac OS X, Linux). Il faut choisir entre 32 bits ou 64 bits (pour la version <em>Python 3</em>) selon que votre syst&#232;me d&#8217;exploitation est 32 bits ou 64 bits.
+<!-- !split -->
+
+<p>
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 1:  Interface graphique du navigateur Anaconda sur Windows </p></center>
+<p><img src="imgs/AnacondaNavigator.png" align="bottom" width=600></p>
+</center>
+
+<p>
+<!-- !split -->
+<div class="panel panel-primary">
+  <div class="panel-heading">
+  <h3 class="panel-title">Note</h3>
+  </div>
+<div class="panel-body">
+<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+Anaconda installe plusieurs ex&#233;cutables pour d&#233;velopper en Python dans le r&#233;pertoire <em>anaconda/bin</em>, sans toujours cr&#233;er des raccourcis sur le bureau ou dans un menu. Nous nous occuperons au tout d&#233;but de la formation de cr&#233;er des raccourcis pour pouvoir lancer l'application web <em>Jupyter notebook</em>. Vous pouvez lancer le notebook depuis le navigateur Anaconda.
+</div>
+</div>
+
+
+<p>
+<!-- !split -->
+
+<h1 id="___sec7" class="anchor">Introduction: "Hello World!" </h1>
+C'est devenu une tradition que lorsque vous apprenez un nouveau langage de programmation, vous d&#233;marrez avec un programme permettant &#224; l'ordinateur d'imprimer le message <em>"Hello World!"</em>.
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>In [<span style="color: #666666">1</span>]: <span style="color: #008000">print</span>(<span style="color: #BA2121">&quot;Hello World!&quot;</span>)
+Hello World!
+</pre></div>
+<p>
+F&#233;licitation! tout &#224; l'heure vous avez fait votre ordinateur saluer le monde en anglais! La fonction <code>print()</code> est utilis&#233;e pour imprimer l&#8217;instruction entre les parenth&#232;ses. De plus, l'utilisation de guillemets simples <code>print('Hello World!')</code> affichera le m&#234;me r&#233;sultat. Le d&#233;limiteur de d&#233;but et de fin doit &#234;tre le m&#234;me.
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>In [<span style="color: #666666">2</span>]: <span style="color: #008000">print</span>(<span style="color: #BA2121">&#39;Hello World!&#39;</span>)
+Hello World!
+</pre></div>
+<p>
+<!-- !split -->
+
+<h1 id="___sec8" class="anchor">Commentaires </h1>
+
+<p>
+Au fur et &#224; mesure que vos programmes deviennent plus grands et plus compliqu&#233;s, ils deviennent plus difficiles &#224; lire et &#224; regarder un morceau de code et &#224; comprendre ce qu'il fait ou pourquoi. Pour cette raison, il est conseill&#233; d&#8217;ajouter des notes &#224; vos programmes pour expliquer en langage naturel ce qu&#8217;il fait. Ces notes s'appellent des commentaires et commencent par le symbole <code>#</code>.
+
+<p>
+Voyez ce qui se passe lorsque nous ajoutons un commentaire au code pr&#233;c&#233;dent:
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>In [<span style="color: #666666">3</span>]: <span style="color: #008000">print</span>(<span style="color: #BA2121">&#39;Hello World!&#39;</span>) <span style="color: #408080; font-style: italic"># Ceci est mon premier commentaire</span>
+Hello World!
+</pre></div>
+<p>
+Rien ne change dans la sortie? Oui, et c&#8217;est tr&#232;s normal, l&#8217;interpr&#232;te Python ignore cette ligne et ne renvoie rien. La raison en est que les commentaires sont &#233;crits pour les humains, pour comprendre leurs codes, et non pour les machines.
+
+<p>
+<!-- !split -->
+
+<h1 id="___sec9" class="anchor">Nombres </h1>
+
+<p>
+L'interpr&#233;teur Python agit comme une simple calculatrice: vous pouvez y taper une expression et l'interpr&#233;teur restituera la valeur. La syntaxe d'expression est simple: les op&#233;rateurs +, -, * et / fonctionnent comme dans la plupart des autres langages (par exemple, Pascal ou C); les parenth&#232;ses (<code>()</code>) peuvent &#234;tre utilis&#233;es pour le regroupement. Par exemple:
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>In [<span style="color: #666666">4</span>]: <span style="color: #666666">5+3</span>
+Out[<span style="color: #666666">4</span>]: <span style="color: #666666">8</span>
+In [<span style="color: #666666">5</span>]: <span style="color: #666666">2</span> <span style="color: #666666">-</span> <span style="color: #666666">9</span>      <span style="color: #408080; font-style: italic"># les espaces sont optionnels</span>
+Out[<span style="color: #666666">5</span>]: <span style="color: #666666">-7</span>
+In [<span style="color: #666666">6</span>]: <span style="color: #666666">7</span> <span style="color: #666666">+</span> <span style="color: #666666">3</span> <span style="color: #666666">*</span> <span style="color: #666666">4</span>  <span style="color: #408080; font-style: italic">#la hiérarchie des opérations mathématique</span>
+Out[<span style="color: #666666">6</span>]: <span style="color: #666666">19</span>
+In [<span style="color: #666666">7</span>]: (<span style="color: #666666">7</span> <span style="color: #666666">+</span> <span style="color: #666666">3</span>) <span style="color: #666666">*</span> <span style="color: #666666">4</span>  <span style="color: #408080; font-style: italic"># est-elle respectées?</span>
+Out[<span style="color: #666666">7</span>]: <span style="color: #666666">40</span>
+<span style="color: #408080; font-style: italic"># en python3 la division retourne toujours un nombre en virgule flottante</span>
+In [<span style="color: #666666">8</span>]: <span style="color: #666666">20</span> <span style="color: #666666">/</span> <span style="color: #666666">3</span>
+Out[<span style="color: #666666">8</span>]: <span style="color: #666666">6.666666666666667</span>
+In [<span style="color: #666666">9</span>]: <span style="color: #666666">7</span> <span style="color: #666666">//</span> <span style="color: #666666">2</span>      <span style="color: #408080; font-style: italic"># une division entière</span>
+Out[<span style="color: #666666">9</span>]: <span style="color: #666666">3</span>
+</pre></div>
+<p>
+<!-- !split -->
+On peut noter l&#8217;existence de l&#8217;op&#233;rateur <code>%</code> (appel&#233; op&#233;rateur modulo). Cet op&#233;rateur fournit le reste de la division enti&#232;re d&#8217;un nombre par un autre. Par exemple :
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>In [<span style="color: #666666">10</span>]: <span style="color: #666666">7</span> <span style="color: #666666">%</span> <span style="color: #666666">2</span>       <span style="color: #408080; font-style: italic"># donne le reste de la division</span>
+Out[<span style="color: #666666">10</span>]: <span style="color: #666666">1</span>
+In [<span style="color: #666666">11</span>]: <span style="color: #666666">6</span> <span style="color: #666666">%</span> <span style="color: #666666">2</span>
+Out[<span style="color: #666666">11</span>]: <span style="color: #666666">0</span>
+</pre></div>
+<p>
+Les exposants peuvent &#234;tre calcul&#233;s &#224; l'aide de doubles ast&#233;risques <code>**</code>.
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>In [<span style="color: #666666">12</span>]: <span style="color: #666666">3**2</span>
+Out[<span style="color: #666666">12</span>]: <span style="color: #666666">9</span>
+</pre></div>
+<p>
+Les puissances de dix peuvent &#234;tre calcul&#233;es comme suit:
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>In [<span style="color: #666666">13</span>]: <span style="color: #666666">3</span> <span style="color: #666666">*</span> <span style="color: #666666">2e3</span>   <span style="color: #408080; font-style: italic"># vaut 3 * 2000</span>
+Out[<span style="color: #666666">13</span>]: <span style="color: #666666">6000.0</span>
+</pre></div>
+<p>
+<!-- !split -->
+
+<h1 id="___sec10" class="anchor">Affectations (ou assignation) </h1>
+
+<h2 id="___sec11" class="anchor">variables </h2>
+Dans presque tous les programmes Python que vous allez &#233;crire, vous aurez des variables. Les variables agissent comme des espaces r&#233;serv&#233;s pour les donn&#233;es. Ils peuvent aider &#224; court terme, ainsi qu&#8217;&#224; la logique, les variables pouvant changer, d&#8217;o&#249; leur nom. C&#8217;est beaucoup plus facile en Python car aucune d&#233;claration de variables n&#8217;est requise. Les noms de variable (ou tout autre objet Python tel que fonction, classe, module, etc.) commencent par une lettre majuscule ou minuscule (A-Z ou a-z). Ils sont sensibles &#224; la casse (<code>VAR1</code> et <code>var1</code> sont deux variables distinctes). Depuis Python, vous pouvez utiliser n&#8217;importe quel caract&#232;re Unicode, il est pr&#233;f&#233;rable d&#8217;ignorer les caract&#232;res ASCII (donc pas de caract&#232;res accentu&#233;s).
+
+<p>
+Si une variable est n&#233;cessaire, pensez &#224; un nom et commencez &#224; l'utiliser comme une variable, comme dans l'exemple ci-dessous:
+
+<p>
+<!-- !split -->
+Pour calculer l'aire d'un rectangle par exemple: <code>largeur</code> x <code>hauteur</code>:
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>In [<span style="color: #666666">15</span>]: largeur <span style="color: #666666">=</span> <span style="color: #666666">25</span>
+    <span style="color: #666666">...</span>: hauteur <span style="color: #666666">=</span> <span style="color: #666666">40</span>
+    <span style="color: #666666">...</span>: largeur    <span style="color: #408080; font-style: italic"># essayer d&#39;accéder à la valeur de la variable largeur</span>
+Out[<span style="color: #666666">15</span>]: <span style="color: #666666">25</span>
+</pre></div>
+<p>
+on peut &#233;galement utiliser la fonction <code>print()</code> pour afficher la valeur de la variable <code>largeur</code>
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>In [<span style="color: #666666">16</span>]: <span style="color: #008000">print</span>(largeur)
+<span style="color: #666666">25</span>
+</pre></div>
+<p>
+Le produit de ces deux variables donne l'aire du rectangle:
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>In [<span style="color: #666666">17</span>]: largeur <span style="color: #666666">*</span> hauteur  <span style="color: #408080; font-style: italic"># donne l&#39;aire du rectangle</span>
+Out[<span style="color: #666666">17</span>]: <span style="color: #666666">1000</span>
+</pre></div>
+<p>
+<!-- !split -->
+<div class="panel panel-primary">
+  <div class="panel-heading">
+  <h3 class="panel-title">Note</h3>
+  </div>
+<div class="panel-body">
+<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+Notez ici que le signe &#233;gal (<code>=</code>) dans l'affectation ne doit pas &#234;tre consid&#233;r&#233; comme <b>"est &#233;gal &#224;"</b>. Il doit &#234;tre <b>"lu"</b> ou interpr&#233;t&#233; comme <b>"est d&#233;finie par"</b>, ce qui signifie dans notre exemple:
+<blockquote>
+    La variable <code>largeur</code> est d&#233;finie par la valeur 25 et la variable <code>hauteur</code> est d&#233;finie par la valeur 40.
+</blockquote>
+</div>
+</div>
+
+
+<p>
+<div class="panel panel-warning">
+  <div class="panel-heading">
+  <h3 class="panel-title">Avertissement</h3>
+  </div>
+<div class="panel-body">
+<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+Si une variable n'est pas <em>d&#233;finie</em> (assign&#233;e &#224; une valeur), son utilisation vous donnera une erreur:
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>In [<span style="color: #666666">18</span>]: aire     <span style="color: #408080; font-style: italic"># essayer d&#39;accéder à une variable non définie</span>
+<span style="color: #666666">-----------------------------------------------------------------------</span>
+<span style="color: #D2413A; font-weight: bold">NameError</span>                            Traceback (most recent call last)
+<span style="color: #666666">&lt;</span>ipython<span style="color: #666666">-</span><span style="color: #008000">input</span><span style="color: #666666">-18-1</span>b03529c1ce5<span style="color: #666666">&gt;</span> <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #666666">&lt;</span>module<span style="color: #666666">&gt;</span>()
+<span style="color: #666666">----&gt;</span> <span style="color: #666666">1</span> aire     <span style="color: #408080; font-style: italic"># essayer d&#39;accéder à une variable non définie</span>
+
+<span style="color: #D2413A; font-weight: bold">NameError</span>: name <span style="color: #BA2121">&#39;aire&#39;</span> <span style="color: #AA22FF; font-weight: bold">is</span> <span style="color: #AA22FF; font-weight: bold">not</span> defined
+</pre></div>
+<p>
+</div>
+</div>
+
+<!-- !split -->
+
+<p>
+Laissez-nous r&#233;soudre ce probl&#232;me informatique (ou <b>bug</b> tout simplement)!. En d'autres termes, assignons la variable <code>aire</code> &#224; sa valeur.
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>In [<span style="color: #666666">19</span>]: aire <span style="color: #666666">=</span> largeur <span style="color: #666666">*</span> hauteur
+    <span style="color: #666666">...</span>: aire  <span style="color: #408080; font-style: italic"># et voila!</span>
+Out[<span style="color: #666666">19</span>]: <span style="color: #666666">1000</span>
+</pre></div>
+
+<h2 id="___sec12" class="anchor">Noms de variables r&#233;serv&#233;s (keywords) </h2>
+Certains noms de variables ne sont pas disponibles, ils sont r&#233;serv&#233;s &#224; python lui-m&#234;me. Les mots-cl&#233;s suivants (que vous pouvez afficher dans l'interpr&#233;teur avec la commande <code>help(&quot;keywords&quot;)</code>) sont r&#233;serv&#233;s et ne peuvent pas &#234;tre utilis&#233;s pour d&#233;finir vos propres identifiants (variables, noms de fonctions, classes, etc.).
+
+<p>
+<!-- !split -->
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>In [<span style="color: #666666">20</span>]: help(<span style="color: #BA2121">&quot;keywords&quot;</span>)
+
+Here <span style="color: #AA22FF; font-weight: bold">is</span> a <span style="color: #008000">list</span> of the Python keywords<span style="color: #666666">.</span>  Enter <span style="color: #008000">any</span> keyword to get more help<span style="color: #666666">.</span>
+
+<span style="color: #008000; font-weight: bold">False</span>               <span style="color: #008000; font-weight: bold">def</span>                 <span style="color: #0000FF">if</span>                  <span style="color: #008000; font-weight: bold">raise</span>
+<span style="color: #008000; font-weight: bold">None</span>                <span style="color: #008000; font-weight: bold">del</span>                 <span style="color: #008000; font-weight: bold">import</span>              <span style="color: #0000FF; font-weight: bold">return</span>
+<span style="color: #008000; font-weight: bold">True</span>                <span style="color: #008000; font-weight: bold">elif</span>                <span style="color: #AA22FF; font-weight: bold">in</span>                  <span style="color: #008000; font-weight: bold">try</span>
+<span style="color: #AA22FF; font-weight: bold">and</span>                 <span style="color: #008000; font-weight: bold">else</span>                <span style="color: #AA22FF; font-weight: bold">is</span>                  <span style="color: #008000; font-weight: bold">while</span>
+<span style="color: #008000; font-weight: bold">as</span>                  <span style="color: #008000; font-weight: bold">except</span>              <span style="color: #008000; font-weight: bold">lambda</span>              <span style="color: #008000; font-weight: bold">with</span>
+<span style="color: #008000; font-weight: bold">assert</span>              <span style="color: #008000; font-weight: bold">finally</span>             <span style="color: #008000; font-weight: bold">nonlocal</span>            <span style="color: #008000; font-weight: bold">yield</span>
+<span style="color: #008000; font-weight: bold">break</span>               <span style="color: #008000; font-weight: bold">for</span>                 <span style="color: #AA22FF; font-weight: bold">not</span>
+<span style="color: #008000; font-weight: bold">class</span>               <span style="color: #0000FF; font-weight: bold">from</span>                <span style="color: #AA22FF; font-weight: bold">or</span>
+<span style="color: #008000; font-weight: bold">continue</span>            <span style="color: #008000; font-weight: bold">global</span>              <span style="color: #008000; font-weight: bold">pass</span>
+
+<span style="color: #408080; font-style: italic"># par exemple pour éviter d&#39;écraser le nom réservé lambda</span>
+In [<span style="color: #666666">22</span>]: lambda_ <span style="color: #666666">=</span> <span style="color: #666666">630e-9</span>
+    <span style="color: #666666">...</span>: lambda_
+Out[<span style="color: #666666">22</span>]: <span style="color: #666666">6.3e-07</span>
+</pre></div>
+<p>
+
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+<center style="font-size:80%">
+<!-- copyright --> &copy; 2023, UP Math&#233;matiques. ESPRIT
+</center>
+
+
+</body>
+</html>
+    
+

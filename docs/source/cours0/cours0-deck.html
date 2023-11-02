@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Introduction à Python (I)">
+
+<title>Introduction à Python (I)</title>
+
+
+
+
+
+
+
+<!-- deck.js: https://github.com/imakewebthings/deck.js -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=1024, user-scalable=no">
+
+<!-- Required stylesheet -->
+<link rel="stylesheet" href="deck.js/core/deck.core.css">
+
+<!-- Extension CSS files go here. Remove or add as needed.
+deck.goto: Adds a shortcut key to jump to any slide number.
+Hit g, type in the slide number, and hit enter.
+
+deck.hash: Enables internal linking within slides, deep
+linking to individual slides, and updates the address bar and
+a permalink anchor with each slide change.
+
+deck.menu: Adds a menu view, letting you see all slides in a grid.
+Hit m to toggle to menu view, continue navigating your deck,
+and hit m to return to normal view. Touch devices can double-tap
+the deck to switch between views.
+
+deck.navigation: Adds clickable left and right buttons for the
+less keyboard inclined.
+
+deck.status: Adds a page number indicator. (current/total).
+
+deck.scale: Scales each slide to fit within the deck container
+using CSS Transforms for those browsers that support them.
+
+deck.pointer: Turn mouse into laser pointer (toggle with p).
+(Requires https://github.com/mikeharris100/deck.pointer.js)
+-->
+
+<link rel="stylesheet" href="deck.js/extensions/menu/deck.menu.css">
+<link rel="stylesheet" href="deck.js/extensions/navigation/deck.navigation.css">
+<link rel="stylesheet" href="deck.js/extensions/scale/deck.scale.css">
+<link rel="stylesheet" href="deck.js/extensions/pointer/deck.pointer.css">
+<link rel="stylesheet" href="deck.js/extensions/notes/deck.notes.css">
+<!--
+<link rel="stylesheet" href="deck.js/extensions/goto/deck.goto.css">
+<link rel="stylesheet" href="deck.js/extensions/hash/deck.hash.css">
+<link rel="stylesheet" href="deck.js/extensions/status/deck.status.css">
+-->
+
+<!-- Style theme. More available in themes/style/ or create your own. -->
+<link rel="stylesheet" href="deck.js/themes/style/sandstone.default.css">
+
+<!--
+<link rel="stylesheet" href="deck.js/themes/style/neon.css">
+<link rel="stylesheet" href="deck.js/themes/style/swiss.css">
+<link rel="stylesheet" href="deck.js/themes/style/web-2.0.css">
+
+git clone git://github.com/duijf/mnml.git
+<link rel="stylesheet" href="deck.js/themes/style/mnml.css">
+
+git://github.com/groovecoder/deckjs-theme-mozilla.git
+<link rel="stylesheet" href="deck.js/themes/style/sandstone.css">
+<link rel="stylesheet" href="deck.js/themes/style/sandstone.aurora.css">
+<link rel="stylesheet" href="deck.js/themes/style/sandstone.dark.css">
+<link rel="stylesheet" href="deck.js/themes/style/sandstone.default.css">
+<link rel="stylesheet" href="deck.js/themes/style/sandstone.firefox.css">
+<link rel="stylesheet" href="deck.js/themes/style/sandstone.light.css">
+<link rel="stylesheet" href="deck.js/themes/style/sandstone.mdn.css">
+<link rel="stylesheet" href="deck.js/themes/style/sandstone.nightly.css">
+<link rel="stylesheet" href="deck.js/themes/style/sandstone.cbc.css">
+
+git://github.com/barraq/deck.ext.js.git
+<link rel="stylesheet" href="deck.js/themes/style/beamer.css">
+-->
+
+<!--
+Transition theme. More available in /themes/transition/ or create your own. -->
+<!--
+<link rel="stylesheet" href="deck.js/themes/transition/horizontal-slide.css">
+<link rel="stylesheet" href="deck.js/themes/transition/fade.css">
+<link rel="stylesheet" href="deck.js/themes/transition/vertical-slide.css">
+<link rel="stylesheet" href="deck.js/themes/transition/horizontal-slide.css">
+-->
+
+<!-- Required Modernizr file -->
+<script src="deck.js/modernizr.custom.js"></script>
+
+<style type="text/css">
+/* Override h1, h2, ... styles */
+h1 { font-size: 2.8em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
+h1, h2, h3, h4 { font-weight: bold; line-height: 1.2; }
+body { overflow: auto; } /* vertical scrolling */
+
+hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+p.caption { width: 80%; font-size: 60%; font-style: italic; text-align: left; }
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+.slide .alert-text-small   { font-size: 80%;  }
+.slide .alert-text-large   { font-size: 130%; }
+.slide .alert-text-normal  { font-size: 90%;  }
+.slide .alert {
+     padding:8px 35px 8px 14px; margin-bottom:18px;
+     text-shadow:0 1px 0 rgba(255,255,255,0.5);
+     border:5px solid #bababa;
+       -webkit-border-radius:14px; -moz-border-radius:14px;
+     border-radius:14px
+     background-position: 10px 10px;
+     background-repeat: no-repeat;
+     background-size: 38px;
+     padding-left: 30px; /* 55px; if icon */
+ }
+ .slide .alert-block {padding-top:14px; padding-bottom:14px}
+ .slide .alert-block > p, .alert-block > ul {margin-bottom:0}
+ /*.slide .alert li {margin-top: 1em}*/
+ .deck .alert-block p+p {margin-top:5px}
+ /*.slide .alert-notice { background-image: url(http://hplgit.github.io/doconce/bundled/html_images//small_gray_notice.png); }
+ .slide .alert-summary  { background-image:url(http://hplgit.github.io/doconce/bundled/html_images//small_gray_summary.png); }
+ .slide .alert-warning { background-image: url(http://hplgit.github.io/doconce/bundled/html_images//small_gray_warning.png); }
+ .slide .alert-question {background-image:url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_question.png); } */
+
+</style>
+
+
+
+<!-- Styles for table layout of slides -->
+<style type="text/css">
+td.padding {
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-right:50px;
+  padding-left:50px;
+}
+</style>
+
+</head>
+
+<body class="deck-container">
+
+<header>
+<!-- Here goes a potential header -->
+</header>
+
+<!-- do not use the article tag - it gives strange sizings -->
+
+
+
+    
+
+
+
+<section class="slide">
+<!-- ------------------- main content ---------------------- -->
+
+<h2 style="text-align: center;">Introduction &#224; Python (I)</h2>  <!-- document title -->
+
+<p>
+<!-- author(s): UP Math&#233;matiques -->
+
+<center>
+<b style="font-weight: bold">UP Math&#233;matiques</b> 
+</center>
+
+<p>
+<!-- institution -->
+
+<center><b style="font-weight: bold">&#201;cole Sup&#233;rieure PRiv&#233;e d'Ing&#233;nierie et de Technologies.</b></center>
+<br>
+<p>
+<center><b style="font-weight: bold">2 novembre 2023</b></center> <!-- date -->
+<br>
+
+<h1 id="table_of_contents">Table of contents</h2>
+
+<p>
+<a href="#___sec0"> Objectifs g&#233;n&#233;raux en premier </a><br>
+<a href="#___sec1"> Situation standard que nous rencontrons quotidiennement </a><br>
+<a href="#___sec2"> Langage Python </a><br>
+<a href="#___sec3"> Installation d'un environnement Python scientifique </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec4"> Installation sur ordinateur </a><br>
+<a href="#___sec7"> Introduction: "Hello World!" </a><br>
+<a href="#___sec8"> Commentaires </a><br>
+<a href="#___sec9"> Nombres </a><br>
+<a href="#___sec10"> Affectations (ou assignation) </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec11"> variables </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec12"> Noms de variables r&#233;serv&#233;s (keywords) </a><br>
+</p>
+<p>
+
+<center style="font-size:80%">
+<!-- copyright --> &copy; 2023, UP Math&#233;matiques. ESPRIT
+</center>
+</section>
+
+
+<section class="slide">
+
+<h1 id="___sec0">Objectifs g&#233;n&#233;raux en premier </h1>
+
+<p>
+Une partie essentielle de ce cours est de vous permettre de faire de la science par des exp&#233;riences num&#233;riques et de d&#233;velopper des projets qui vous permettent d'&#233;tudier des syst&#232;mes complexes. Le but est d'am&#233;liorer ce que nous appelons la pens&#233;e algorithmique.
+
+<p>
+<b style="font-weight: bold">Algorithme</b>
+Un ensemble fini d'instructions non ambigu&#235;s qui, &#233;tant donn&#233; un ensemble de conditions initiales, peuvent &#234;tre effectu&#233;es dans une s&#233;quence prescrite pour atteindre un certain but.
+</section>
+
+
+<section class="slide">
+
+<h1 id="___sec1">Situation standard que nous rencontrons quotidiennement </h1>
+
+<p>
+La situation standard que nous rencontrons presque tous les s&#233;ances de cours:
+
+<ul>
+<p><li> Th&#233;orie + exp&#233;rience + simulation est presque la norme dans la recherche et l'industrie.</li>
+<p><li> &#202;tre capable de mod&#233;liser des syst&#232;mes complexes. R&#233;soudre de vrais probl&#232;mes.</li>
+<p><li> Accent la compr&#233;hension des principes fondamentaux et des lois dans les sciences.</li>
+<p><li> &#202;tre capable de visualiser, pr&#233;senter, discuter, interpr&#233;ter et venir avec une analyse critique des r&#233;sultats, et d&#233;velopper une attitude &#233;thique saine pour son propre travail.</li>
+<p><li> Am&#233;liorer le raisonnement sur la m&#233;thode scientifique.</li>
+</ul>
+<p>
+
+Une bonne pr&#233;sentation des r&#233;sultats obtenus via de bons rapports scientifiques, aide &#224; inclure tous les aspects ci-dessus.
+</section>
+
+
+<section class="slide">
+
+<h1 id="___sec2">Langage Python </h1>
+
+<p>
+<a href="http://www.python.org/" target="_blank">Python</a> est un langage de programmation moderne de haut niveau, orient&#233; objet et d'usage g&#233;n&#233;ral.
+
+<p>
+<b style="font-weight: bold">Caract&#233;ristiques g&#233;n&#233;rales de Python</b> :
+
+<ul>
+<p><li> Langage simple:</li>
+
+<ul>
+
+<p><li> facile &#224; lire et &#224; apprendre avec une syntaxe minimaliste.</li>
+</ul>
+<p><li> Langage concis et expressif:</li>
+
+<ul>
+
+<p><li> moins de lignes de code</li>
+
+<p><li> moins de bugs</li>
+
+<p><li> plus facile &#224; maintenir.</li>
+</ul>
+<p>
+</ul>
+</section>
+
+
+<section class="slide">
+<b style="font-weight: bold">D&#233;tails techniques</b> :
+
+<ul>
+<p><li> Typ&#233; dynamiquement:</li>
+
+<ul>
+
+<p><li> Pas besoin de d&#233;finir le type des variables, les arguments ou le type des fonctions.</li>
+</ul>
+<p><li> La gestion automatique de la m&#233;moire:</li>
+
+<ul>
+
+<p><li> Aucune n&#233;cessit&#233; d'allouer explicitement et d&#233;sallouer la m&#233;moire pour les variables et les tableaux de donn&#233;es. Aucun bug de fuite de m&#233;moire.</li>
+</ul>
+<p><li> Interpr&#233;t&#233;:</li>
+
+<ul>
+
+<p><li> Pas besoin de compiler le code. L'interpr&#233;teur Python lit et ex&#233;cute le code python directement.</li>
+</ul>
+<p>
+</ul>
+</section>
+
+
+<section class="slide">
+<b style="font-weight: bold">Avantages</b> :
+
+<ul>
+<p><li> Le principal avantage est la facilit&#233; de programmation, qui minimise le temps n&#233;cessaire pour d&#233;velopper, d&#233;boguer et maintenir le code.</li>
+<p><li> Langage bien con&#231;u qui encourage les bonnes pratiques de programmation:</li>
+
+<ul>
+
+<p><li> Modulaire et orient&#233;e objet, permet l'encapsulation  et la r&#233;utilisation de code. Il en r&#233;sulte souvent un code plus transparent, plus facile &#224; am&#233;liorer et sans bug.</li>
+
+<p><li> Documentation int&#233;gr&#233; avec le code.</li>
+</ul>
+<p><li> De nombreuses biblioth&#232;ques standards, et de nombreux packages add-on.</li>
+</ul>
+</section>
+
+
+<section class="slide">
+<br /><br /><center><p><img src="imgs/python_easy.png" align="bottom" width=600></p></center><br /><br />
+</section>
+
+
+<section class="slide">
+
+<h1 id="___sec3">Installation d'un environnement Python scientifique </h1>
+
+<h2 id="___sec4">Installation sur ordinateur </h2>
+
+<h3 id="___sec5">Qu&#8217;est ce que Anaconda ? </h3>
+
+<p>
+L&#8217;installation d&#8217;un environnement Python complet peut-&#234;tre une vraie gal&#232;re. D&#233;j&#224;, il faut t&#233;l&#233;charger Python et l&#8217;installer. Par la suite, t&#233;l&#233;charger un &#224; un les packages dont on a besoin. Parfois, le nombre de ces librairies peut-&#234;tre grand.
+
+<p>
+Par ailleurs, il faut s&#8217;assurer de la compatibilit&#233; entre les versions des diff&#233;rentes packages qu&#8217;on a &#224; t&#233;l&#233;charger. Bref, ce n&#8217;est pas amusant.
+</section>
+
+
+<section class="slide">
+<a href="https://www.anaconda.com/download/" target="_blank">Anaconda</a> est  une distribution Python. A son installation, Anaconda installera Python ainsi qu'une multitude de packages (voir <a href="https://docs.anaconda.com/anaconda/packages/pkg-docs#python-3-6" target="_blank">liste de packages anaconda</a>).  Cela nous &#233;vite de nous ruer dans les probl&#232;mes d&#8217;incompatibilit&#233;s entre les diff&#233;rents packages.
+
+<p>
+Finalement, Anaconda propose un outil de gestion de packages appel&#233; <a href="https://conda.io/docs/" target="_blank">conda</a>. Ce dernier permettra de mettre &#224; jour et installer facilement les librairies dont on aura besoin pour nos d&#233;veloppements.
+</section>
+
+
+<section class="slide">
+
+<h3 id="___sec6">Pr&#233;parer la formation: t&#233;l&#233;chargement d&#8217;Anaconda </h3>
+
+<p>
+Nous demandons &#224; tous les &#233;tudiants de t&#233;l&#233;charger Anaconda. Pour cela, il faut t&#233;l&#233;charger un installeur &#224; partir de <a href="https://www.anaconda.com/download/" target="_blank"><tt>https://www.anaconda.com/download/</tt></a>, correspondant &#224; votre syst&#232;me d&#8217;exploitation (Windows, Mac OS X, Linux). Il faut choisir entre 32 bits ou 64 bits (pour la version <em>Python 3</em>) selon que votre syst&#232;me d&#8217;exploitation est 32 bits ou 64 bits.
+</section>
+
+
+<section class="slide">
+
+<p>
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 1:  Interface graphique du navigateur Anaconda sur Windows </p></center>
+<p><img src="imgs/AnacondaNavigator.png" align="bottom" width=600></p>
+</center>
+</section>
+
+
+<section class="slide">
+<div class="alert alert-block alert-notice alert-text-normal">
+<b style="font-weight: bold">Notice</b>
+<p>
+Anaconda installe plusieurs ex&#233;cutables pour d&#233;velopper en Python dans le r&#233;pertoire <em>anaconda/bin</em>, sans toujours cr&#233;er des raccourcis sur le bureau ou dans un menu. Nous nous occuperons au tout d&#233;but de la formation de cr&#233;er des raccourcis pour pouvoir lancer l'application web <em>Jupyter notebook</em>. Vous pouvez lancer le notebook depuis le navigateur Anaconda.
+</div>
+</section>
+
+
+<section class="slide">
+
+<h1 id="___sec7">Introduction: "Hello World!" </h1>
+C'est devenu une tradition que lorsque vous apprenez un nouveau langage de programmation, vous d&#233;marrez avec un programme permettant &#224; l'ordinateur d'imprimer le message <em>"Hello World!"</em>.
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">1</span>]: <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Hello World!&quot;</span>)
+Hello World<span style="color: #a61717; background-color: #e3d2d2">!</span>
+</pre></div>
+<p>
+F&#233;licitation! tout &#224; l'heure vous avez fait votre ordinateur saluer le monde en anglais! La fonction <code>print()</code> est utilis&#233;e pour imprimer l&#8217;instruction entre les parenth&#232;ses. De plus, l'utilisation de guillemets simples <code>print('Hello World!')</code> affichera le m&#234;me r&#233;sultat. Le d&#233;limiteur de d&#233;but et de fin doit &#234;tre le m&#234;me.
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">2</span>]: <span style="color: #658b00">print</span>(<span style="color: #CD5555">&#39;Hello World!&#39;</span>)
+Hello World<span style="color: #a61717; background-color: #e3d2d2">!</span>
+</pre></div>
+</section>
+
+
+<section class="slide">
+
+<h1 id="___sec8">Commentaires </h1>
+
+<p>
+Au fur et &#224; mesure que vos programmes deviennent plus grands et plus compliqu&#233;s, ils deviennent plus difficiles &#224; lire et &#224; regarder un morceau de code et &#224; comprendre ce qu'il fait ou pourquoi. Pour cette raison, il est conseill&#233; d&#8217;ajouter des notes &#224; vos programmes pour expliquer en langage naturel ce qu&#8217;il fait. Ces notes s'appellent des commentaires et commencent par le symbole <code>#</code>.
+
+<p>
+Voyez ce qui se passe lorsque nous ajoutons un commentaire au code pr&#233;c&#233;dent:
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">3</span>]: <span style="color: #658b00">print</span>(<span style="color: #CD5555">&#39;Hello World!&#39;</span>) <span style="color: #228B22"># Ceci est mon premier commentaire</span>
+Hello World<span style="color: #a61717; background-color: #e3d2d2">!</span>
+</pre></div>
+<p>
+Rien ne change dans la sortie? Oui, et c&#8217;est tr&#232;s normal, l&#8217;interpr&#232;te Python ignore cette ligne et ne renvoie rien. La raison en est que les commentaires sont &#233;crits pour les humains, pour comprendre leurs codes, et non pour les machines.
+</section>
+
+
+<section class="slide">
+
+<h1 id="___sec9">Nombres </h1>
+
+<p>
+L'interpr&#233;teur Python agit comme une simple calculatrice: vous pouvez y taper une expression et l'interpr&#233;teur restituera la valeur. La syntaxe d'expression est simple: les op&#233;rateurs +, -, * et / fonctionnent comme dans la plupart des autres langages (par exemple, Pascal ou C); les parenth&#232;ses (<code>()</code>) peuvent &#234;tre utilis&#233;es pour le regroupement. Par exemple:
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">4</span>]: <span style="color: #B452CD">5</span>+<span style="color: #B452CD">3</span>
+Out[<span style="color: #B452CD">4</span>]: <span style="color: #B452CD">8</span>
+In [<span style="color: #B452CD">5</span>]: <span style="color: #B452CD">2</span> - <span style="color: #B452CD">9</span>      <span style="color: #228B22"># les espaces sont optionnels</span>
+Out[<span style="color: #B452CD">5</span>]: -<span style="color: #B452CD">7</span>
+In [<span style="color: #B452CD">6</span>]: <span style="color: #B452CD">7</span> + <span style="color: #B452CD">3</span> * <span style="color: #B452CD">4</span>  <span style="color: #228B22">#la hiérarchie des opérations mathématique</span>
+Out[<span style="color: #B452CD">6</span>]: <span style="color: #B452CD">19</span>
+In [<span style="color: #B452CD">7</span>]: (<span style="color: #B452CD">7</span> + <span style="color: #B452CD">3</span>) * <span style="color: #B452CD">4</span>  <span style="color: #228B22"># est-elle respectées?</span>
+Out[<span style="color: #B452CD">7</span>]: <span style="color: #B452CD">40</span>
+<span style="color: #228B22"># en python3 la division retourne toujours un nombre en virgule flottante</span>
+In [<span style="color: #B452CD">8</span>]: <span style="color: #B452CD">20</span> / <span style="color: #B452CD">3</span>
+Out[<span style="color: #B452CD">8</span>]: <span style="color: #B452CD">6.666666666666667</span>
+In [<span style="color: #B452CD">9</span>]: <span style="color: #B452CD">7</span> // <span style="color: #B452CD">2</span>      <span style="color: #228B22"># une division entière</span>
+Out[<span style="color: #B452CD">9</span>]: <span style="color: #B452CD">3</span>
+</pre></div>
+</section>
+
+
+<section class="slide">
+On peut noter l&#8217;existence de l&#8217;op&#233;rateur <code>%</code> (appel&#233; op&#233;rateur modulo). Cet op&#233;rateur fournit le reste de la division enti&#232;re d&#8217;un nombre par un autre. Par exemple :
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">10</span>]: <span style="color: #B452CD">7</span> % <span style="color: #B452CD">2</span>       <span style="color: #228B22"># donne le reste de la division</span>
+Out[<span style="color: #B452CD">10</span>]: <span style="color: #B452CD">1</span>
+In [<span style="color: #B452CD">11</span>]: <span style="color: #B452CD">6</span> % <span style="color: #B452CD">2</span>
+Out[<span style="color: #B452CD">11</span>]: <span style="color: #B452CD">0</span>
+</pre></div>
+<p>
+Les exposants peuvent &#234;tre calcul&#233;s &#224; l'aide de doubles ast&#233;risques <code>**</code>.
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">12</span>]: <span style="color: #B452CD">3</span>**<span style="color: #B452CD">2</span>
+Out[<span style="color: #B452CD">12</span>]: <span style="color: #B452CD">9</span>
+</pre></div>
+<p>
+Les puissances de dix peuvent &#234;tre calcul&#233;es comme suit:
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">13</span>]: <span style="color: #B452CD">3</span> * <span style="color: #B452CD">2e3</span>   <span style="color: #228B22"># vaut 3 * 2000</span>
+Out[<span style="color: #B452CD">13</span>]: <span style="color: #B452CD">6000.0</span>
+</pre></div>
+</section>
+
+
+<section class="slide">
+
+<h1 id="___sec10">Affectations (ou assignation) </h1>
+
+<h2 id="___sec11">variables </h2>
+Dans presque tous les programmes Python que vous allez &#233;crire, vous aurez des variables. Les variables agissent comme des espaces r&#233;serv&#233;s pour les donn&#233;es. Ils peuvent aider &#224; court terme, ainsi qu&#8217;&#224; la logique, les variables pouvant changer, d&#8217;o&#249; leur nom. C&#8217;est beaucoup plus facile en Python car aucune d&#233;claration de variables n&#8217;est requise. Les noms de variable (ou tout autre objet Python tel que fonction, classe, module, etc.) commencent par une lettre majuscule ou minuscule (A-Z ou a-z). Ils sont sensibles &#224; la casse (<code>VAR1</code> et <code>var1</code> sont deux variables distinctes). Depuis Python, vous pouvez utiliser n&#8217;importe quel caract&#232;re Unicode, il est pr&#233;f&#233;rable d&#8217;ignorer les caract&#232;res ASCII (donc pas de caract&#232;res accentu&#233;s).
+
+<p>
+Si une variable est n&#233;cessaire, pensez &#224; un nom et commencez &#224; l'utiliser comme une variable, comme dans l'exemple ci-dessous:
+</section>
+
+
+<section class="slide">
+Pour calculer l'aire d'un rectangle par exemple: <code>largeur</code> x <code>hauteur</code>:
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">15</span>]: largeur = <span style="color: #B452CD">25</span>
+    ...: hauteur = <span style="color: #B452CD">40</span>
+    ...: largeur    <span style="color: #228B22"># essayer d&#39;accéder à la valeur de la variable largeur</span>
+Out[<span style="color: #B452CD">15</span>]: <span style="color: #B452CD">25</span>
+</pre></div>
+<p>
+on peut &#233;galement utiliser la fonction <code>print()</code> pour afficher la valeur de la variable <code>largeur</code>
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">16</span>]: <span style="color: #658b00">print</span>(largeur)
+<span style="color: #B452CD">25</span>
+</pre></div>
+<p>
+Le produit de ces deux variables donne l'aire du rectangle:
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">17</span>]: largeur * hauteur  <span style="color: #228B22"># donne l&#39;aire du rectangle</span>
+Out[<span style="color: #B452CD">17</span>]: <span style="color: #B452CD">1000</span>
+</pre></div>
+</section>
+
+
+<section class="slide">
+<div class="alert alert-block alert-notice alert-text-normal">
+<b style="font-weight: bold">Notice</b>
+<p>
+Notez ici que le signe &#233;gal (<code>=</code>) dans l'affectation ne doit pas &#234;tre consid&#233;r&#233; comme <b style="font-weight: bold">"est &#233;gal &#224;"</b>. Il doit &#234;tre <b style="font-weight: bold">"lu"</b> ou interpr&#233;t&#233; comme <b style="font-weight: bold">"est d&#233;finie par"</b>, ce qui signifie dans notre exemple:
+<blockquote>
+    La variable <code>largeur</code> est d&#233;finie par la valeur 25 et la variable <code>hauteur</code> est d&#233;finie par la valeur 40.
+</blockquote>
+</div>
+
+<p>
+<div class="alert alert-block alert-warning alert-text-normal">
+<b style="font-weight: bold">Warning</b>
+<p>
+Si une variable n'est pas <em>d&#233;finie</em> (assign&#233;e &#224; une valeur), son utilisation vous donnera une erreur:
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">18</span>]: aire     <span style="color: #228B22"># essayer d&#39;accéder à une variable non définie</span>
+-----------------------------------------------------------------------
+<span style="color: #008b45; font-weight: bold">NameError</span>                            Traceback (most recent call last)
+&lt;ipython-<span style="color: #658b00">input</span>-<span style="color: #B452CD">18</span>-<span style="color: #B452CD">1</span>b03529c1ce5&gt; <span style="color: #8B008B">in</span> &lt;module&gt;()
+----&gt; <span style="color: #B452CD">1</span> aire     <span style="color: #228B22"># essayer d&#39;accéder à une variable non définie</span>
+
+<span style="color: #008b45; font-weight: bold">NameError</span>: name <span style="color: #CD5555">&#39;aire&#39;</span> <span style="color: #8B008B">is</span> <span style="color: #8B008B">not</span> defined
+</pre></div>
+
+</div>
+</section>
+
+
+<section class="slide">
+
+<p>
+Laissez-nous r&#233;soudre ce probl&#232;me informatique (ou <b style="font-weight: bold">bug</b> tout simplement)!. En d'autres termes, assignons la variable <code>aire</code> &#224; sa valeur.
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">19</span>]: aire = largeur * hauteur
+    ...: aire  <span style="color: #228B22"># et voila!</span>
+Out[<span style="color: #B452CD">19</span>]: <span style="color: #B452CD">1000</span>
+</pre></div>
+
+<h2 id="___sec12">Noms de variables r&#233;serv&#233;s (keywords) </h2>
+Certains noms de variables ne sont pas disponibles, ils sont r&#233;serv&#233;s &#224; python lui-m&#234;me. Les mots-cl&#233;s suivants (que vous pouvez afficher dans l'interpr&#233;teur avec la commande <code>help(&quot;keywords&quot;)</code>) sont r&#233;serv&#233;s et ne peuvent pas &#234;tre utilis&#233;s pour d&#233;finir vos propres identifiants (variables, noms de fonctions, classes, etc.).
+</section>
+
+
+<section class="slide">
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">20</span>]: help(<span style="color: #CD5555">&quot;keywords&quot;</span>)
+
+Here <span style="color: #8B008B">is</span> a <span style="color: #658b00">list</span> of the Python keywords.  Enter <span style="color: #658b00">any</span> keyword to get more help.
+
+<span style="color: #8B008B; font-weight: bold">False</span>               <span style="color: #8B008B; font-weight: bold">def</span>                 <span style="color: #008b45">if</span>                  <span style="color: #8B008B; font-weight: bold">raise</span>
+<span style="color: #8B008B; font-weight: bold">None</span>                <span style="color: #8B008B; font-weight: bold">del</span>                 <span style="color: #8B008B; font-weight: bold">import</span>              <span style="color: #008b45; text-decoration: underline">return</span>
+<span style="color: #8B008B; font-weight: bold">True</span>                <span style="color: #8B008B; font-weight: bold">elif</span>                <span style="color: #8B008B">in</span>                  <span style="color: #8B008B; font-weight: bold">try</span>
+<span style="color: #8B008B">and</span>                 <span style="color: #8B008B; font-weight: bold">else</span>                <span style="color: #8B008B">is</span>                  <span style="color: #8B008B; font-weight: bold">while</span>
+<span style="color: #8B008B; font-weight: bold">as</span>                  <span style="color: #8B008B; font-weight: bold">except</span>              <span style="color: #8B008B; font-weight: bold">lambda</span>              <span style="color: #8B008B; font-weight: bold">with</span>
+<span style="color: #8B008B; font-weight: bold">assert</span>              <span style="color: #8B008B; font-weight: bold">finally</span>             <span style="color: #8B008B; font-weight: bold">nonlocal</span>            <span style="color: #8B008B; font-weight: bold">yield</span>
+<span style="color: #8B008B; font-weight: bold">break</span>               <span style="color: #8B008B; font-weight: bold">for</span>                 <span style="color: #8B008B">not</span>
+<span style="color: #8B008B; font-weight: bold">class</span>               <span style="color: #008b45; font-weight: bold">from</span>                <span style="color: #8B008B">or</span>
+<span style="color: #8B008B; font-weight: bold">continue</span>            <span style="color: #8B008B; font-weight: bold">global</span>              <span style="color: #8B008B; font-weight: bold">pass</span>
+
+<span style="color: #228B22"># par exemple pour éviter d&#39;écraser le nom réservé lambda</span>
+In [<span style="color: #B452CD">22</span>]: lambda_ = <span style="color: #B452CD">630e-9</span>
+    ...: lambda_
+Out[<span style="color: #B452CD">22</span>]: <span style="color: #B452CD">6.3e-07</span>
+</pre></div>
+</section>
+
+
+
+
+<footer>
+<!-- Here goes a footer -->
+</footer>
+
+<!-- Begin extension snippets. Add or remove as needed. -->
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet
+<p class="deck-status">
+    <span class="deck-status-current"></span>
+    /
+    <span class="deck-status-total"></span>
+</p>
+-->
+
+<!-- deck.goto snippet
+<form action="." method="get" class="goto-form">
+    <label for="goto-slide">Go to slide:</label>
+    <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+    <datalist id="goto-datalist"></datalist>
+    <input type="submit" value="Go">
+</form>
+-->
+
+<!-- deck.hash snippet
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+-->
+
+<!-- End extension snippets. -->
+
+
+<!-- Required JS files. -->
+<script src="deck.js/jquery.min.js"></script>
+<script src="deck.js/core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="deck.js/core/deck.core.js"></script>
+<script src="deck.js/extensions/hash/deck.hash.js"></script>
+<script src="deck.js/extensions/menu/deck.menu.js"></script>
+<script src="deck.js/extensions/goto/deck.goto.js"></script>
+<script src="deck.js/extensions/status/deck.status.js"></script>
+<script src="deck.js/extensions/navigation/deck.navigation.js"></script>
+<script src="deck.js/extensions/scale/deck.scale.js"></script>
+<script src="deck.js/extensions/notes/deck.notes.js"></script>
+
+<!-- From https://github.com/mikeharris100/deck.pointer.js -->
+<script src="deck.js/extensions/pointer/deck.pointer.js"></script>
+
+<!-- From https://github.com/stvnwrgs/presenterview
+<script type="text/javascript" src="deck.js/extensions/presenterview/deck.presenterview.js"></script> -->
+
+<!-- From https://github.com/nemec/deck.annotate.js
+<script type="text/javascript" src="deck.js/extensions/deck.annotate.js/deck.annotate.js"></script>
+-->
+
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+    $(function() {
+        $.deck('.slide');
+    });
+</script>
+
+
+</body>
+</html>

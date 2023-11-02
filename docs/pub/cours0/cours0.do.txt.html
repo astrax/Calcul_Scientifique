@@ -1,0 +1,250 @@
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #000080; font-weight: bold">TITLE: Introduction à Python (I)</span>
+<span style="color: #000080; font-weight: bold">AUTHOR:</span> UP Mathématiques {copyright|ESPRIT} at École Supérieure PRivée d&#39;Ingénierie et de Technologies.
+<span style="color: #000080; font-weight: bold">DATE:</span> 2 novembre 2023
+
+<span style="color: #000080; font-weight: bold">TOC:</span> on
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">======= Objectifs généraux en premier =======</span>
+
+Une partie essentielle de ce cours est de vous permettre de faire de la science par des expériences numériques et de développer des projets qui vous permettent d&#39;étudier des systèmes complexes. Le but est d&#39;améliorer ce que nous appelons la pensée algorithmique.
+
+<span style="color: #800080; font-weight: bold">__Algorithme__</span>
+Un ensemble fini d&#39;instructions non ambiguës qui, étant donné un ensemble de conditions initiales, peuvent être effectuées dans une séquence prescrite pour atteindre un certain but.
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">======= Situation standard que nous rencontrons quotidiennement =======</span>
+
+La situation standard que nous rencontrons presque tous les séances de cours:
+
+* Théorie + expérience + simulation est presque la norme dans la recherche et l&#39;industrie.
+* Être capable de modéliser des systèmes complexes. Résoudre de vrais problèmes.
+* Accent la compréhension des principes fondamentaux et des lois dans les sciences.
+* Être capable de visualiser, présenter, discuter, interpréter et venir avec une analyse critique des résultats, et développer une attitude éthique saine pour son propre travail.
+* Améliorer le raisonnement sur la méthode scientifique.
+
+Une bonne présentation des résultats obtenus via de bons rapports scientifiques, aide à inclure tous les aspects ci-dessus.
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">======= Langage Python =======</span>
+
+<span style="color: #CD5555">&quot;Python&quot;</span>: &quot;http://www.python.org/&quot; est un langage de programmation moderne de haut niveau, orienté objet et d&#39;usage général.
+
+_Caractéristiques générales de Python_ :
+
+* Langage simple:
+  * facile à lire et à apprendre avec une syntaxe minimaliste.
+* Langage concis et expressif:
+  * moins de lignes de code
+  * moins de bugs
+  * plus facile à maintenir.
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+_Détails techniques_ :
+
+* Typé dynamiquement:
+  * Pas besoin de définir le type des variables, les arguments ou le type des fonctions.
+* La gestion automatique de la mémoire:
+  * Aucune nécessité d&#39;allouer explicitement et désallouer la mémoire pour les variables et les tableaux de données. Aucun bug de fuite de mémoire.
+* Interprété:
+  * Pas besoin de compiler le code. L&#39;interpréteur Python lit et exécute le code python directement.
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+_Avantages_ :
+
+* Le principal avantage est la facilité de programmation, qui minimise le temps nécessaire pour développer, déboguer et maintenir le code.
+* Langage bien conçu qui encourage les bonnes pratiques de programmation:
+  * Modulaire et orientée objet, permet l&#39;encapsulation  et la réutilisation de code. Il en résulte souvent un code plus transparent, plus facile à améliorer et sans bug.
+  * Documentation intégré avec le code.
+* De nombreuses bibliothèques standards, et de nombreux packages add-on.
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #658b00">FIGURE: [imgs/python_easy.png, width=600 frac=0.6]</span>
+
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">======= Installation d&#39;un environnement Python scientifique =======</span>
+
+<span style="color: #000080; font-weight: bold">===== Installation sur ordinateur =====</span>
+
+<span style="color: #000080; font-weight: bold">=== Qu’est ce que Anaconda ? ===</span>
+
+L’installation d’un environnement Python complet peut-être une vraie galère. Déjà, il faut télécharger Python et l’installer. Par la suite, télécharger un à un les packages dont on a besoin. Parfois, le nombre de ces librairies peut-être grand.
+
+Par ailleurs, il faut s’assurer de la compatibilité entre les versions des différentes packages qu’on a à télécharger. Bref, ce n’est pas amusant.
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #CD5555">&quot;Anaconda&quot;</span>: &quot;https://www.anaconda.com/download/&quot; est  une distribution Python. A son installation, Anaconda installera Python ainsi qu&#39;une multitude de packages (voir &quot;liste de packages anaconda&quot;: &quot;https://docs.anaconda.com/anaconda/packages/pkg-docs#python-3-6&quot;).  Cela nous évite de nous ruer dans les problèmes d’incompatibilités entre les différents packages.
+
+Finalement, Anaconda propose un outil de gestion de packages appelé &quot;conda&quot;: &quot;https://conda.io/docs/&quot;. Ce dernier permettra de mettre à jour et installer facilement les librairies dont on aura besoin pour nos développements.
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">=== Préparer la formation: téléchargement d’Anaconda ===</span>
+
+Nous demandons à tous les étudiants de télécharger Anaconda. Pour cela, il faut télécharger un installeur à partir de https://www.anaconda.com/download/, correspondant à votre système d’exploitation (Windows, Mac OS X, Linux). Il faut choisir entre 32 bits ou 64 bits (pour la version *Python 3*) selon que votre système d’exploitation est 32 bits ou 64 bits.
+<span style="color: #8B008B; font-weight: bold">!split</span>
+
+<span style="color: #658b00">FIGURE: [imgs/AnacondaNavigator, width=600 frac=0.7] Interface graphique du navigateur Anaconda sur Windows</span>
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #8B008B; font-weight: bold">!bnotice</span>
+Anaconda installe plusieurs exécutables pour développer en Python dans le répertoire *anaconda/bin*, sans toujours créer des raccourcis sur le bureau ou dans un menu. Nous nous occuperons au tout début de la formation de créer des raccourcis pour pouvoir lancer l&#39;application web *Jupyter notebook*. Vous pouvez lancer le notebook depuis le navigateur Anaconda.
+<span style="color: #8B008B; font-weight: bold">!enotice</span>
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">======= Introduction: &quot;Hello World!&quot; =======</span>
+C&#39;est devenu une tradition que lorsque vous apprenez un nouveau langage de programmation, vous démarrez avec un programme permettant à l&#39;ordinateur d&#39;imprimer le message *&quot;Hello World!&quot;*.
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [1]: print(&quot;Hello World!&quot;)
+Hello World!
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+Félicitation! tout à l&#39;heure vous avez fait votre ordinateur saluer le monde en anglais! La fonction `print()` est utilisée pour imprimer l’instruction entre les parenthèses. De plus, l&#39;utilisation de guillemets simples `print(&#39;Hello World!&#39;)` affichera le même résultat. Le délimiteur de début et de fin doit être le même.
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [2]: print(&#39;Hello World!&#39;)
+Hello World!
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">======= Commentaires =======</span>
+
+Au fur et à mesure que vos programmes deviennent plus grands et plus compliqués, ils deviennent plus difficiles à lire et à regarder un morceau de code et à comprendre ce qu&#39;il fait ou pourquoi. Pour cette raison, il est conseillé d’ajouter des notes à vos programmes pour expliquer en langage naturel ce qu’il fait. Ces notes s&#39;appellent des commentaires et commencent par le symbole `#`.
+
+Voyez ce qui se passe lorsque nous ajoutons un commentaire au code précédent:
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [3]: print(&#39;Hello World!&#39;) # Ceci est mon premier commentaire
+Hello World!
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+Rien ne change dans la sortie? Oui, et c’est très normal, l’interprète Python ignore cette ligne et ne renvoie rien. La raison en est que les commentaires sont écrits pour les humains, pour comprendre leurs codes, et non pour les machines.
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">======= Nombres =======</span>
+
+L&#39;interpréteur Python agit comme une simple calculatrice: vous pouvez y taper une expression et l&#39;interpréteur restituera la valeur. La syntaxe d&#39;expression est simple: les opérateurs +, -, * et / fonctionnent comme dans la plupart des autres langages (par exemple, Pascal ou C); les parenthèses (`()`) peuvent être utilisées pour le regroupement. Par exemple:
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [4]: 5+3
+Out[4]: 8
+In [5]: 2 - 9      # les espaces sont optionnels
+Out[5]: -7
+In [6]: 7 + 3 * 4  #la hiérarchie des opérations mathématique
+Out[6]: 19
+In [7]: (7 + 3) * 4  # est-elle respectées?
+Out[7]: 40
+<span style="color: #228B22"># en python3 la division retourne toujours un nombre en virgule flottante</span>
+In [8]: 20 / 3
+Out[8]: 6.666666666666667
+In [9]: 7 // 2      # une division entière
+Out[9]: 3
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+On peut noter l’existence de l’opérateur `%` (appelé opérateur modulo). Cet opérateur fournit le reste de la division entière d’un nombre par un autre. Par exemple :
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [10]: 7 % 2       # donne le reste de la division
+Out[10]: 1
+In [11]: 6 % 2
+Out[11]: 0
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+Les exposants peuvent être calculés à l&#39;aide de doubles astérisques `**`.
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [12]: 3**2
+Out[12]: 9
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+Les puissances de dix peuvent être calculées comme suit:
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [13]: 3 * 2e3   # vaut 3 * 2000
+Out[13]: 6000.0
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">======= Affectations (ou assignation) =======</span>
+
+<span style="color: #000080; font-weight: bold">===== variables =====</span>
+Dans presque tous les programmes Python que vous allez écrire, vous aurez des variables. Les variables agissent comme des espaces réservés pour les données. Ils peuvent aider à court terme, ainsi qu’à la logique, les variables pouvant changer, d’où leur nom. C’est beaucoup plus facile en Python car aucune déclaration de variables n’est requise. Les noms de variable (ou tout autre objet Python tel que fonction, classe, module, etc.) commencent par une lettre majuscule ou minuscule (A-Z ou a-z). Ils sont sensibles à la casse (`VAR1` et `var1` sont deux variables distinctes). Depuis Python, vous pouvez utiliser n’importe quel caractère Unicode, il est préférable d’ignorer les caractères ASCII (donc pas de caractères accentués).
+
+Si une variable est nécessaire, pensez à un nom et commencez à l&#39;utiliser comme une variable, comme dans l&#39;exemple ci-dessous:
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+Pour calculer l&#39;aire d&#39;un rectangle par exemple: `largeur` x `hauteur`:
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [15]: largeur = 25
+    ...: hauteur = 40
+    ...: largeur    # essayer d&#39;accéder à la valeur de la variable largeur
+Out[15]: 25
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+
+on peut également utiliser la fonction `print()` pour afficher la valeur de la variable `largeur`
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [16]: print(largeur)
+25
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+Le produit de ces deux variables donne l&#39;aire du rectangle:
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [17]: largeur * hauteur  # donne l&#39;aire du rectangle
+Out[17]: 1000
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #8B008B; font-weight: bold">!bnotice</span>
+Notez ici que le signe égal (`=`) dans l&#39;affectation ne doit pas être considéré comme _&quot;est égal à&quot;_. Il doit être _&quot;lu&quot;_ ou interprété comme _&quot;est définie par&quot;_, ce qui signifie dans notre exemple:
+<span style="color: #8B008B; font-weight: bold">!bquote</span>
+La variable `largeur` est définie par la valeur 25 et la variable `hauteur` est définie par la valeur 40.
+<span style="color: #8B008B; font-weight: bold">!equote</span>
+<span style="color: #8B008B; font-weight: bold">!enotice</span>
+
+<span style="color: #8B008B; font-weight: bold">!bwarning</span>
+Si une variable n&#39;est pas *définie* (assignée à une valeur), son utilisation vous donnera une erreur:
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [18]: aire     # essayer d&#39;accéder à une variable non définie
+-----------------------------------------------------------------------
+NameError                            Traceback (most recent call last)
+&lt;ipython-input-18-1b03529c1ce5&gt; in &lt;module&gt;()
+----&gt; 1 aire     # essayer d&#39;accéder à une variable non définie
+
+NameError: name &#39;aire&#39; is not defined
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!ewarning</span>
+<span style="color: #8B008B; font-weight: bold">!split</span>
+
+Laissez-nous résoudre ce problème informatique (ou _bug_ tout simplement)!. En d&#39;autres termes, assignons la variable `aire` à sa valeur.
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [19]: aire = largeur * hauteur
+    ...: aire  # et voila!
+Out[19]: 1000
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+<span style="color: #000080; font-weight: bold">===== Noms de variables réservés (keywords) =====</span>
+Certains noms de variables ne sont pas disponibles, ils sont réservés à python lui-même. Les mots-clés suivants (que vous pouvez afficher dans l&#39;interpréteur avec la commande `help(&quot;keywords&quot;)`) sont réservés et ne peuvent pas être utilisés pour définir vos propres identifiants (variables, noms de fonctions, classes, etc.).
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [20]: help(&quot;keywords&quot;)
+
+Here is a list of the Python keywords.  Enter any keyword to get more help.
+
+False               def                 if                  raise
+None                del                 import              return
+True                elif                in                  try
+and                 else                is                  while
+as                  except              lambda              with
+assert              finally             nonlocal            yield
+break               for                 not
+class               from                or
+continue            global              pass
+
+<span style="color: #228B22"># par exemple pour éviter d&#39;écraser le nom réservé lambda</span>
+In [22]: lambda_ = 630e-9
+    ...: lambda_
+Out[22]: 6.3e-07
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+</pre></div>
