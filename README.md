@@ -17,6 +17,9 @@
 * [PDF (pur impression)](https://astrax.github.io/Calcul_Scientifique/docs/pub/cours0/cours0.pdf)
 * [Beamer](https://astrax.github.io/Calcul_Scientifique/docs/pub/cours0/cours0-beamer.pdf)
 * [HTML-bs](https://astrax.github.io/Calcul_Scientifique/docs/pub/cours0/cours0-bs.html)
+* [HTML-solarized](https://astrax.github.io/Calcul_Scientifique/docs/pub/cours0/cours0-solarized.html)
 * [HTML-deck](https://astrax.github.io/Calcul_Scientifique/docs/pub/cours0/cours0-deck.html)
+* [HTML-remark light](https://astrax.github.io/Calcul_Scientifique/docs/pub/cours0/cours0-remark_light.html)
+* [HTML-remark dark](https://astrax.github.io/Calcul_Scientifique/docs/pub/cours0/cours0-remark_dark.html)
 * [Jupyter Notebook](https://colab.research.google.com/github/astrax/Calcul_Scientifique/blob/main/docs/pub/cours0/cours0.ipynb)
 
