@@ -135,11 +135,13 @@ end of tocinfo -->
 <p>
 <!-- institution -->
 
-<center><b>&#201;cole Sup&#233;rieure PRiv&#233;e d'Ing&#233;nierie et de Technologies.</b></center>
+<center><b>&#201;cole Sup&#233;rieure PRiv&#233;e d'Ing&#233;nierie et de Technologies (ESPRIT).</b></center>
 <br>
 <p>
 <center><h4>2 novembre 2023</h4></center> <!-- date -->
 <br>
+<br /><br /><center><p><img src="imgs/Signature-01.jpg" align="bottom" width=300></p></center><br /><br />
+
 <p>
 </div> <!-- end jumbotron -->
 
@@ -414,9 +416,9 @@ Pour calculer l'aire d'un rectangle par exemple: <code>largeur</code> x <code>ha
 
 <!-- code=python (!bc ipy) typeset with pygments style "monokai" -->
 <div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #f8f8f2">In</span> <span style="color: #f8f8f2">[</span><span style="color: #ae81ff">15</span><span style="color: #f8f8f2">]:</span> <span style="color: #f8f8f2">largeur</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">25</span>
-    <span style="color: #f92672">...</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">hauteur</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">40</span>
-    <span style="color: #f92672">...</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">largeur</span>    <span style="color: #75715e"># essayer d&#39;accéder à la valeur de la variable largeur</span>
-<span style="color: #f8f8f2">Out[</span><span style="color: #ae81ff">15</span><span style="color: #f8f8f2">]:</span> <span style="color: #ae81ff">25</span>
+<span style="color: #f8f8f2">In</span> <span style="color: #f8f8f2">[</span><span style="color: #ae81ff">16</span><span style="color: #f8f8f2">]:</span> <span style="color: #f8f8f2">hauteur</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">40</span>
+<span style="color: #f8f8f2">In</span> <span style="color: #f8f8f2">[</span><span style="color: #ae81ff">17</span><span style="color: #f8f8f2">]:</span> <span style="color: #f8f8f2">largeur</span>    <span style="color: #75715e"># essayer d&#39;accéder à la valeur de la variable largeur</span>
+<span style="color: #f8f8f2">Out[</span><span style="color: #ae81ff">17</span><span style="color: #f8f8f2">]:</span> <span style="color: #ae81ff">25</span>
 </pre></div>
 <p>
 on peut &#233;galement utiliser la fonction <code>print()</code> pour afficher la valeur de la variable <code>largeur</code>

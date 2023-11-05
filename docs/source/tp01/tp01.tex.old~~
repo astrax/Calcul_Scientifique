@@ -1,0 +1,542 @@
+%%
+%% Automatically generated file from DocOnce source
+%% (https://github.com/hplgit/doconce/)
+%%
+
+% #define PREAMBLE
+
+% #ifdef PREAMBLE
+%-------------------- begin preamble ----------------------
+
+\documentclass[%
+oneside,                 % oneside: electronic viewing, twoside: printing
+final,                   % draft: marks overfull hboxes, figures with paths
+10pt]{article}
+
+\listfiles               %  print all files needed to compile this document
+
+\usepackage{relsize,makeidx,color,setspace,amsmath,amsfonts,amssymb}
+\usepackage[table]{xcolor}
+\usepackage{bm,ltablex,microtype}
+
+\usepackage[pdftex]{graphicx}
+
+% Packages for typesetting blocks of computer code
+\usepackage{fancyvrb,framed,moreverb}
+
+% Define colors
+\definecolor{orange}{cmyk}{0,0.4,0.8,0.2}
+\definecolor{tucorange}{rgb}{1.0,0.64,0}
+\definecolor{darkorange}{rgb}{.71,0.21,0.01}
+\definecolor{darkgreen}{rgb}{.12,.54,.11}
+\definecolor{myteal}{rgb}{.26, .44, .56}
+\definecolor{gray}{gray}{0.45}
+\definecolor{mediumgray}{gray}{.8}
+\definecolor{lightgray}{gray}{.95}
+\definecolor{brown}{rgb}{0.54,0.27,0.07}
+\definecolor{purple}{rgb}{0.5,0.0,0.5}
+\definecolor{darkgray}{gray}{0.25}
+\definecolor{darkblue}{rgb}{0,0.08,0.45}
+\definecolor{darkblue2}{rgb}{0,0,0.8}
+\definecolor{lightred}{rgb}{1.0,0.39,0.28}
+\definecolor{lightgreen}{rgb}{0.48,0.99,0.0}
+\definecolor{lightblue}{rgb}{0.53,0.81,0.92}
+\definecolor{lightblue2}{rgb}{0.3,0.3,1.0}
+\definecolor{lightpurple}{rgb}{0.87,0.63,0.87}
+\definecolor{lightcyan}{rgb}{0.5,1.0,0.83}
+
+\colorlet{comment_green}{green!50!black}
+\colorlet{string_red}{red!60!black}
+\colorlet{keyword_pink}{magenta!70!black}
+\colorlet{indendifier_green}{green!70!white}
+
+% Backgrounds for code
+\definecolor{cbg_gray}{rgb}{.95, .95, .95}
+\definecolor{bar_gray}{rgb}{.92, .92, .92}
+
+\definecolor{cbg_yellowgray}{rgb}{.95, .95, .85}
+\definecolor{bar_yellowgray}{rgb}{.95, .95, .65}
+
+\colorlet{cbg_yellow2}{yellow!10}
+\colorlet{bar_yellow2}{yellow!20}
+
+\definecolor{cbg_yellow1}{rgb}{.98, .98, 0.8}
+\definecolor{bar_yellow1}{rgb}{.98, .98, 0.4}
+
+\definecolor{cbg_red1}{rgb}{1, 0.85, 0.85}
+\definecolor{bar_red1}{rgb}{1, 0.75, 0.85}
+
+\definecolor{cbg_blue1}{rgb}{0.87843, 0.95686, 1.0}
+\definecolor{bar_blue1}{rgb}{0.7,     0.95686, 1}
+
+%\setlength{\fboxsep}{-1.5mm}  % adjust cod_vpad/pro_vpad background box
+
+%% Background for code blocks (parameter is color name)
+
+%% pro/cod_vpad: gives some vertical padding before and after the text
+%% (but has more simplistic code than _cod/pro_tight+cod/pro).
+%% pro/cod_vpad can be used to enclose Verbatim or lst begin/end for code.
+%% pro/cod calls _pro/cod_tight and has very little vertical padding,
+%% used to enclose Verbatim and other begin/end for code.
+%% (pro/cod is what the ptex2tex program could produce with the
+%% Blue/BlueBar definitions in .ptex2tex.cfg.)
+
+\newenvironment{cod_vpad}[1]{
+   \def\FrameCommand{\colorbox{#1}}
+   \MakeFramed{\FrameRestore}}
+   {\endMakeFramed}
+
+\newenvironment{_cod_tight}[1]{
+   \def\FrameCommand{\colorbox{#1}}
+   \FrameRule0.6pt\MakeFramed {\FrameRestore}\vskip3mm}
+   {\vskip0mm\endMakeFramed}
+
+\newenvironment{cod}[1]{
+\bgroup\rmfamily
+\fboxsep=0mm\relax
+\begin{_cod_tight}{#1}
+\list{}{\parsep=-2mm\parskip=0mm\topsep=0pt\leftmargin=2mm
+\rightmargin=2\leftmargin\leftmargin=4pt\relax}
+\item\relax}
+{\endlist\end{_cod_tight}\egroup}
+
+%% Background for complete program blocks (parameter 1 is color name
+%% for background, parameter 2 is color for left bar)
+\newenvironment{pro_vpad}[2]{
+   \def\FrameCommand{\color{#2}\vrule width 1mm\normalcolor\colorbox{#1}}
+   \MakeFramed{\FrameRestore}}
+   {\endMakeFramed}
+
+\newenvironment{_pro_tight}[2]{
+   \def\FrameCommand{\color{#2}\vrule width 1mm\normalcolor\colorbox{#1}}
+   \FrameRule0.6pt\MakeFramed {\advance\hsize-2mm\FrameRestore}\vskip3mm}
+   {\vskip0mm\endMakeFramed}
+
+\newenvironment{pro}[2]{
+\bgroup\rmfamily
+\fboxsep=0mm\relax
+\begin{_pro_tight}{#1}{#2}
+\list{}{\parsep=-2mm\parskip=0mm\topsep=0pt\leftmargin=2mm
+\rightmargin=2\leftmargin\leftmargin=4pt\relax}
+\item\relax}
+{\endlist\end{_pro_tight}\egroup}
+
+\usepackage{minted}
+\usemintedstyle{default}
+
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+% Set palatino as the default font family:
+\usepackage[sc]{mathpazo}    % Palatino fonts
+\linespread{1.05}            % Palatino needs extra line spread to look nice
+
+\usepackage{lmodern}         % Latin Modern fonts derived from Computer Modern
+
+% Hyperlinks in PDF:
+
+\usepackage{hyperref}
+\hypersetup{
+    breaklinks=true,
+    colorlinks=true,
+    linkcolor=seccolor,
+    urlcolor=seccolor,
+    citecolor=black,
+    filecolor=black,
+    %filecolor=blue,
+    pdfmenubar=true,
+    pdftoolbar=true,
+    bookmarksdepth=3   % Uncomment (and tweak) for PDF bookmarks with more levels than the TOC
+    }
+%\hyperbaseurl{}   % hyperlinks are relative to this root
+
+\setcounter{tocdepth}{2}  % levels in table of contents
+
+% Tricks for having figures close to where they are defined:
+% 1. define less restrictive rules for where to put figures
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\textfraction}{0}
+\renewcommand{\floatpagefraction}{0.75}
+% floatpagefraction must always be less than topfraction!
+% 2. ensure all figures are flushed before next section
+\usepackage[section]{placeins}
+% 3. enable begin{figure}[H] (often leads to ugly pagebreaks)
+%\usepackage{float}\restylefloat{figure}
+
+% --- fancyhdr package for fancy headers ---
+\usepackage{fancyhdr}
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{1pt}
+% section name to the left (L) and page number to the right (R)
+% on even (E) pages, the other way around on odd pages
+% (switch twoside to onside in documentclass to just have odd pages)
+\fancyhead[LE,RO]{\rightmark} % section
+\fancyhead[RE,LO]{\thepage}
+% Ensure copyright on titlepage (article style) and chapter pages (book style)
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{{\footnotesize \copyright\ 2023, UP Mathématiques. ESPRIT}}
+%  \renewcommand{\footrulewidth}{0mm}
+  \renewcommand{\headrulewidth}{0mm}
+}
+% Ensure copyright on titlepages with \thispagestyle{empty}
+\fancypagestyle{empty}{
+  \fancyhf{}
+  \fancyfoot[C]{{\footnotesize \copyright\ 2023, UP Mathématiques. ESPRIT}}
+  \renewcommand{\footrulewidth}{0mm}
+  \renewcommand{\headrulewidth}{0mm}
+}
+
+\pagestyle{fancy}
+
+
+\usepackage{framed,wrapfig}
+
+% --- begin definitions of admonition environments ---
+
+% Admonition style "grayicon" has colored background, no frame, and an icon
+% Admon "notice"
+\definecolor{grayicon_notice_background}{rgb}{0.91,0.91,0.91}
+% \fboxsep sets the space between the text and the box
+\newenvironment{noticeshaded}
+{\def\FrameCommand{\fboxsep=3mm\colorbox{grayicon_notice_background}}
+ \MakeFramed {\advance\hsize-\width \FrameRestore}}{\endMakeFramed}
+
+\newenvironment{notice_grayiconadmon}[1][À noter]{
+\begin{noticeshaded}
+\noindent
+\begin{wrapfigure}{l}{0.07\textwidth}
+\vspace{-13pt}
+\includegraphics[width=0.07\textwidth]{latex_figs/small_gray_notice}
+\end{wrapfigure} \textbf{#1}\par
+\nobreak\noindent\ignorespaces
+}
+{
+\end{noticeshaded}
+}
+
+% Admonition style "grayicon" has colored background, no frame, and an icon
+% Admon "summary"
+\definecolor{grayicon_summary_background}{rgb}{0.91,0.91,0.91}
+% \fboxsep sets the space between the text and the box
+\newenvironment{summaryshaded}
+{\def\FrameCommand{\fboxsep=3mm\colorbox{grayicon_summary_background}}
+ \MakeFramed {\advance\hsize-\width \FrameRestore}}{\endMakeFramed}
+
+\newenvironment{summary_grayiconadmon}[1][Résumé]{
+\begin{summaryshaded}
+\noindent
+\begin{wrapfigure}{l}{0.07\textwidth}
+\vspace{-13pt}
+\includegraphics[width=0.07\textwidth]{latex_figs/small_gray_summary}
+\end{wrapfigure} \textbf{#1}\par
+\nobreak\noindent\ignorespaces
+}
+{
+\end{summaryshaded}
+}
+
+% Admonition style "grayicon" has colored background, no frame, and an icon
+% Admon "warning"
+\definecolor{grayicon_warning_background}{rgb}{0.91,0.91,0.91}
+% \fboxsep sets the space between the text and the box
+\newenvironment{warningshaded}
+{\def\FrameCommand{\fboxsep=3mm\colorbox{grayicon_warning_background}}
+ \MakeFramed {\advance\hsize-\width \FrameRestore}}{\endMakeFramed}
+
+\newenvironment{warning_grayiconadmon}[1][Attention]{
+\begin{warningshaded}
+\noindent
+\begin{wrapfigure}{l}{0.07\textwidth}
+\vspace{-13pt}
+\includegraphics[width=0.07\textwidth]{latex_figs/small_gray_warning}
+\end{wrapfigure} \textbf{#1}\par
+\nobreak\noindent\ignorespaces
+}
+{
+\end{warningshaded}
+}
+
+% Admonition style "grayicon" has colored background, no frame, and an icon
+% Admon "question"
+\definecolor{grayicon_question_background}{rgb}{0.91,0.91,0.91}
+% \fboxsep sets the space between the text and the box
+\newenvironment{questionshaded}
+{\def\FrameCommand{\fboxsep=3mm\colorbox{grayicon_question_background}}
+ \MakeFramed {\advance\hsize-\width \FrameRestore}}{\endMakeFramed}
+
+\newenvironment{question_grayiconadmon}[1][Question]{
+\begin{questionshaded}
+\noindent
+\begin{wrapfigure}{l}{0.07\textwidth}
+\vspace{-13pt}
+\includegraphics[width=0.07\textwidth]{latex_figs/small_gray_question2}
+\end{wrapfigure} \textbf{#1}\par
+\nobreak\noindent\ignorespaces
+}
+{
+\end{questionshaded}
+}
+
+% Admonition style "grayicon" has colored background, no frame, and an icon
+% Admon "block"
+\definecolor{grayicon_block_background}{rgb}{0.91,0.91,0.91}
+% \fboxsep sets the space between the text and the box
+\newenvironment{blockshaded}
+{\def\FrameCommand{\fboxsep=3mm\colorbox{grayicon_block_background}}
+ \MakeFramed {\advance\hsize-\width \FrameRestore}}{\endMakeFramed}
+
+\newenvironment{block_grayiconadmon}[1][Block]{
+\begin{blockshaded}
+\noindent
+ \textbf{#1}\par
+\nobreak\noindent\ignorespaces
+}
+{
+\end{blockshaded}
+}
+
+% --- end of definitions of admonition environments ---
+
+% prevent orhpans and widows
+\clubpenalty = 10000
+\widowpenalty = 10000
+
+% http://www.ctex.org/documents/packages/layout/titlesec.pdf
+\usepackage{titlesec}  % needed for colored section headings
+%\usepackage[compact]{titlesec}  % reduce the spacing around section headings
+
+% --- section/subsection headings with blue color ---
+\definecolor{seccolor}{cmyk}{.9,.5,0,.35}  % siamltexmm.sty section color
+\titleformat{name=\section}
+{\color{seccolor}\normalfont\Large\bfseries}
+{\color{seccolor}\thesection}{1em}{}
+\titleformat{name=\subsection}
+{\color{seccolor}\normalfont\large\bfseries}
+{\color{seccolor}\thesubsection}{1em}{}
+\titleformat{name=\paragraph}[runin]
+{\color{seccolor}\normalfont\normalsize\bfseries}
+{}{}{\indent}
+
+% let the header have a thick gray hrule with section and page in blue above
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{{\color{gray!50}%
+\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth}}
+% replace \rightmark and \thepage by bfseries everwyhere to get bold headings
+\fancyhead[LE,RO]{{\color{seccolor}\nouppercase{\rightmark}}} %section
+\fancyhead[RE,LO]{{\color{seccolor}\thepage}}
+
+\newenvironment{doconceexercise}{}{}
+\newcounter{doconceexercisecounter}
+
+
+% ------ header in subexercises ------
+%\newcommand{\subex}[1]{\paragraph{#1}}
+%\newcommand{\subex}[1]{\par\vspace{1.7mm}\noindent{\bf #1}\ \ }
+\makeatletter
+% 1.5ex is the spacing above the header, 0.5em the spacing after subex title
+\newcommand\subex{\@startsection{paragraph}{4}{\z@}%
+                  {1.5ex\@plus1ex \@minus.2ex}%
+                  {-0.5em}%
+                  {\normalfont\normalsize\bfseries}}
+\makeatother
+
+
+% --- end of standard preamble for documents ---
+
+
+% insert custom LaTeX commands...
+
+\raggedbottom
+\makeindex
+\usepackage[totoc]{idxlayout}   % for index in the toc
+\usepackage[nottoc]{tocbibind}  % for references/bibliography in the toc
+
+%-------------------- end preamble ----------------------
+
+\begin{document}
+
+% matching end for #ifdef PREAMBLE
+% #endif
+
+\newcommand{\exercisesection}[1]{\subsection*{#1}}
+
+
+% ------------------- main content ----------------------
+
+
+
+% ----------------- title -------------------------
+
+\title{{\color{seccolor} TP N°0-1 : Introduction à Python}}
+
+% ----------------- author(s) -------------------------
+
+\author{UP Mathématiques\footnote{École Supérieure PRivée d'Ingénierie et de Technologies (ESPRIT).}}
+
+% ----------------- end author(s) -------------------------
+
+\date{2 novembre 2023}
+\maketitle
+
+\vspace{6mm}
+
+% inline figure
+\centerline{\includegraphics[width=0.45\linewidth]{imgs/Signature-01.jpg}}
+
+\vspace{6mm}
+
+
+
+% !split
+
+
+% --- begin exercise ---
+\begin{doconceexercise}
+\refstepcounter{doconceexercisecounter}
+
+\exercisesection{Exercise \thedoconceexercisecounter: Les variables}
+
+
+
+\subex{a)}
+Assignez les valeurs respectives 3, 5, 7 à trois variables a, b, c. Effectuez l’opération \texttt{a-b//c}. Interprétez le résultat obtenu.
+
+
+% removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+
+
+\subex{b)}
+Testez les lignes d’instructions suivantes. Décrivez ce qui se passe :
+
+\begin{cod}{cbg_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+r = 12
+pi = 3.14159
+s = pi * r**2
+print(s)
+print(type(r), type(pi), type(s))
+\end{minted}
+\end{cod}
+\noindent
+
+Quelle est, à votre avis, l’utilité de la fonction \texttt{type()} ?
+
+
+% removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+
+\subex{c)}
+Écrivez un programme qui convertisse en degrés Celsius une température exprimée au départ en degrés Fahrenheit, ou l’inverse. La formule de conversion est :
+    $$T_F = T_C \times 1,8 + 32 $$
+
+
+% removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+
+\end{doconceexercise}
+% --- end exercise ---
+
+
+% !split
+
+
+% --- begin exercise ---
+\begin{doconceexercise}
+\refstepcounter{doconceexercisecounter}
+
+\exercisesection{Exercise \thedoconceexercisecounter: Fonction \texttt{input()} }
+
+
+Dans tous ces exercices, utilisez la fonction \texttt{input()} pour l’entrée des données.
+
+
+\subex{a)}
+Écrivez un programme qui convertisse en mètres par seconde et en km/h une vitesse fournie par l’utilisateur en miles/heure. (Rappel : 1 mile = 1609 mètres)
+
+
+% removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+
+\subex{b)}
+Écrivez un programme qui calcule le périmètre et l’aire d’un triangle quelconque dont l’utilisateur fournit les 3 côtés.(Rappel : l’aire d’un triangle quelconque se calcule à l’aide de la formule :
+$$ S = \sqrt{d \cdot (d-a) \cdot (d-b) \cdot (d-c)}$$
+    dans laquelle d désigne la longueur du demi-périmètre, et a, b, c celles des trois côtés.)
+
+
+% removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+
+\end{doconceexercise}
+% --- end exercise ---
+
+
+% !split
+
+
+% --- begin exercise ---
+\begin{doconceexercise}
+\refstepcounter{doconceexercisecounter}
+
+\exercisesection{Exercise \thedoconceexercisecounter: Corriger l'erreur dans le code}
+
+
+
+\subex{a)}
+Le code suivant renvoie une erreur. Trouver et corriger l'erreur:
+
+\begin{cod}{cbg_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+prenom = input('Entrez votre prénom : ')
+age = input('Entrez votre age : ')
+annee_naissance = 2018 - age
+print("Bonjour Mr/Mme", prenom)
+print("vous êtes né en", annee_naissance)
+\end{minted}
+\end{cod}
+\noindent
+
+% --- begin hint in exercise ---
+
+\paragraph{Indication.}
+\begin{itemize}
+\item utiliser la fonction \texttt{type()}
+
+\item utliser la fonction \texttt{int()}
+\end{itemize}
+
+\noindent
+% --- end hint in exercise ---
+
+
+% removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+
+\subex{b)}
+Afficher le messge suivant:
+Bonjour Mr/Mme \texttt{prenom}, votre age est \texttt{age} et vous êtes né en \Verb!annee_naissance!.
+
+% --- begin hint in exercise ---
+
+\paragraph{Indication.}
+Remplacer les points par ce qui convient dans le code:
+\begin{cod}{cbg_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+print(" Bonjour Mr/Mme {}, votre age est {}....".format(...))
+\end{minted}
+\end{cod}
+\noindent
+
+% --- end hint in exercise ---
+
+
+% removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+
+\end{doconceexercise}
+% --- end exercise ---
+
+
+% ------------------- end of main content ---------------
+
+% #ifdef PREAMBLE
+\end{document}
+% #endif
+

@@ -48,7 +48,7 @@ doconce replace '\eqref{mysec:eq:Dudt}' '(ref{mysec:eq:Dudt})' $1
 }
 
 doconce pygmentize $name.do.txt perldoc
-system doconce format pdflatex $name --latex_code_style=pyg-gray $options --latex_admon=grayicon --latex_admon_title_no_period --latex_style=std --latex_copyright=titlepages
+system doconce format pdflatex $name --latex_code_style=pyg-gray $options --latex_admon=grayicon --latex_admon_title_no_period --latex_style=std --latex_copyright=Springer_collection
 # Tips: http://folk.uio.no/tobiasvl/latex.html
 system common_replacements $name.tex
 # Auto edits

@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Conversion de degrés Celsius en degrés Fahrenheit:\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{Tc1} \PYG{o}{=} \PYG{l+m+mi}{25} \PYG{c+c1}{\PYGZsh{} température en Celsius donnée}
+\PYG{n}{TF1} \PYG{o}{=} \PYG{n}{Tc1} \PYG{o}{*} \PYG{l+m+mf}{1.8} \PYG{o}{+} \PYG{l+m+mi}{32}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s2}{ degrés Celsius vaut }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s2}{ degrés Fahrenheit\PYGZdq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{Tc1}\PYG{p}{,} \PYG{n}{TF1}\PYG{p}{))}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Conversion de degrés Fahrenheit en degrés Celsius:\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{TF2} \PYG{o}{=} \PYG{l+m+mi}{120} \PYG{c+c1}{\PYGZsh{} température en Fahrenheit donnée}
+\PYG{n}{TC2} \PYG{o}{=} \PYG{p}{(}\PYG{n}{TF2} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{32}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mf}{1.8}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s2}{ degrés Fahrenheit vaut }\PYG{l+s+si}{\PYGZob{}\PYGZcb{}}\PYG{l+s+s2}{ degrés Celsius\PYGZdq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{TF2}\PYG{p}{,} \PYG{n}{TC2}\PYG{p}{))}
+\end{Verbatim}

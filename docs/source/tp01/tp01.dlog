@@ -1,0 +1,224 @@
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 3 exercises
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+*** warning: bootswatch style "cyborg" is dark and some
+    options to doconce format html are recommended:
+    --pygments_html_style=monokai     # dark background
+    --keep_pygments_html_bg           # keep code background in admons
+    --html_code_style=inherit         # use <code> style in surroundings (no red)
+    --html_pre_style=inherit          # use <pre> style in surroundings
+    
+found info about 3 exercises
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 3 exercises
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+*** error: figure file "imgs/Signature-01" does not exist!
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html

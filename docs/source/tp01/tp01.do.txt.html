@@ -1,0 +1,189 @@
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #000080; font-weight: bold">TITLE: TP N°0-1 : Introduction à Python</span>
+<span style="color: #000080; font-weight: bold">AUTHOR:</span> UP Mathématiques {copyright|ESPRIT} at École Supérieure PRivée d&#39;Ingénierie et de Technologies (ESPRIT).
+<span style="color: #000080; font-weight: bold">DATE:</span> 2 novembre 2023
+<span style="color: #658b00">FIGURE: [imgs/Signature-01, width=300 frac=0.45]</span>
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">===== Exercise: Les variables =====</span>
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Assignez les valeurs respectives 3, 5, 7 à trois variables a, b, c. Effectuez l’opération `a-b//c`. Interprétez le résultat obtenu.
+<span style="color: #8B008B; font-weight: bold">!bsol</span>
+Soit les trois valeurs 3, 5 et 7 assignées, respectivement, aux variables `a`, `b` et `c`:
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+a, b, c = 3, 5, 7 # Assignation des variables
+a - b//c
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+<span style="color: #8B008B; font-weight: bold">!bblock</span> Interprétation
+ L&#39;expression `a - b // c` signifie que nous voulons soustraire (signe &#39;`-`&#39;) de la variable `a` la division entière (signe &#39;`//`&#39;) de la variable `b` par la variable `c`. Le résultat est 3 car la division entière de 5 par 7 est égale à 0.
+<span style="color: #8B008B; font-weight: bold">!eblock</span>
+
+<span style="color: #8B008B; font-weight: bold">!esol</span>
+
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+
+
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Testez les lignes d’instructions suivantes. Décrivez ce qui se passe :
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+r = 12
+pi = 3.14159
+s = pi * r**2
+print(s)
+print(type(r), type(pi), type(s))
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+Quelle est, à votre avis, l’utilité de la fonction `type()` ?
+<span style="color: #8B008B; font-weight: bold">!bsol</span>
+Soit:
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+r = 12
+pi = 3.14159
+s = pi * r**2
+print(s)
+print(type(r), type(pi), type(s))
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!bblock</span> Description
+Ce code sert à calculer la surface $ s = \pi r^2$ d&#39;un disque de rayon r donné.
+
+* dans les deux premières lignes, _nous assignons_ les paramètres de l&#39;équation de s (`r` et `pi`) par ses valeurs.
+* à la troisième ligne, _nous attribuons_ `s` par son expression.
+* dans les deux dernières lignes, _nous affichons_ la valeur de `s` trouvée et les types de variables utilisés dans ce code.
+<span style="color: #8B008B; font-weight: bold">!eblock</span>
+
+<span style="color: #8B008B; font-weight: bold">!esol</span>
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Écrivez un programme qui convertisse en degrés Celsius une température exprimée au départ en degrés Fahrenheit, ou l’inverse. La formule de conversion est :
+    $$T_F = T_C \times 1,8 + 32 $$
+<span style="color: #8B008B; font-weight: bold">!bsol</span>
+Soit:
+ $$T_F = T_C \times 1,8 + 32 $$
+ avec $T_F$ estla température en degrés Fahrenheit et $T_C$ est la température en degrés Celsius.
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+print(&quot;Conversion de degrés Celsius en degrés Fahrenheit:&quot;)
+Tc1 = 25 # température en Celsius donnée
+TF1 = Tc1 * 1.8 + 32
+print(&quot;{} degrés Celsius vaut {} degrés Fahrenheit&quot;.format(Tc1, TF1))
+
+print(&quot;Conversion de degrés Fahrenheit en degrés Celsius:&quot;)
+TF2 = 120 # température en Fahrenheit donnée
+TC2 = (TF2 - 32)/1.8
+print(&quot;{} degrés Fahrenheit vaut {} degrés Celsius&quot;.format(TF2, TC2))
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+<span style="color: #8B008B; font-weight: bold">!esol</span>
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">===== Exercise: Fonction `input()` =====</span>
+
+Dans tous ces exercices, utilisez la fonction `input()` pour l’entrée des données.
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Écrivez un programme qui convertisse en mètres par seconde et en km/h une vitesse fournie par l’utilisateur en miles/heure. (Rappel : 1 mile = 1609 mètres)
+<span style="color: #8B008B; font-weight: bold">!bsol</span>
+Conversion de miles/heure en km/h et m/s
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+<span style="color: #228B22"># %load sol21.py</span>
+<span style="color: #228B22"># Conversion de miles/heure en km/h et m/s</span>
+ch = input(&quot;Veuillez entrer le nombre de miles parcourus en une heure : &quot;)
+mph = float(ch)             # conversion de la chaîne entrée en nombre réel
+mps = mph * 1609 / 3600     # conversion en mètres par seconde
+kmph = mph * 1.609          # conversion en km/h
+<span style="color: #228B22"># affichage :</span>
+print(mph, &quot;miles/heure =&quot;, kmph, &quot;km/h, ou encore&quot;, mps, &quot;m/s&quot;)
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!esol</span>
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Écrivez un programme qui calcule le périmètre et l’aire d’un triangle quelconque dont l’utilisateur fournit les 3 côtés.(Rappel : l’aire d’un triangle quelconque se calcule à l’aide de la formule :
+$$ S = \sqrt{d \cdot (d-a) \cdot (d-b) \cdot (d-c)}$$
+    dans laquelle d désigne la longueur du demi-périmètre, et a, b, c celles des trois côtés.)
+
+<span style="color: #8B008B; font-weight: bold">!bsol</span>
+Périmètre et Aire d&#39;un triangle quelconque:
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+<span style="color: #228B22"># %load sol22.py</span>
+<span style="color: #228B22"># Périmètre et Aire d&#39;un triangle quelconque</span>
+
+from math import sqrt
+
+a = float(input(&quot;Veuillez entrer le côté a : &quot;))
+b = float(input(&quot;Veuillez entrer le côté b : &quot;))
+c = float(input(&quot;Veuillez entrer le côté c : &quot;))
+d = (a + b + c)/2.0                # demi-périmètre
+s = sqrt(d*(d-a)*(d-b)*(d-c))    # aire (suivant formule)
+
+print(&quot;Longueur des côtés =&quot;, a, b, c)
+print(&quot;Périmètre =&quot;, d*2, &quot;Aire =&quot;, s)
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+<span style="color: #8B008B; font-weight: bold">!esol</span>
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">===== Exercise: Corriger l&#39;erreur dans le code =====</span>
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Le code suivant renvoie une erreur. Trouver et corriger l&#39;erreur:
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+prenom = input(&#39;Entrez votre prénom : &#39;)
+age = input(&#39;Entrez votre age : &#39;)
+annee_naissance = 2018 - age
+print(&quot;Bonjour Mr/Mme&quot;, prenom)
+print(&quot;vous êtes né en&quot;, annee_naissance)
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+<span style="color: #8B008B; font-weight: bold">!bhint</span>
+* utiliser la fonction `type()`
+* utliser la fonction `int()`
+<span style="color: #8B008B; font-weight: bold">!ehint</span>
+
+<span style="color: #8B008B; font-weight: bold">!bsol</span>
+La solution est comme suit:
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In [71]: prenom = input(&#39;Entrez votre prénom : &#39;)
+    ...: age = input(&#39;Entrez votre age : &#39;)
+    ...: type(age) # ici str
+    ...: age = int(age)
+    ...: type(age) #ici int
+    ...: annee_naissance = 2018 - age
+    ...: print(&quot;Bonjour Mr/Mme&quot;, prenom)
+    ...: print(&quot;vous êtes né en&quot;, annee_naissance)
+
+Entrez votre prénom : Foulen
+
+Entrez votre age : 25
+Bonjour Mr/Mme Foulen
+vous êtes né en 1993
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+<span style="color: #8B008B; font-weight: bold">!esol</span>
+
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Afficher le messge suivant:
+Bonjour Mr/Mme `prenom`, votre age est `age` et vous êtes né en `annee_naissance`.
+<span style="color: #8B008B; font-weight: bold">!bhint</span>
+Remplacer les points par ce qui convient dans le code:
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+print(&quot; Bonjour Mr/Mme {}, votre age est {}....&quot;.format(...))
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!ehint</span>
+<span style="color: #8B008B; font-weight: bold">!bsol</span>
+La solution s&#39;écrit:
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+print(&quot; Bonjour Mr/Mme {}, votre age est {} et vous êtes né en {}&quot;.format(prenom, age, annee_naissance))
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!esol</span>
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+</pre></div>

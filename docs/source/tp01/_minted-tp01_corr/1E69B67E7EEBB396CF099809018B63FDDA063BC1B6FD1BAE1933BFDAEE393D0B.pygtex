@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{c} \PYG{o}{=} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{7} \PYG{c+c1}{\PYGZsh{} Assignation des variables}
+\PYG{n}{a} \PYG{o}{\PYGZhy{}} \PYG{n}{b}\PYG{o}{//}\PYG{n}{c}
+\end{Verbatim}

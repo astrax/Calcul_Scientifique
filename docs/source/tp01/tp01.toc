@@ -1,0 +1,9 @@
+\contentsline {paragraph}{a)}{1}{section*.1}%
+\contentsline {paragraph}{b)}{1}{section*.2}%
+\contentsline {paragraph}{c)}{1}{section*.3}%
+\contentsline {paragraph}{a)}{2}{section*.4}%
+\contentsline {paragraph}{b)}{2}{section*.5}%
+\contentsline {paragraph}{a)}{2}{section*.6}%
+\contentsline {paragraph}{Indication.}{2}{section*.6}%
+\contentsline {paragraph}{b)}{2}{section*.7}%
+\contentsline {paragraph}{Indication.}{2}{section*.7}%

@@ -1,0 +1,188 @@
+TITLE: TP N°0-1 : Introduction à Python
+AUTHOR: UP Mathématiques {copyright|ESPRIT} at École Supérieure PRivée d'Ingénierie et de Technologies (ESPRIT).
+DATE: 2 novembre 2023
+FIGURE: [imgs/Signature-01, width=300 frac=0.45]
+
+!split
+===== Exercise: Les variables =====
+!bsubex
+Assignez les valeurs respectives 3, 5, 7 à trois variables a, b, c. Effectuez l’opération `a-b//c`. Interprétez le résultat obtenu.
+!bsol
+Soit les trois valeurs 3, 5 et 7 assignées, respectivement, aux variables `a`, `b` et `c`:
+
+!bc pycod
+a, b, c = 3, 5, 7 # Assignation des variables
+a - b//c
+!ec
+
+!bblock Interprétation
+ L'expression `a - b // c` signifie que nous voulons soustraire (signe '`-`') de la variable `a` la division entière (signe '`//`') de la variable `b` par la variable `c`. Le résultat est 3 car la division entière de 5 par 7 est égale à 0.
+!eblock
+
+!esol
+
+!esubex
+
+
+!bsubex
+Testez les lignes d’instructions suivantes. Décrivez ce qui se passe :
+
+!bc pycod-t
+r = 12
+pi = 3.14159
+s = pi * r**2
+print(s)
+print(type(r), type(pi), type(s))
+!ec
+
+Quelle est, à votre avis, l’utilité de la fonction `type()` ?
+!bsol
+Soit:
+
+!bc pycod
+r = 12
+pi = 3.14159
+s = pi * r**2
+print(s)
+print(type(r), type(pi), type(s))
+!ec
+!bblock Description
+Ce code sert à calculer la surface $ s = \pi r^2$ d'un disque de rayon r donné.
+
+* dans les deux premières lignes, _nous assignons_ les paramètres de l'équation de s (`r` et `pi`) par ses valeurs.
+* à la troisième ligne, _nous attribuons_ `s` par son expression.
+* dans les deux dernières lignes, _nous affichons_ la valeur de `s` trouvée et les types de variables utilisés dans ce code.
+!eblock
+
+!esol
+!esubex
+
+!bsubex
+Écrivez un programme qui convertisse en degrés Celsius une température exprimée au départ en degrés Fahrenheit, ou l’inverse. La formule de conversion est :
+    $$T_F = T_C \times 1,8 + 32 $$
+!bsol
+Soit:
+ $$T_F = T_C \times 1,8 + 32 $$
+ avec $T_F$ estla température en degrés Fahrenheit et $T_C$ est la température en degrés Celsius.
+
+!bc pycod
+print("Conversion de degrés Celsius en degrés Fahrenheit:")
+Tc1 = 25 # température en Celsius donnée
+TF1 = Tc1 * 1.8 + 32
+print("{} degrés Celsius vaut {} degrés Fahrenheit".format(Tc1, TF1))
+
+print("Conversion de degrés Fahrenheit en degrés Celsius:")
+TF2 = 120 # température en Fahrenheit donnée
+TC2 = (TF2 - 32)/1.8
+print("{} degrés Fahrenheit vaut {} degrés Celsius".format(TF2, TC2))
+!ec
+
+!esol
+!esubex
+
+!split
+===== Exercise: Fonction `input()` =====
+
+Dans tous ces exercices, utilisez la fonction `input()` pour l’entrée des données.
+!bsubex
+Écrivez un programme qui convertisse en mètres par seconde et en km/h une vitesse fournie par l’utilisateur en miles/heure. (Rappel : 1 mile = 1609 mètres)
+!bsol
+Conversion de miles/heure en km/h et m/s
+
+!bc pycod
+# %load sol21.py
+# Conversion de miles/heure en km/h et m/s
+ch = input("Veuillez entrer le nombre de miles parcourus en une heure : ")
+mph = float(ch)             # conversion de la chaîne entrée en nombre réel
+mps = mph * 1609 / 3600     # conversion en mètres par seconde
+kmph = mph * 1.609          # conversion en km/h
+# affichage :
+print(mph, "miles/heure =", kmph, "km/h, ou encore", mps, "m/s")
+!ec
+!esol
+!esubex
+
+!bsubex
+Écrivez un programme qui calcule le périmètre et l’aire d’un triangle quelconque dont l’utilisateur fournit les 3 côtés.(Rappel : l’aire d’un triangle quelconque se calcule à l’aide de la formule :
+$$ S = \sqrt{d \cdot (d-a) \cdot (d-b) \cdot (d-c)}$$
+    dans laquelle d désigne la longueur du demi-périmètre, et a, b, c celles des trois côtés.)
+
+!bsol
+Périmètre et Aire d'un triangle quelconque:
+
+!bc pycod
+# %load sol22.py
+# Périmètre et Aire d'un triangle quelconque
+
+from math import sqrt
+
+a = float(input("Veuillez entrer le côté a : "))
+b = float(input("Veuillez entrer le côté b : "))
+c = float(input("Veuillez entrer le côté c : "))
+d = (a + b + c)/2.0                # demi-périmètre
+s = sqrt(d*(d-a)*(d-b)*(d-c))    # aire (suivant formule)
+
+print("Longueur des côtés =", a, b, c)
+print("Périmètre =", d*2, "Aire =", s)
+!ec
+
+!esol
+!esubex
+
+!split
+===== Exercise: Corriger l'erreur dans le code =====
+!bsubex
+Le code suivant renvoie une erreur. Trouver et corriger l'erreur:
+
+!bc pycod-t
+prenom = input('Entrez votre prénom : ')
+age = input('Entrez votre age : ')
+annee_naissance = 2018 - age
+print("Bonjour Mr/Mme", prenom)
+print("vous êtes né en", annee_naissance)
+!ec
+
+!bhint
+* utiliser la fonction `type()`
+* utliser la fonction `int()`
+!ehint
+
+!bsol
+La solution est comme suit:
+
+!bc ipy
+In [71]: prenom = input('Entrez votre prénom : ')
+    ...: age = input('Entrez votre age : ')
+    ...: type(age) # ici str
+    ...: age = int(age)
+    ...: type(age) #ici int
+    ...: annee_naissance = 2018 - age
+    ...: print("Bonjour Mr/Mme", prenom)
+    ...: print("vous êtes né en", annee_naissance)
+
+Entrez votre prénom : Foulen
+
+Entrez votre age : 25
+Bonjour Mr/Mme Foulen
+vous êtes né en 1993
+!ec
+
+!esol
+
+!esubex
+!bsubex
+Afficher le messge suivant:
+Bonjour Mr/Mme `prenom`, votre age est `age` et vous êtes né en `annee_naissance`.
+!bhint
+Remplacer les points par ce qui convient dans le code:
+!bc pycod-t
+print(" Bonjour Mr/Mme {}, votre age est {}....".format(...))
+!ec
+!ehint
+!bsol
+La solution s'écrit:
+!bc pycod
+print(" Bonjour Mr/Mme {}, votre age est {} et vous êtes né en {}".format(prenom, age, annee_naissance))
+!ec
+!esol
+!esubex

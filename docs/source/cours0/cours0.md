@@ -1,6 +1,9 @@
 % Introduction à Python
-% **UP Mathématiques** at École Supérieure PRivée d'Ingénierie et de Technologies.
+% **UP Mathématiques** at École Supérieure PRivée d'Ingénierie et de Technologies (ESPRIT).
 % 2 novembre 2023
+
+<!-- <img src="imgs/Signature-01.jpg" width=300> -->
+![](imgs/Signature-01.jpg)
 
 <!-- Table of contents: Run pandoc with --toc option -->
 
@@ -193,9 +196,9 @@ Pour calculer l'aire d'un rectangle par exemple: `largeur` x `hauteur`:
 
 ```python
 In [15]: largeur = 25
-    ...: hauteur = 40
-    ...: largeur    # essayer d'accéder à la valeur de la variable largeur
-Out[15]: 25
+In [16]: hauteur = 40
+In [17]: largeur    # essayer d'accéder à la valeur de la variable largeur
+Out[17]: 25
 ```
 
 on peut également utiliser la fonction `print()` pour afficher la valeur de la variable `largeur`

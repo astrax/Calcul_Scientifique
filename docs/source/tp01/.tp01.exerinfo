@@ -1,0 +1,278 @@
+# Information about all exercises in the file tp01.do.txt.
+# The information can be loaded into a Python list of dicts by
+#
+# f = open('.tp01.exerinfo', 'r')
+# exer = eval(f.read())
+#
+[{'ans_docend': '',
+  'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': None,
+  'label': None,
+  'no': 1,
+  'sol_docend': '',
+  'solution': '',
+  'solution_file': None,
+  'subex': [{'aftertext': '\n',
+             'ans_docend': '',
+             'answer': '',
+             'file': None,
+             'hints': [],
+             'sol_docend': '',
+             'solution': 'Soit les trois valeurs 3, 5 et 7 assignées, '
+                         'respectivement, aux variables `a`, `b` et `c`:\n'
+                         '\n'
+                         '!bc pycod\n'
+                         'a, b, c = 3, 5, 7 # Assignation des variables\n'
+                         'a - b//c\n'
+                         '\n'
+                         '!ec\n'
+                         '\n'
+                         '!bblock Interprétation\n'
+                         " L'expression `a - b // c` signifie que nous voulons "
+                         "soustraire (signe '`-`') de la variable `a` la "
+                         "division entière (signe '`//`') de la variable `b` "
+                         'par la variable `c`. Le résultat est 3 car la '
+                         'division entière de 5 par 7 est égale à 0.\n'
+                         '!eblock',
+             'text': 'Assignez les valeurs respectives 3, 5, 7 à trois '
+                     'variables a, b, c. Effectuez l’opération `a-b//c`. '
+                     'Interprétez le résultat obtenu.'},
+            {'ans_docend': '',
+             'answer': '',
+             'file': None,
+             'hints': [],
+             'sol_docend': '',
+             'solution': 'Soit:\n'
+                         '\n'
+                         '!bc pycod\n'
+                         'r = 12\n'
+                         'pi = 3.14159\n'
+                         's = pi * r**2\n'
+                         'print(s)\n'
+                         'print(type(r), type(pi), type(s))\n'
+                         '\n'
+                         '!ec\n'
+                         '!bblock Description\n'
+                         'Ce code sert à calculer la surface $ s = \\pi r^2$ '
+                         "d'un disque de rayon r donné.\n"
+                         '\n'
+                         '* dans les deux premières lignes, _nous assignons_ '
+                         "les paramètres de l'équation de s (`r` et `pi`) par "
+                         'ses valeurs.\n'
+                         '* à la troisième ligne, _nous attribuons_ `s` par '
+                         'son expression.\n'
+                         '* dans les deux dernières lignes, _nous affichons_ '
+                         'la valeur de `s` trouvée et les types de variables '
+                         'utilisés dans ce code.\n'
+                         '!eblock',
+             'text': 'Testez les lignes d’instructions suivantes. Décrivez ce '
+                     'qui se passe\xa0:\n'
+                     '\n'
+                     '!bc pycod\n'
+                     'r = 12\n'
+                     'pi = 3.14159\n'
+                     's = pi * r**2\n'
+                     'print(s)\n'
+                     'print(type(r), type(pi), type(s))\n'
+                     '\n'
+                     '!ec\n'
+                     '\n'
+                     'Quelle est, à votre avis, l’utilité de la fonction '
+                     '`type()` ?'},
+            {'ans_docend': '',
+             'answer': '',
+             'file': None,
+             'hints': [],
+             'sol_docend': '',
+             'solution': 'Soit:\n'
+                         ' $$T_F = T_C \\times 1,8 + 32 $$\n'
+                         ' avec $T_F$ estla température en degrés Fahrenheit '
+                         'et $T_C$ est la température en degrés Celsius.\n'
+                         '\n'
+                         '!bc pycod\n'
+                         'print("Conversion de degrés Celsius en degrés '
+                         'Fahrenheit:")\n'
+                         'Tc1 = 25 # température en Celsius donnée\n'
+                         'TF1 = Tc1 * 1.8 + 32\n'
+                         'print("{} degrés Celsius vaut {} degrés '
+                         'Fahrenheit".format(Tc1, TF1))\n'
+                         '\n'
+                         'print("Conversion de degrés Fahrenheit en degrés '
+                         'Celsius:")\n'
+                         'TF2 = 120 # température en Fahrenheit donnée\n'
+                         'TC2 = (TF2 - 32)/1.8\n'
+                         'print("{} degrés Fahrenheit vaut {} degrés '
+                         'Celsius".format(TF2, TC2))\n'
+                         '\n'
+                         '!ec',
+             'text': 'Écrivez un programme qui convertisse en degrés Celsius '
+                     'une température exprimée au départ en degrés Fahrenheit, '
+                     'ou l’inverse. La formule de conversion est\xa0:\n'
+                     '    $$T_F = T_C \\times 1,8 + 32 $$'}],
+  'text': '',
+  'title': 'Les variables',
+  'type': 'Exercise',
+  'type_visible': True},
+ {'ans_docend': '',
+  'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': None,
+  'label': None,
+  'no': 2,
+  'sol_docend': '',
+  'solution': '',
+  'solution_file': None,
+  'subex': [{'ans_docend': '',
+             'answer': '',
+             'file': None,
+             'hints': [],
+             'sol_docend': '',
+             'solution': 'Conversion de miles/heure en km/h et m/s\n'
+                         '\n'
+                         '!bc pycod\n'
+                         '# %load sol21.py\n'
+                         '# Conversion de miles/heure en km/h et m/s\n'
+                         'ch = input("Veuillez entrer le nombre de miles '
+                         'parcourus en une heure : ")\n'
+                         'mph = float(ch)             # conversion de la '
+                         'chaîne entrée en nombre réel\n'
+                         'mps = mph * 1609 / 3600     # conversion en mètres '
+                         'par seconde\n'
+                         'kmph = mph * 1.609          # conversion en km/h\n'
+                         '# affichage :\n'
+                         'print(mph, "miles/heure =", kmph, "km/h, ou encore", '
+                         'mps, "m/s")\n'
+                         '\n'
+                         '!ec',
+             'text': 'Écrivez un programme qui convertisse en mètres par '
+                     'seconde et en km/h une vitesse fournie par l’utilisateur '
+                     'en miles/heure. (Rappel : 1 mile = 1609 mètres)'},
+            {'ans_docend': '',
+             'answer': '',
+             'file': None,
+             'hints': [],
+             'sol_docend': '',
+             'solution': "Périmètre et Aire d'un triangle quelconque:\n"
+                         '\n'
+                         '!bc pycod\n'
+                         '# %load sol22.py\n'
+                         "# Périmètre et Aire d'un triangle quelconque\n"
+                         '\n'
+                         'from math import sqrt\n'
+                         '\n'
+                         'a = float(input("Veuillez entrer le côté a : "))\n'
+                         'b = float(input("Veuillez entrer le côté b : "))\n'
+                         'c = float(input("Veuillez entrer le côté c : "))\n'
+                         'd = (a + b + c)/2.0                # demi-périmètre\n'
+                         's = sqrt(d*(d-a)*(d-b)*(d-c))    # aire (suivant '
+                         'formule)\n'
+                         '\n'
+                         'print("Longueur des côtés =", a, b, c)\n'
+                         'print("Périmètre =", d*2, "Aire =", s)\n'
+                         '\n'
+                         '!ec',
+             'text': 'Écrivez un programme qui calcule le périmètre et l’aire '
+                     'd’un triangle quelconque dont l’utilisateur fournit les '
+                     '3 côtés.(Rappel : l’aire d’un triangle quelconque se '
+                     'calcule à l’aide de la formule :\n'
+                     '$$ S = \\sqrt{d \\cdot (d-a) \\cdot (d-b) \\cdot '
+                     '(d-c)}$$\n'
+                     '    dans laquelle d désigne la longueur du '
+                     'demi-périmètre, et a, b, c celles des trois côtés.)'}],
+  'text': 'Dans tous ces exercices, utilisez la fonction `input()` pour '
+          'l’entrée des données.',
+  'title': 'Fonction `input()`',
+  'type': 'Exercise',
+  'type_visible': True},
+ {'ans_docend': '',
+  'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': None,
+  'label': None,
+  'no': 3,
+  'sol_docend': '',
+  'solution': '',
+  'solution_file': None,
+  'subex': [{'ans_docend': '',
+             'answer': '',
+             'file': None,
+             'hints': ['* utiliser la fonction `type()`\n'
+                       '* utliser la fonction `int()`'],
+             'sol_docend': '',
+             'solution': 'La solution est comme suit:\n'
+                         '\n'
+                         '!bc ipy\n'
+                         "In [71]: prenom = input('Entrez votre prénom : ')\n"
+                         "    ...: age = input('Entrez votre age : ')\n"
+                         '    ...: type(age) # ici str\n'
+                         '    ...: age = int(age)\n'
+                         '    ...: type(age) #ici int\n'
+                         '    ...: annee_naissance = 2018 - age\n'
+                         '    ...: print("Bonjour Mr/Mme", prenom)\n'
+                         '    ...: print("vous êtes né en", annee_naissance)\n'
+                         '\n'
+                         'Entrez votre prénom : Foulen\n'
+                         '\n'
+                         'Entrez votre age : 25\n'
+                         'Bonjour Mr/Mme Foulen\n'
+                         'vous êtes né en 1993\n'
+                         '\n'
+                         '!ec',
+             'text': 'Le code suivant renvoie une erreur. Trouver et corriger '
+                     "l'erreur:\n"
+                     '\n'
+                     '!bc pycod\n'
+                     "prenom = input('Entrez votre prénom : ')\n"
+                     "age = input('Entrez votre age : ')\n"
+                     'annee_naissance = 2018 - age\n'
+                     'print("Bonjour Mr/Mme", prenom)\n'
+                     'print("vous êtes né en", annee_naissance)\n'
+                     '\n'
+                     '!ec'},
+            {'ans_docend': '',
+             'answer': '',
+             'file': None,
+             'hints': ['Remplacer les points par ce qui convient dans le '
+                       'code:\n'
+                       '!bc pycod\n'
+                       'print(" Bonjour Mr/Mme {}, votre age est '
+                       '{}....".format(...))\n'
+                       '\n'
+                       '!ec'],
+             'sol_docend': '',
+             'solution': "La solution s'écrit:\n"
+                         '!bc pycod\n'
+                         'print(" Bonjour Mr/Mme {}, votre age est {} et vous '
+                         'êtes né en {}".format(prenom, age, '
+                         'annee_naissance))\n'
+                         '\n'
+                         '!ec',
+             'text': 'Afficher le messge suivant:\n'
+                     'Bonjour Mr/Mme `prenom`, votre age est `age` et vous '
+                     'êtes né en `annee_naissance`.'}],
+  'text': '',
+  'title': "Corriger l'erreur dans le code",
+  'type': 'Exercise',
+  'type_visible': True}]

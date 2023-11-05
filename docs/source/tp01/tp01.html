@@ -1,0 +1,551 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/doconce/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="TP N°0-1 : Introduction à Python">
+
+<title>TP N°0-1 : Introduction à Python</title>
+
+<!-- Bootstrap style: bootswatch_cyborg -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/cyborg/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+/* Let inline verbatim have the same color as the surroundings */
+code { color: inherit; background-color: transparent; }
+/* Let pre tags for code blocks have the same color as the surroundings */
+pre { color: inherit; background-color: transparent; }
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:50px;      /* fixed header height for style bootswatch_cyborg */
+  margin:-50px 0 0; /* negative fixed header height */
+}
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 2,
+ 'sections': [('Exercise 1: Les variables', 2, None, '___sec0'),
+              ('Exercise 2: Fonction `input()`', 2, None, '___sec1'),
+              ("Exercise 3: Corriger l'erreur dans le code",
+               2,
+               None,
+               '___sec2')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "AMS"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="tp01.html">TP N°0-1 : Introduction à Python</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contenu <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="#___sec0" style="font-size: 80%;">Exercise 1: Les variables</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec1" style="font-size: 80%;">Exercise 2: Fonction <code>input()</code></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec2" style="font-size: 80%;">Exercise 3: Corriger l'erreur dans le code</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<!-- ------------------- main content ---------------------- -->
+
+
+
+<div class="jumbotron">
+<center><h1>TP N&#176;0-1 : Introduction &#224; Python</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): UP Math&#233;matiques -->
+
+<center>
+<b>UP Math&#233;matiques</b> 
+</center>
+
+<p>
+<!-- institution -->
+
+<center><b>&#201;cole Sup&#233;rieure PRiv&#233;e d'Ing&#233;nierie et de Technologies (ESPRIT).</b></center>
+<br>
+<p>
+<center><h4>2 novembre 2023</h4></center> <!-- date -->
+<br>
+<br /><br /><center><p><img src="imgs/Signature-01.jpg" align="bottom" width=300></p></center><br /><br />
+
+<p>
+<!-- potential-jumbotron-button -->
+</div> <!-- end jumbotron -->
+
+<!-- !split -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec0" class="anchor">Exercise 1: Les variables </h2>
+
+<p>
+<b>a)</b>
+Assignez les valeurs respectives 3, 5, 7 &#224; trois variables a, b, c. Effectuez l&#8217;op&#233;ration <code>a-b//c</code>. Interpr&#233;tez le r&#233;sultat obtenu.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_1" style="font-size: 80%;"></a>
+<a href="#exer_1_1" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_1">
+
+<p>
+Soit les trois valeurs 3, 5 et 7 assign&#233;es, respectivement, aux variables <code>a</code>, <code>b</code> et <code>c</code>:
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #f8f8f2">a,</span> <span style="color: #f8f8f2">b,</span> <span style="color: #f8f8f2">c</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">3</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">5</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">7</span> <span style="color: #75715e"># Assignation des variables</span>
+<span style="color: #f8f8f2">a</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">b</span><span style="color: #f92672">//</span><span style="color: #f8f8f2">c</span>
+</pre></div>
+<p>
+<div class="alert alert-block alert-success alert-text-normal"><b>Interpr&#233;tation</b>
+ L'expression <code>a - b // c</code> signifie que nous voulons soustraire (signe '`-`') de la variable <code>a</code> la division enti&#232;re (signe '`//`') de la variable <code>b</code> par la variable <code>c</code>. Le r&#233;sultat est 3 car la division enti&#232;re de 5 par 7 est &#233;gale &#224; 0.
+</div>
+
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Testez les lignes d&#8217;instructions suivantes. D&#233;crivez ce qui se passe&#160;:
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #f8f8f2">r</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">12</span>
+<span style="color: #f8f8f2">pi</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">3.14159</span>
+<span style="color: #f8f8f2">s</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pi</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">r</span><span style="color: #f92672">**</span><span style="color: #ae81ff">2</span>
+<span style="color: #f8f8f2">print(s)</span>
+<span style="color: #f8f8f2">print(type(r),</span> <span style="color: #f8f8f2">type(pi),</span> <span style="color: #f8f8f2">type(s))</span>
+</pre></div>
+<p>
+Quelle est, &#224; votre avis, l&#8217;utilit&#233; de la fonction <code>type()</code> ?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_2" style="font-size: 80%;"></a>
+<a href="#exer_1_2" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_2">
+
+<p>
+Soit:
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #f8f8f2">r</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">12</span>
+<span style="color: #f8f8f2">pi</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">3.14159</span>
+<span style="color: #f8f8f2">s</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pi</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">r</span><span style="color: #f92672">**</span><span style="color: #ae81ff">2</span>
+<span style="color: #f8f8f2">print(s)</span>
+<span style="color: #f8f8f2">print(type(r),</span> <span style="color: #f8f8f2">type(pi),</span> <span style="color: #f8f8f2">type(s))</span>
+</pre></div>
+<p>
+<div class="alert alert-block alert-success alert-text-normal"><b>Description</b>
+Ce code sert &#224; calculer la surface $ s = \pi r^2$ d'un disque de rayon r donn&#233;.
+
+<ul>
+<li> dans les deux premi&#232;res lignes, <b>nous assignons</b> les param&#232;tres de l'&#233;quation de s (<code>r</code> et <code>pi</code>) par ses valeurs.</li>
+<li> &#224; la troisi&#232;me ligne, <b>nous attribuons</b> <code>s</code> par son expression.</li>
+<li> dans les deux derni&#232;res lignes, <b>nous affichons</b> la valeur de <code>s</code> trouv&#233;e et les types de variables utilis&#233;s dans ce code.</li>
+</ul>
+</div>
+
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+&#201;crivez un programme qui convertisse en degr&#233;s Celsius une temp&#233;rature exprim&#233;e au d&#233;part en degr&#233;s Fahrenheit, ou l&#8217;inverse. La formule de conversion est&#160;:
+    $$T_F = T_C \times 1,8 + 32 $$
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_3" style="font-size: 80%;"></a>
+<a href="#exer_1_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_3">
+
+<p>
+Soit:
+ $$T_F = T_C \times 1,8 + 32 $$
+ avec \( T_F \) estla temp&#233;rature en degr&#233;s Fahrenheit et \( T_C \) est la temp&#233;rature en degr&#233;s Celsius.
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;Conversion de degrés Celsius en degrés Fahrenheit:&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">Tc1</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">25</span> <span style="color: #75715e"># température en Celsius donnée</span>
+<span style="color: #f8f8f2">TF1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">Tc1</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">1.8</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">32</span>
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;{} degrés Celsius vaut {} degrés Fahrenheit&quot;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">format(Tc1,</span> <span style="color: #f8f8f2">TF1))</span>
+
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;Conversion de degrés Fahrenheit en degrés Celsius:&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">TF2</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">120</span> <span style="color: #75715e"># température en Fahrenheit donnée</span>
+<span style="color: #f8f8f2">TC2</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(TF2</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">32</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">/</span><span style="color: #ae81ff">1.8</span>
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;{} degrés Fahrenheit vaut {} degrés Celsius&quot;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">format(TF2,</span> <span style="color: #f8f8f2">TC2))</span>
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- !split -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec1" class="anchor">Exercise 2: Fonction <code>input()</code> </h2>
+
+<p>
+Dans tous ces exercices, utilisez la fonction <code>input()</code> pour l&#8217;entr&#233;e des donn&#233;es.
+
+<p>
+<b>a)</b>
+&#201;crivez un programme qui convertisse en m&#232;tres par seconde et en km/h une vitesse fournie par l&#8217;utilisateur en miles/heure. (Rappel : 1 mile = 1609 m&#232;tres)
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_1" style="font-size: 80%;"></a>
+<a href="#exer_2_1" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_1">
+
+<p>
+Conversion de miles/heure en km/h et m/s
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #75715e"># %load sol21.py</span>
+<span style="color: #75715e"># Conversion de miles/heure en km/h et m/s</span>
+<span style="color: #f8f8f2">ch</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">input(</span><span style="color: #e6db74">&quot;Veuillez entrer le nombre de miles parcourus en une heure : &quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">mph</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">float(ch)</span>             <span style="color: #75715e"># conversion de la chaîne entrée en nombre réel</span>
+<span style="color: #f8f8f2">mps</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">mph</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">1609</span> <span style="color: #f92672">/</span> <span style="color: #ae81ff">3600</span>     <span style="color: #75715e"># conversion en mètres par seconde</span>
+<span style="color: #f8f8f2">kmph</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">mph</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">1.609</span>          <span style="color: #75715e"># conversion en km/h</span>
+<span style="color: #75715e"># affichage :</span>
+<span style="color: #f8f8f2">print(mph,</span> <span style="color: #e6db74">&quot;miles/heure =&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">kmph,</span> <span style="color: #e6db74">&quot;km/h, ou encore&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">mps,</span> <span style="color: #e6db74">&quot;m/s&quot;</span><span style="color: #f8f8f2">)</span>
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+&#201;crivez un programme qui calcule le p&#233;rim&#232;tre et l&#8217;aire d&#8217;un triangle quelconque dont l&#8217;utilisateur fournit les 3 c&#244;t&#233;s.(Rappel : l&#8217;aire d&#8217;un triangle quelconque se calcule &#224; l&#8217;aide de la formule :
+$$ S = \sqrt{d \cdot (d-a) \cdot (d-b) \cdot (d-c)}$$
+    dans laquelle d d&#233;signe la longueur du demi-p&#233;rim&#232;tre, et a, b, c celles des trois c&#244;t&#233;s.)
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_2" style="font-size: 80%;"></a>
+<a href="#exer_2_2" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_2">
+
+<p>
+P&#233;rim&#232;tre et Aire d'un triangle quelconque:
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #75715e"># %load sol22.py</span>
+<span style="color: #75715e"># Périmètre et Aire d&#39;un triangle quelconque</span>
+
+<span style="color: #f92672">from</span> <span style="color: #f8f8f2">math</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">sqrt</span>
+
+<span style="color: #f8f8f2">a</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">float(input(</span><span style="color: #e6db74">&quot;Veuillez entrer le côté a : &quot;</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">b</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">float(input(</span><span style="color: #e6db74">&quot;Veuillez entrer le côté b : &quot;</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">c</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">float(input(</span><span style="color: #e6db74">&quot;Veuillez entrer le côté c : &quot;</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">d</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(a</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">b</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">c)</span><span style="color: #f92672">/</span><span style="color: #ae81ff">2.0</span>                <span style="color: #75715e"># demi-périmètre</span>
+<span style="color: #f8f8f2">s</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">sqrt(d</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">(d</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">a)</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">(d</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">b)</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">(d</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">c))</span>    <span style="color: #75715e"># aire (suivant formule)</span>
+
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;Longueur des côtés =&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">a,</span> <span style="color: #f8f8f2">b,</span> <span style="color: #f8f8f2">c)</span>
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;Périmètre =&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">d</span><span style="color: #f92672">*</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;Aire =&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">s)</span>
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- !split -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec2" class="anchor">Exercise 3: Corriger l'erreur dans le code </h2>
+
+<p>
+<b>a)</b>
+Le code suivant renvoie une erreur. Trouver et corriger l'erreur:
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #f8f8f2">prenom</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">input(</span><span style="color: #e6db74">&#39;Entrez votre prénom : &#39;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">age</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">input(</span><span style="color: #e6db74">&#39;Entrez votre age : &#39;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">annee_naissance</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">2018</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">age</span>
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;Bonjour Mr/Mme&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">prenom)</span>
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;vous êtes né en&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">annee_naissance)</span>
+</pre></div>
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_3_1" style="font-size: 80%;"></a>
+<a href="#exer_3_1" data-toggle="collapse">
+<b>Indication.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_3_1">
+
+<ul>
+<li> utiliser la fonction <code>type()</code></li>
+<li> utliser la fonction <code>int()</code></li>
+</ul>
+
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_3_3" style="font-size: 80%;"></a>
+<a href="#exer_3_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_3_3">
+
+<p>
+La solution est comme suit:
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #f8f8f2">In</span> <span style="color: #f8f8f2">[</span><span style="color: #ae81ff">71</span><span style="color: #f8f8f2">]:</span> <span style="color: #f8f8f2">prenom</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">input(</span><span style="color: #e6db74">&#39;Entrez votre prénom : &#39;</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f92672">...</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">age</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">input(</span><span style="color: #e6db74">&#39;Entrez votre age : &#39;</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f92672">...</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">type(age)</span> <span style="color: #75715e"># ici str</span>
+    <span style="color: #f92672">...</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">age</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">int(age)</span>
+    <span style="color: #f92672">...</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">type(age)</span> <span style="color: #75715e">#ici int</span>
+    <span style="color: #f92672">...</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">annee_naissance</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">2018</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">age</span>
+    <span style="color: #f92672">...</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;Bonjour Mr/Mme&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">prenom)</span>
+    <span style="color: #f92672">...</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;vous êtes né en&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">annee_naissance)</span>
+
+<span style="color: #f8f8f2">Entrez</span> <span style="color: #f8f8f2">votre</span> <span style="color: #f8f8f2">prénom</span> <span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">Foulen</span>
+
+<span style="color: #f8f8f2">Entrez</span> <span style="color: #f8f8f2">votre</span> <span style="color: #f8f8f2">age</span> <span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">25</span>
+<span style="color: #f8f8f2">Bonjour</span> <span style="color: #f8f8f2">Mr</span><span style="color: #f92672">/</span><span style="color: #f8f8f2">Mme</span> <span style="color: #f8f8f2">Foulen</span>
+<span style="color: #f8f8f2">vous</span> <span style="color: #f8f8f2">êtes</span> <span style="color: #f8f8f2">né</span> <span style="color: #f8f8f2">en</span> <span style="color: #ae81ff">1993</span>
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Afficher le messge suivant:
+Bonjour Mr/Mme <code>prenom</code>, votre age est <code>age</code> et vous &#234;tes n&#233; en <code>annee_naissance</code>.
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_3_2" style="font-size: 80%;"></a>
+<a href="#exer_3_2" data-toggle="collapse">
+<b>Indication.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_3_2">
+
+<p>
+Remplacer les points par ce qui convient dans le code:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot; Bonjour Mr/Mme {}, votre age est {}....&quot;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">format(</span><span style="color: #f92672">...</span><span style="color: #f8f8f2">))</span>
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_3_4" style="font-size: 80%;"></a>
+<a href="#exer_3_4" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_3_4">
+
+<p>
+La solution s'&#233;crit:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot; Bonjour Mr/Mme {}, votre age est {} et vous êtes né en {}&quot;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">format(prenom,</span> <span style="color: #f8f8f2">age,</span> <span style="color: #f8f8f2">annee_naissance))</span>
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+<center style="font-size:80%">
+<!-- copyright --> &copy; 2023, UP Math&#233;matiques. ESPRIT
+</center>
+
+
+</body>
+</html>
+    
+

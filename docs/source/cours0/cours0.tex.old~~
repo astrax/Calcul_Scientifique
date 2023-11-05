@@ -344,7 +344,7 @@ Introduction à Python
 
     \begin{center}
 % List of all institutions:
-\centerline{{\small École Supérieure PRivée d'Ingénierie et de Technologies.}}
+\centerline{{\small École Supérieure PRivée d'Ingénierie et de Technologies (ESPRIT).}}
 \end{center}
     
 % ----------------- end author(s) -------------------------
@@ -356,6 +356,16 @@ Introduction à Python
 % --- end date ---
 
 \vspace{1cm}
+
+
+\vspace{6mm}
+
+% inline figure
+\centerline{\includegraphics[width=0.45\linewidth]{imgs/Signature-01.jpg}}
+
+\vspace{6mm}
+
+
 
 
 \tableofcontents
@@ -612,9 +622,9 @@ Pour calculer l'aire d'un rectangle par exemple: \texttt{largeur} x \texttt{haut
 
 \begin{cod}{cbg_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
 In [15]: largeur = 25
-    ...: hauteur = 40
-    ...: largeur    # essayer d'accéder à la valeur de la variable largeur
-Out[15]: 25
+In [16]: hauteur = 40
+In [17]: largeur    # essayer d'accéder à la valeur de la variable largeur
+Out[17]: 25
 \end{minted}
 \end{cod}
 \noindent

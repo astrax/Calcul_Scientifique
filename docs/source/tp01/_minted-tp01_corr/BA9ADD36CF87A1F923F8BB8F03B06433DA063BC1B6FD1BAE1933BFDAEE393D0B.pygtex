@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{71}\PYG{p}{]:} \PYG{n}{prenom} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Entrez votre prénom : \PYGZsq{}}\PYG{p}{)}
+    \PYG{o}{...}\PYG{p}{:} \PYG{n}{age} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Entrez votre age : \PYGZsq{}}\PYG{p}{)}
+    \PYG{o}{...}\PYG{p}{:} \PYG{n+nb}{type}\PYG{p}{(}\PYG{n}{age}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} ici str}
+    \PYG{o}{...}\PYG{p}{:} \PYG{n}{age} \PYG{o}{=} \PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{age}\PYG{p}{)}
+    \PYG{o}{...}\PYG{p}{:} \PYG{n+nb}{type}\PYG{p}{(}\PYG{n}{age}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{}ici int}
+    \PYG{o}{...}\PYG{p}{:} \PYG{n}{annee\PYGZus{}naissance} \PYG{o}{=} \PYG{l+m+mi}{2018} \PYG{o}{\PYGZhy{}} \PYG{n}{age}
+    \PYG{o}{...}\PYG{p}{:} \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Bonjour Mr/Mme\PYGZdq{}}\PYG{p}{,} \PYG{n}{prenom}\PYG{p}{)}
+    \PYG{o}{...}\PYG{p}{:} \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}vous êtes né en\PYGZdq{}}\PYG{p}{,} \PYG{n}{annee\PYGZus{}naissance}\PYG{p}{)}
+
+\PYG{n}{Entrez} \PYG{n}{votre} \PYG{n}{prénom} \PYG{p}{:} \PYG{n}{Foulen}
+
+\PYG{n}{Entrez} \PYG{n}{votre} \PYG{n}{age} \PYG{p}{:} \PYG{l+m+mi}{25}
+\PYG{n}{Bonjour} \PYG{n}{Mr}\PYG{o}{/}\PYG{n}{Mme} \PYG{n}{Foulen}
+\PYG{n}{vous} \PYG{n}{êtes} \PYG{n}{né} \PYG{n}{en} \PYG{l+m+mi}{1993}
+\end{Verbatim}

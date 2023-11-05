@@ -1,0 +1,16 @@
+\contentsline {paragraph}{a)}{1}{section*.1}%
+\contentsline {paragraph}{Solution.}{1}{section*.1}%
+\contentsline {paragraph}{b)}{2}{section*.2}%
+\contentsline {paragraph}{Solution.}{2}{section*.2}%
+\contentsline {paragraph}{c)}{2}{section*.3}%
+\contentsline {paragraph}{Solution.}{2}{section*.3}%
+\contentsline {paragraph}{a)}{3}{section*.4}%
+\contentsline {paragraph}{Solution.}{3}{section*.4}%
+\contentsline {paragraph}{b)}{3}{section*.5}%
+\contentsline {paragraph}{Solution.}{3}{section*.5}%
+\contentsline {paragraph}{a)}{4}{section*.6}%
+\contentsline {paragraph}{Indication.}{4}{section*.6}%
+\contentsline {paragraph}{Solution.}{4}{section*.6}%
+\contentsline {paragraph}{b)}{4}{section*.7}%
+\contentsline {paragraph}{Indication.}{4}{section*.7}%
+\contentsline {paragraph}{Solution.}{4}{section*.7}%

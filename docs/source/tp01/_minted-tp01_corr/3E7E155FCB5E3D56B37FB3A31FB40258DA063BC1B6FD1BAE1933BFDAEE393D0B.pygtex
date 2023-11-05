@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{c+c1}{\PYGZsh{} \PYGZpc{}load sol21.py}
+\PYG{c+c1}{\PYGZsh{} Conversion de miles/heure en km/h et m/s}
+\PYG{n}{ch} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Veuillez entrer le nombre de miles parcourus en une heure : \PYGZdq{}}\PYG{p}{)}
+\PYG{n}{mph} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n}{ch}\PYG{p}{)}             \PYG{c+c1}{\PYGZsh{} conversion de la chaîne entrée en nombre réel}
+\PYG{n}{mps} \PYG{o}{=} \PYG{n}{mph} \PYG{o}{*} \PYG{l+m+mi}{1609} \PYG{o}{/} \PYG{l+m+mi}{3600}     \PYG{c+c1}{\PYGZsh{} conversion en mètres par seconde}
+\PYG{n}{kmph} \PYG{o}{=} \PYG{n}{mph} \PYG{o}{*} \PYG{l+m+mf}{1.609}          \PYG{c+c1}{\PYGZsh{} conversion en km/h}
+\PYG{c+c1}{\PYGZsh{} affichage :}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{mph}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}miles/heure =\PYGZdq{}}\PYG{p}{,} \PYG{n}{kmph}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}km/h, ou encore\PYGZdq{}}\PYG{p}{,} \PYG{n}{mps}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}m/s\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

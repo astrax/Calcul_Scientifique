@@ -1,7 +1,7 @@
 TITLE: Introduction à Python
-AUTHOR: UP Mathématiques {copyright|ESPRIT} at École Supérieure PRivée d'Ingénierie et de Technologies.
+AUTHOR: UP Mathématiques {copyright|ESPRIT} at École Supérieure PRivée d'Ingénierie et de Technologies (ESPRIT).
 DATE: 2 novembre 2023
-
+FIGURE: [imgs/Signature-01, width=300 frac=0.45]
 TOC: on
 
 !split
@@ -173,9 +173,9 @@ Pour calculer l'aire d'un rectangle par exemple: `largeur` x `hauteur`:
 
 !bc ipy
 In [15]: largeur = 25
-    ...: hauteur = 40
-    ...: largeur    # essayer d'accéder à la valeur de la variable largeur
-Out[15]: 25
+In [16]: hauteur = 40
+In [17]: largeur    # essayer d'accéder à la valeur de la variable largeur
+Out[17]: 25
 !ec
 
 on peut également utiliser la fonction `print()` pour afficher la valeur de la variable `largeur`
@@ -240,7 +240,7 @@ class               from                or
 continue            global              pass
 
 # par exemple pour éviter d'écraser le nom réservé lambda
-In [22]: lambda_ = 630e-9
-    ...: lambda_
-Out[22]: 6.3e-07
+In [22]: Lambda = 630e-9
+In [23]: Lambda
+Out[23]: 6.3e-07
 !ec

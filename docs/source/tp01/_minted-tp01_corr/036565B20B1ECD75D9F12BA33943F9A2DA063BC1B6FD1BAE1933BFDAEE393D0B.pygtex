@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{c+c1}{\PYGZsh{} \PYGZpc{}load sol22.py}
+\PYG{c+c1}{\PYGZsh{} Périmètre et Aire d\PYGZsq{}un triangle quelconque}
+
+\PYG{k+kn}{from} \PYG{n+nn}{math} \PYG{k+kn}{import} \PYG{n}{sqrt}
+
+\PYG{n}{a} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Veuillez entrer le côté a : \PYGZdq{}}\PYG{p}{))}
+\PYG{n}{b} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Veuillez entrer le côté b : \PYGZdq{}}\PYG{p}{))}
+\PYG{n}{c} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Veuillez entrer le côté c : \PYGZdq{}}\PYG{p}{))}
+\PYG{n}{d} \PYG{o}{=} \PYG{p}{(}\PYG{n}{a} \PYG{o}{+} \PYG{n}{b} \PYG{o}{+} \PYG{n}{c}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mf}{2.0}                \PYG{c+c1}{\PYGZsh{} demi\PYGZhy{}périmètre}
+\PYG{n}{s} \PYG{o}{=} \PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{d}\PYG{o}{*}\PYG{p}{(}\PYG{n}{d}\PYG{o}{\PYGZhy{}}\PYG{n}{a}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{d}\PYG{o}{\PYGZhy{}}\PYG{n}{b}\PYG{p}{)}\PYG{o}{*}\PYG{p}{(}\PYG{n}{d}\PYG{o}{\PYGZhy{}}\PYG{n}{c}\PYG{p}{))}    \PYG{c+c1}{\PYGZsh{} aire (suivant formule)}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Longueur des côtés =\PYGZdq{}}\PYG{p}{,} \PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{c}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Périmètre =\PYGZdq{}}\PYG{p}{,} \PYG{n}{d}\PYG{o}{*}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Aire =\PYGZdq{}}\PYG{p}{,} \PYG{n}{s}\PYG{p}{)}
+\end{Verbatim}

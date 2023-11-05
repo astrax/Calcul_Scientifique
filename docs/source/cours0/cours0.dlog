@@ -2079,3 +2079,1397 @@ collected all required additional files in ipynb-cours0-src.tar.gz which must be
 Failed to remove ans_at_end environment
 Failed to remove sol_at_end environment
 output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-solarized.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-solarized.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-solarized.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-solarized.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-solarized.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+*** error: --latex_style=Springer_llncs not registered
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+*** error: --latex_style=Springer_lncse not registered
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+*** error: --latex_style=Springer_sv requires --latex_title_layout=std
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+*** error: --latex_style=default not registered
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+*** error: --latex_style=article not registered
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+*** error: --latex_style=draft not registered
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-solarized.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-solarized.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+*** error: --latex_style=Springer_lncse not registered
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-solarized.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-solarized.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-solarized.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+
+*** error: wrong number of = in heading (8):
+    ======== Objectifs généraux en premier ========
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-solarized.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-solarized.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.tex
+Translating doconce text in cours0.do.txt to pdflatex
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0.p.tex
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-deck.html
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to pandoc
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pandoc
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pandoc
+output in cours0.md
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-solarized.html
+Translating doconce text in cours0.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in cours0-bs.html
+Translating doconce text in cours0.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Algorithme__
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours0-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in cours0.ipynb
