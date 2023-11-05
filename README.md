@@ -23,3 +23,7 @@
 * [HTML-remark dark](https://astrax.github.io/Calcul_Scientifique/docs/pub/cours0/cours0_remark_dark.html)
 * [Jupyter Notebook](https://colab.research.google.com/github/astrax/Calcul_Scientifique/blob/main/docs/pub/cours0/cours0.ipynb)
 
+### TPN°01 : Introduction à Python
+* [PDF (pur impression)](https://astrax.github.io/Calcul_Scientifique/docs/pub/tp01/tp01.pdf)
+* [HTML-bs](https://astrax.github.io/Calcul_Scientifique/docs/pub/tp01/tp01.html)
+* [Jupyter Notebook]()
