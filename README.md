@@ -24,4 +24,4 @@
 * [PDF (énoncé)](https://astrax.github.io/Calcul_Scientifique/docs/pub/tp01/tp01.pdf)
 * [PDF (corrigé)](https://astrax.github.io/Calcul_Scientifique/docs/pub/tp01/tp01_corr.pdf)
 * [HTML-bs](https://astrax.github.io/Calcul_Scientifique/docs/pub/tp01/tp01.html)
-* [Jupyter Notebook]()
+* [Jupyter Notebook](https://colab.research.google.com/github/astrax/Calcul_Scientifique/blob/main/docs/pub/tp01/tp01.ipynb)
