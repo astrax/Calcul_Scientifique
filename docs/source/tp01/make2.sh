@@ -68,10 +68,13 @@ pdflatex -shell-escape $name
 system doconce format html $name --html_style=bootswatch_cyborg --pygments_html_style='monokai' --html_admon=bootstrap_alert $options --keep_pygments_html_bg --html_code_style=inherit --html_pre_style=inherit
 common_replacements $name.html
 
+# Jupyter notebook
+doconce format ipynb $name
+common_replacements $name.ipynb
 # Publish
 dest=../../pub/$name
 if [ ! -d $dest ]; then
 mkdir $dest
 fi
-cp -r *.pdf *.html $dest
+cp -r *.pdf *.html *.ipynb $dest
 cp -r imgs $dest

@@ -1122,3 +1122,60 @@ figure file imgs/Signature-01:
     git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
 no lexer for alias 'ipy' found
 output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to ipynb
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format ipynb
+collected all required additional files in ipynb-tp01-src.tar.gz which must be distributed with the notebook
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in tp01.ipynb

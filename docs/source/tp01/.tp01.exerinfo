@@ -83,7 +83,7 @@
                      'print(s)\n'
                      'print(type(r), type(pi), type(s))\n'
                      '\n'
-                     '!ec\n'
+                     '!ec-t\n'
                      '\n'
                      'Quelle est, à votre avis, l’utilité de la fonction '
                      '`type()` ?'},
@@ -250,7 +250,7 @@
                      'print("Bonjour Mr/Mme", prenom)\n'
                      'print("vous êtes né en", annee_naissance)\n'
                      '\n'
-                     '!ec'},
+                     '!ec-t'},
             {'ans_docend': '',
              'answer': '',
              'file': None,
@@ -260,7 +260,7 @@
                        'print(" Bonjour Mr/Mme {}, votre age est '
                        '{}....".format(...))\n'
                        '\n'
-                       '!ec'],
+                       '!ec-t'],
              'sol_docend': '',
              'solution': "La solution s'écrit:\n"
                          '!bc pycod\n'
@@ -305,13 +305,13 @@
                        '\n'
                        'Out[2]: {0: 1, 5: 1, 8: 1, 2: 1.0}\n'
                        '\n'
-                       '!ec\n'
+                       '!ec-t\n'
                        'ou bien\n'
                        '!bc pycod\n'
                        'In[3]: ajout_monome(P, {2:8})\n'
                        'Out[3]: {0: 1, 5: 1, 8: 1, 2: 8}\n'
                        '\n'
-                       '!ec'],
+                       '!ec-t'],
              'sol_docend': '',
              'solution': '!bc pycod\n'
                          'def ajout_monome(P,monome={}):\n'
