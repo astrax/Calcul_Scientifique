@@ -50,7 +50,8 @@ pre { color: inherit; background-color: transparent; }
               ("Exercise 3: Corriger l'erreur dans le code",
                2,
                None,
-               '___sec2')]}
+               '___sec2'),
+              ('Exercise 4: Polynômes creux', 2, None, '___sec3')]}
 end of tocinfo -->
 
 <body>
@@ -91,6 +92,7 @@ MathJax.Hub.Config({
      <!-- navigation toc: --> <li><a href="#___sec0" style="font-size: 80%;">Exercise 1: Les variables</a></li>
      <!-- navigation toc: --> <li><a href="#___sec1" style="font-size: 80%;">Exercise 2: Fonction <code>input()</code></a></li>
      <!-- navigation toc: --> <li><a href="#___sec2" style="font-size: 80%;">Exercise 3: Corriger l'erreur dans le code</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec3" style="font-size: 80%;">Exercise 4: Polynômes creux</a></li>
 
         </ul>
       </li>
@@ -522,6 +524,349 @@ La solution s'&#233;crit:
 
 <p>
 <!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- !split -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec3" class="anchor">Exercise 4: Polyn&#244;mes creux </h2>
+
+<p>
+L'objectif de cet exercice est la manipulation des polyn&#244;mes creux &#224; une seule variable.
+
+<p>
+Un polyn&#244;me creux est un polyn&#244;me dont certains coefficients sont nuls.
+
+<p>
+Un polyn&#244;me est construit &#224; partir de mon&#244;mes.
+
+<p>
+Un mon&#244;me est une expression de la forme \( a x^n \) o&#249; \( a \) (\( a \neq 0 \)) est le coefficient du mon&#244;me et \( n \) (\( n \ge 0 \)) son degr&#233;.
+
+<p>
+Un mon&#244;me est repr&#233;sent&#233; par un dictionnaire &#224; un &#233;l&#233;ment dont la cl&#233; est le degr&#233; \( n \) et la valeur est le coefficient \( a \).
+
+<p>
+<b>Exemple :</b>
+
+<p>
+Le mon&#244;me \( 8 x^2 \) est repr&#233;sent&#233; par le dictionnaire <code>{2:8}</code>.
+
+<p>
+Un polyn&#244;me creux est alors d&#233;fini comme une association de mon&#244;mes de degr&#233;s diff&#233;rents.
+
+<p>
+<b>Exemple :</b>
+
+<p>
+Le polyn&#244;me \( -x^4 + 8 x^2 - 5 x \) est repr&#233;sent&#233; par le dictionnaire <code>{2:8, 1:-5, 4:-1}</code>.
+
+<p>
+Le dictionnaire <code>{0:1, 5:1, 8:1}</code> repr&#233;sente le polyn&#244;me \( x^8 + x^5 + 1 \).
+
+<p>
+<b>a)</b>
+Compl&#233;ter le script de la fonction <code>ajout_monome(P,monome)</code>, sachant que <code>P</code> est un dictionnaire repr&#233;sentant un polyn&#244;me. On rappelle que cette m&#233;thode ajoute un mon&#244;me saisi au clavier (en faisant les contr&#244;les n&#233;cessaires) si le param&#232;tre <code>monome</code> est nul ou ajoute le mon&#244;me nomm&#233; <code>monome</code> sinon.
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">ajout_monome</span><span style="color: #f8f8f2">(P,monome</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{}):</span>
+    <span style="color: #e6db74">&quot;&quot;&quot;</span>
+<span style="color: #e6db74">    Cette méthode ajoute un monôme saisi au clavier à P</span>
+<span style="color: #e6db74">    si le paramètre monome est nul ou ajoute le monôme nommé monome sinon</span>
+<span style="color: #e6db74">    &quot;&quot;&quot;</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">len(monome)</span><span style="color: #f92672">==</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span>
+        <span style="color: #75715e"># Partie à compléter</span>
+    <span style="color: #66d9ef">else</span><span style="color: #f8f8f2">:</span>
+        <span style="color: #f8f8f2">degre</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">list(monome</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">keys())[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span>
+        <span style="color: #f8f8f2">coeff</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">list(monome</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">values())[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span>
+        <span style="color: #66d9ef">assert</span> <span style="color: #f8f8f2">degre</span><span style="color: #f92672">&gt;=</span><span style="color: #ae81ff">0</span>
+        <span style="color: #66d9ef">assert</span> <span style="color: #f8f8f2">type(degre)</span><span style="color: #f92672">==</span><span style="color: #f8f8f2">int</span>
+        <span style="color: #66d9ef">assert</span> <span style="color: #f8f8f2">type(coeff)</span><span style="color: #f92672">==</span><span style="color: #f8f8f2">int</span> <span style="color: #f92672">or</span> <span style="color: #f8f8f2">type(coeff)</span><span style="color: #f92672">==</span><span style="color: #f8f8f2">float</span>
+        <span style="color: #66d9ef">assert</span> <span style="color: #f8f8f2">len(monome)</span><span style="color: #f92672">==</span><span style="color: #ae81ff">1</span>
+        <span style="color: #f8f8f2">P</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">update(monome)</span>
+</pre></div>
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_1" style="font-size: 80%;"></a>
+<a href="#exer_4_1" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_1">
+
+<p>
+L'appel &#224; la fonction <code>ajout_monome</code> peut &#234;tre utilis&#233; comme suivant :
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #f8f8f2">In[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]:</span> <span style="color: #f8f8f2">P</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">5</span><span style="color: #f8f8f2">:</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">8</span><span style="color: #f8f8f2">:</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">}</span> <span style="color: #75715e"># x^8 + x^5 + 1</span>
+<span style="color: #f8f8f2">In[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">]:</span> <span style="color: #f8f8f2">ajout_monome(P)</span>
+<span style="color: #f8f8f2">donner</span> <span style="color: #f8f8f2">le</span> <span style="color: #f8f8f2">degré</span> <span style="color: #f8f8f2">du</span> <span style="color: #f8f8f2">monôme</span> <span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">2</span>
+<span style="color: #f8f8f2">donner</span> <span style="color: #f8f8f2">le</span> <span style="color: #f8f8f2">coefficient</span> <span style="color: #f8f8f2">du</span> <span style="color: #f8f8f2">monôme</span> <span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">1</span>
+
+<span style="color: #f8f8f2">Out[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">]:</span> <span style="color: #f8f8f2">{</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">5</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">8</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">2</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">1.0</span><span style="color: #f8f8f2">}</span>
+</pre></div>
+<p>
+ou bien
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #f8f8f2">In[</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">]:</span> <span style="color: #f8f8f2">ajout_monome(P,</span> <span style="color: #f8f8f2">{</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">:</span><span style="color: #ae81ff">8</span><span style="color: #f8f8f2">})</span>
+<span style="color: #f8f8f2">Out[</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">]:</span> <span style="color: #f8f8f2">{</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">5</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">8</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">2</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">8</span><span style="color: #f8f8f2">}</span>
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_3" style="font-size: 80%;"></a>
+<a href="#exer_4_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_3">
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">ajout_monome</span><span style="color: #f8f8f2">(P,monome</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{}):</span>
+    <span style="color: #e6db74">&quot;&quot;&quot;</span>
+<span style="color: #e6db74">    Cette fonction ajoute un monôme saisi au clavier à P</span>
+<span style="color: #e6db74">    si le paramètre monome est nul ou ajoute le monôme nommé monome sinon</span>
+<span style="color: #e6db74">    &quot;&quot;&quot;</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">len(monome)</span><span style="color: #f92672">==</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span>
+        <span style="color: #75715e"># Réponse à Q1.</span>
+        <span style="color: #66d9ef">while</span> <span style="color: #66d9ef">True</span><span style="color: #f8f8f2">:</span>
+            <span style="color: #66d9ef">try</span><span style="color: #f8f8f2">:</span>
+                <span style="color: #f8f8f2">degree</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">int(input(</span><span style="color: #e6db74">&quot;donner le degré du monôme : &quot;</span><span style="color: #f8f8f2">))</span>
+                <span style="color: #f8f8f2">coeff</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">float(input(</span><span style="color: #e6db74">&quot;donner le coefficient du monôme : &quot;</span><span style="color: #f8f8f2">))</span>
+                <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">degree</span> <span style="color: #f92672">&gt;=</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span>
+                    <span style="color: #66d9ef">break</span>
+            <span style="color: #66d9ef">except</span><span style="color: #f8f8f2">:</span>
+                <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;erreur de saisie&quot;</span><span style="color: #f8f8f2">)</span> <span style="color: #75715e"># ou pass ou continue</span>
+        <span style="color: #f8f8f2">P</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">update({degree:coeff})</span>
+    <span style="color: #66d9ef">else</span><span style="color: #f8f8f2">:</span> <span style="color: #75715e"># Si monome est non vide</span>
+        <span style="color: #f8f8f2">degre</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">list(monome</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">keys())[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span> <span style="color: #75715e"># extraction du degré</span>
+        <span style="color: #f8f8f2">coeff</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">list(monome</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">values())[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span> <span style="color: #75715e"># extraction du coefficient</span>
+        <span style="color: #66d9ef">assert</span> <span style="color: #f8f8f2">degre</span><span style="color: #f92672">&gt;=</span><span style="color: #ae81ff">0</span>
+        <span style="color: #66d9ef">assert</span> <span style="color: #f8f8f2">type(degre)</span><span style="color: #f92672">==</span><span style="color: #f8f8f2">int</span>
+        <span style="color: #66d9ef">assert</span> <span style="color: #f8f8f2">type(coeff)</span><span style="color: #f92672">==</span><span style="color: #f8f8f2">int</span> <span style="color: #f92672">or</span> <span style="color: #f8f8f2">type(coeff)</span><span style="color: #f92672">==</span><span style="color: #f8f8f2">float</span>
+        <span style="color: #66d9ef">assert</span> <span style="color: #f8f8f2">len(monome)</span><span style="color: #f92672">==</span><span style="color: #ae81ff">1</span>
+        <span style="color: #f8f8f2">P</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">update(monome)</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">P</span>
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+&#201;crire le code de la fonction <code>degree(P)</code> qui prend en param&#232;tre le polyn&#244;me <code>P</code> repr&#233;sent&#233; sous forme d'un dictionnaire et renvoie  son degr&#233;.
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">degree</span><span style="color: #f8f8f2">(P):</span>
+  <span style="color: #75715e"># à compléter</span>
+</pre></div>
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_4" style="font-size: 80%;"></a>
+<a href="#exer_4_4" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_4">
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">degree</span><span style="color: #f8f8f2">(P):</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">max(P</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">keys())</span>
+</pre></div>
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #f8f8f2">In[</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">]:</span> <span style="color: #f8f8f2">degree(P)</span>
+<span style="color: #f8f8f2">Out[</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">]:</span> <span style="color: #ae81ff">8</span>
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+&#201;crire le code de la fonction <code>call(P,x0)</code> qui retourne la valeur du polyn&#244;me P pass&#233; en param&#232;tre sous forme d'un dictionnaire pour un r&#233;el <code>x0</code> donn&#233;.
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">call</span><span style="color: #f8f8f2">(P,</span> <span style="color: #f8f8f2">x0):</span>
+  <span style="color: #75715e"># à compléter</span>
+</pre></div>
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_5" style="font-size: 80%;"></a>
+<a href="#exer_4_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_5">
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">call</span><span style="color: #f8f8f2">(P,</span> <span style="color: #f8f8f2">x0):</span>
+    <span style="color: #f8f8f2">val</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">degree</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">P</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">keys():</span>
+        <span style="color: #f8f8f2">val</span> <span style="color: #f92672">+=</span> <span style="color: #f8f8f2">P[degree]</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">x0</span><span style="color: #f92672">**</span><span style="color: #f8f8f2">degree</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">val</span>
+</pre></div>
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #f8f8f2">In[</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">]:</span> <span style="color: #f8f8f2">P</span>
+<span style="color: #f8f8f2">Out[</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">]:</span> <span style="color: #f8f8f2">{</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">5</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">8</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">2</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">8</span><span style="color: #f8f8f2">}</span>
+<span style="color: #f8f8f2">In[</span><span style="color: #ae81ff">5</span><span style="color: #f8f8f2">]:</span> <span style="color: #f8f8f2">call(P,</span> <span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">Out[</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">]:</span> <span style="color: #ae81ff">321</span>
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+&#201;crire le code de la fonction <code>add(P,P1)</code> qui retourne le polyn&#244;me somme des deux polyn&#244;mes <code>P</code> et <code>P1</code>.
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">add</span><span style="color: #f8f8f2">(P,</span> <span style="color: #f8f8f2">P1):</span>
+    <span style="color: #75715e"># à compléter</span>
+</pre></div>
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_2" style="font-size: 80%;"></a>
+<a href="#exer_4_2" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_2">
+
+<p>
+aucun mon&#244;me nul ne doit appara&#238;tre dans le polyn&#244;me r&#233;sultat.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_6" style="font-size: 80%;"></a>
+<a href="#exer_4_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_6">
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "monokai" -->
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%;"><span></span><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">add</span><span style="color: #f8f8f2">(P,</span> <span style="color: #f8f8f2">P1):</span>
+    <span style="color: #f8f8f2">p</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{}</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">degree</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">P</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">keys()</span> <span style="color: #f8f8f2">:</span>
+        <span style="color: #66d9ef">if</span> <span style="color: #f92672">not</span> <span style="color: #f8f8f2">(degree</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">P1</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">keys()):</span>
+            <span style="color: #f8f8f2">ajout_monome(p,{degree:P[degree]})</span>
+        <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">P[degree]</span> <span style="color: #f92672">!=</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">P1[degree]</span> <span style="color: #f8f8f2">:</span>
+            <span style="color: #f8f8f2">p</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">update({degree</span> <span style="color: #f8f8f2">:P[degree]</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">P1[degree]})</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">degree</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">P1</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">keys():</span>
+        <span style="color: #66d9ef">if</span> <span style="color: #f92672">not</span> <span style="color: #f8f8f2">(degree</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">P</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">keys()):</span>
+            <span style="color: #f8f8f2">ajout_monome(p,{degree:P1[degree]})</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">p</span>
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>e)</b>
+En d&#233;duire une fonction <code>diff(P,P1)</code> qui retourne le polyn&#244;me diff&#233;rence des deux polyn&#244;mes P et P1.
+<b>Remarque :</b> aucun mon&#244;me nul ne doit appara&#238;tre dans le polyn&#244;me r&#233;sultat.
+
+<p>
+<b>f)</b>
+&#201;crire le code de la fonction <code>mul(P,P1)</code> qui retourne le polyn&#244;me produit de deux polyn&#244;mes.
+<b>Remarque :</b> aucun mon&#244;me nul ne doit appara&#238;tre dans le polyn&#244;me r&#233;sultat.
+<b>g)</b>
+&#201;crire le code de la fonction <code>derive(P)</code> qui retourne le polyn&#244;me d&#233;riv&#233; de P.
+
+<p>
+<b>h)</b>
+&#201;crire le code de la fonction \verb|affiche(P)| qui retourne la cha&#238;ne de caract&#232;res repr&#233;sentant l'expression du polyn&#244;me ordonn&#233; par ordre d&#233;croissant.
+
+<p>
+Pour le polyn&#244;me repr&#233;sent&#233; par <code>{4:4, 0:4, 12:6, 9:1, 7:-1}</code>, la cha&#238;ne retourn&#233;e est : <code>&quot;6 * X^12 + X^9 - X^7+ 4 * X^4 + 4&quot;</code>
+
+<p>
+<b>i)</b>
+&#201;crire le code de la fonction <code>primitive(P)</code>, qui retourne le polyn&#244;me  repr&#233;sentant la primitive. On suppose que la constante d'int&#233;gration est nulle.
+
+<p>
+<b>j)</b>
+On d&#233;finit, l'int&#233;grale d'un polyn&#244;me creux \( P \) en \( x \) entre les bornes \( a \) et \( b \), par :
+$$S = \int_{a}^{b} P dx$$
+&#201;crire le script de la fonction, nomm&#233;e <code>integrale</code>, permettant de retourner la valeur de \( S \) &#224; partir d'un polyn&#244;me \( P \), de type <code>PolynomeCreux</code>, et des bornes d'integration \( a \) et \( b \) r&#233;els.
+
+<p>
+<b>k)</b>
+&#201;crire une fonction <code>courbe()</code> affichant la dans un m&#234;me rep&#232;re un polyn&#244;me P, sa primitive et sa d&#233;riv&#233;e.
 
 <p>
 <!-- --- end exercise --- -->

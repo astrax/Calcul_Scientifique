@@ -86,10 +86,71 @@ div { text-align: justify; text-justify: inter-word; }
               ('Nombres', 1, None, '___sec9'),
               ('Affectations (ou assignation)', 1, None, '___sec10'),
               ('variables', 2, None, '___sec11'),
-              ('Noms de variables réservés (keywords)', 2, None, '___sec12')]}
+              ('Noms de variables réservés (keywords)', 2, None, '___sec12'),
+              ('Les types', 2, None, '___sec13'),
+              ('Le type int (integer : nombres entiers)', 3, None, '___sec14'),
+              ('Le type float (nombres en virgule flottante)',
+               3,
+               None,
+               '___sec15'),
+              ('Les fonctions mathématiques', 3, None, '___sec16'),
+              ('Le type complexe', 3, None, '___sec17'),
+              ('Le type str (string : chaîne de caractères)',
+               3,
+               None,
+               '___sec18'),
+              ('Le type bool (booléen)', 3, None, '___sec19'),
+              ('Les conditions', 1, None, '___sec20'),
+              ("L'instruction `if`", 2, None, '___sec21'),
+              ('Exemple 1: Note sur 20', 3, None, '___sec22'),
+              ("L'instruction `else`", 2, None, '___sec23'),
+              ('Exemple 2 : moyenne', 3, None, '___sec24'),
+              ("L'instruction `elif`", 2, None, '___sec25'),
+              ('Exemple 3 : moyenne-bis', 3, None, '___sec26'),
+              ('Les boucles', 1, None, '___sec27'),
+              ("L'instruction `while`", 2, None, '___sec28'),
+              ('Exemple 1 : un script qui compte de 1 à 4',
+               3,
+               None,
+               '___sec29'),
+              ('Exemple 2 : Table de multiplication par 8',
+               3,
+               None,
+               '___sec30'),
+              ("Exemple 3 : Affichage de l'heure courante",
+               3,
+               None,
+               '___sec31'),
+              ("L'instruction `for`", 2, None, '___sec32'),
+              ('Exemple 1 : séquence de caractères', 3, None, '___sec33'),
+              ('Fonction `range()`', 3, None, '___sec34'),
+              ('Exemple 2 : Table de multiplication', 3, None, '___sec35'),
+              ("Exemple 3 : calcul d'une somme", 3, None, '___sec36'),
+              ("L'instruction break", 2, None, '___sec37'),
+              ("Exemple : Affichage de l'heure courante", 3, None, '___sec38'),
+              ('Les fonctions', 1, None, '___sec39'),
+              ('Intérêt des fonctions', 2, None, '___sec40'),
+              ("L'instruction def", 2, None, '___sec41'),
+              ('Exemple : ma première fonction', 3, None, '___sec42')]}
 end of tocinfo -->
 
 <body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "AMS"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
 
     
 <!-- ------------------- main content ---------------------- -->
@@ -129,6 +190,18 @@ end of tocinfo -->
 <a href="#___sec10"> Affectations (ou assignation) </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec11"> variables </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec12"> Noms de variables r&#233;serv&#233;s (keywords) </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec13"> Les types </a><br>
+<a href="#___sec20"> Les conditions </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec21"> L'instruction <code>if</code> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec23"> L'instruction <code>else</code> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec25"> L'instruction <code>elif</code> </a><br>
+<a href="#___sec27"> Les boucles </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec28"> L'instruction <code>while</code> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec32"> L'instruction <code>for</code> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec37"> L'instruction break </a><br>
+<a href="#___sec39"> Les fonctions </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec40"> Int&#233;r&#234;t des fonctions </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec41"> L'instruction def </a><br>
 </p>
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
@@ -450,8 +523,8 @@ Laissez-nous r&#233;soudre ce probl&#232;me informatique (ou <b>bug</b> tout sim
 
 <!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
 <div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">19</span>]: aire = largeur * hauteur
-    ...: aire  <span style="color: #228B22"># et voila!</span>
-Out[<span style="color: #B452CD">19</span>]: <span style="color: #B452CD">1000</span>
+In [<span style="color: #B452CD">20</span>]: aire  <span style="color: #228B22"># et voila!</span>
+Out[<span style="color: #B452CD">20</span>]: <span style="color: #B452CD">1000</span>
 </pre></div>
 
 <h2 id="___sec12">Noms de variables r&#233;serv&#233;s (keywords) </h2>
@@ -477,9 +550,1066 @@ Here <span style="color: #8B008B">is</span> a <span style="color: #658b00">list<
 <span style="color: #8B008B; font-weight: bold">continue</span>            <span style="color: #8B008B; font-weight: bold">global</span>              <span style="color: #8B008B; font-weight: bold">pass</span>
 
 <span style="color: #228B22"># par exemple pour éviter d&#39;écraser le nom réservé lambda</span>
-In [<span style="color: #B452CD">22</span>]: lambda_ = <span style="color: #B452CD">630e-9</span>
-    ...: lambda_
-Out[<span style="color: #B452CD">22</span>]: <span style="color: #B452CD">6.3e-07</span>
+In [<span style="color: #B452CD">22</span>]: Lambda = <span style="color: #B452CD">630e-9</span>
+In [<span style="color: #B452CD">23</span>]: Lambda
+Out[<span style="color: #B452CD">23</span>]: <span style="color: #B452CD">6.3e-07</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h2 id="___sec13">Les types </h2>
+Les types utilis&#233;s dans Python sont: integers, long integers, floats (double prec.), complexes, strings, booleans. La fonction <code>type()</code> donne le type de son argument
+
+<h3 id="___sec14">Le type int (integer : nombres entiers) </h3>
+
+Pour affecter (on peut dire aussi assigner) la valeur 20 &#224; la variable nomm&#233;e <code>age</code> :
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>age = <span style="color: #B452CD">20</span>
+</pre></div>
+<p>
+La fonction <code>print()</code> affiche la valeur de la variable :
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">24</span>]: <span style="color: #658b00">print</span>(age)
+<span style="color: #B452CD">20</span>
+</pre></div>
+<p>
+La fonction <code>type()</code> retourne le type de la variable :
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #658b00">type</span>(age)
+Out[<span style="color: #B452CD">25</span>]: <span style="color: #658b00">int</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec15">Le type float (nombres en virgule flottante) </h3>
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>b = <span style="color: #B452CD">17.0</span>  <span style="color: #228B22"># le séparateur décimal est un point (et non une virgule)</span>
+b
+Out[<span style="color: #B452CD">26</span>]: <span style="color: #B452CD">17.0</span>
+In [<span style="color: #B452CD">27</span>]: <span style="color: #658b00">type</span>(b)
+Out[<span style="color: #B452CD">27</span>]: <span style="color: #658b00">float</span>
+In [<span style="color: #B452CD">28</span>]: c = <span style="color: #B452CD">14.0</span>/<span style="color: #B452CD">3.0</span>
+    ...: c
+Out[<span style="color: #B452CD">28</span>]: <span style="color: #B452CD">4.666666666666667</span>
+</pre></div>
+<p>
+Notation scientifique :
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">29</span>]: a = -<span style="color: #B452CD">1.784892e4</span>
+    ...: a
+Out[<span style="color: #B452CD">29</span>]: -<span style="color: #B452CD">17848.92</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec16">Les fonctions math&#233;matiques </h3>
+
+<p>
+Pour utiliser les fonctions math&#233;matiques, il faut commencer par importer le module <code>math</code> :
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">math</span>
+</pre></div>
+<p>
+La fonction <code>help()</code> retourne la liste des fonctions et donn&#233;es d'un module.
+
+<p>
+Soit par exemple: <code>help('math')</code>
+
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<p>
+Pour appeler une fonction d'un module, la syntaxe est la suivante : <code>module.fonction(arguments)</code>
+
+<p>
+Pour acc&#233;der &#224; une donn&#233;e d'un module : <code>module.data</code>
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span> <span style="color: #228B22"># donnée pi du module math (nombre pi)</span>
+In [<span style="color: #B452CD">32</span>]: math.pi
+Out[<span style="color: #B452CD">32</span>]: <span style="color: #B452CD">3.141592653589793</span>
+<span style="color: #228B22"># fonction sin() du module math (sinus)</span>
+In [<span style="color: #B452CD">33</span>]: math.sin(math.pi/<span style="color: #B452CD">4.0</span>)
+Out[<span style="color: #B452CD">33</span>]: <span style="color: #B452CD">0.7071067811865475</span>
+<span style="color: #228B22"># fonction sqrt() du module math (racine carrée)</span>
+In [<span style="color: #B452CD">34</span>]: math.sqrt(<span style="color: #B452CD">2.0</span>)
+Out[<span style="color: #B452CD">34</span>]: <span style="color: #B452CD">1.4142135623730951</span>
+<span style="color: #228B22"># fonction exp() du module math (exponentielle)</span>
+In [<span style="color: #B452CD">35</span>]: math.exp(-<span style="color: #B452CD">3.0</span>)
+Out[<span style="color: #B452CD">35</span>]: <span style="color: #B452CD">0.049787068367863944</span>
+<span style="color: #228B22"># fonction log() du module math (logarithme népérien)</span>
+In [<span style="color: #B452CD">36</span>]: math.log(math.e)
+Out[<span style="color: #B452CD">36</span>]: <span style="color: #B452CD">1.0</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec17">Le type complexe </h3>
+
+Python poss&#232;de par d&#233;faut un type pour manipuler les nombres complexes. La partie imaginaire est indiqu&#233;e gr&#226;ce &#224; la lettre &#171; <code>j</code> &#187; ou &#171; <code>J</code> &#187;. La lettre math&#233;matique utilis&#233;e habituellement, le &#171; <code>i</code> &#187;, n&#8217;est pas utilis&#233;e en Python car la variable i est souvent utilis&#233;e dans les boucles.
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">37</span>]: a = <span style="color: #B452CD">2</span> + <span style="color: #B452CD">3</span>j
+    ...: <span style="color: #658b00">type</span>(a)
+Out[<span style="color: #B452CD">37</span>]: <span style="color: #658b00">complex</span>
+In [<span style="color: #B452CD">38</span>]: a
+Out[<span style="color: #B452CD">38</span>]: (<span style="color: #B452CD">2</span>+<span style="color: #B452CD">3</span>j)
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+<div class="alert alert-block alert-warning alert-text-normal">
+<b>Warning</b>
+<p>
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eee8d5"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">39</span>]: b = <span style="color: #B452CD">1</span> + j
+--------------------------------------------------------------
+<span style="color: #008b45; font-weight: bold">NameError</span>                      Traceback (most recent call last)
+&lt;ipython-<span style="color: #658b00">input</span>-<span style="color: #B452CD">39</span>-<span style="color: #B452CD">0</span>f22d953f29e&gt; <span style="color: #8B008B">in</span> &lt;module&gt;()
+----&gt; <span style="color: #B452CD">1</span> b = <span style="color: #B452CD">1</span> + j
+
+<span style="color: #008b45; font-weight: bold">NameError</span>: name <span style="color: #CD5555">&#39;j&#39;</span> <span style="color: #8B008B">is</span> <span style="color: #8B008B">not</span> defined
+</pre></div>
+<p>
+Dans ce cas, on doit &#233;crire la variable <code>b</code> comme suit:
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eee8d5"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">41</span>]: b = <span style="color: #B452CD">1</span> + <span style="color: #B452CD">1</span>j
+    ...: b
+Out[<span style="color: #B452CD">41</span>]: (<span style="color: #B452CD">1</span>+<span style="color: #B452CD">1</span>j)
+</pre></div>
+<p>
+sinon Python va consid&#233;rer <code>j</code> comme variable non d&#233;finie.
+</div>
+
+
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec18">Le type str (string : cha&#238;ne de caract&#232;res) </h3>
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">43</span>]: nom = <span style="color: #CD5555">&#39;Tounsi&#39;</span> <span style="color: #228B22"># entre apostrophes</span>
+    ...: nom
+Out[<span style="color: #B452CD">43</span>]: <span style="color: #CD5555">&#39;Tounsi&#39;</span>
+In [<span style="color: #B452CD">44</span>]: <span style="color: #658b00">type</span>(nom)
+Out[<span style="color: #B452CD">44</span>]: <span style="color: #658b00">str</span>
+In [<span style="color: #B452CD">45</span>]: prenom = <span style="color: #CD5555">&quot;Ali&quot;</span>  <span style="color: #228B22"># on peut aussi utiliser les guillemets</span>
+    ...: prenom
+Out[<span style="color: #B452CD">45</span>]: <span style="color: #CD5555">&#39;Ali&#39;</span>
+In [<span style="color: #B452CD">46</span>]: <span style="color: #658b00">print</span>(nom, prenom)  <span style="color: #228B22"># ne pas oublier la virgule</span>
+Tounsi Ali
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+La concat&#233;nation d&#233;signe la mise bout &#224; bout de plusieurs cha&#238;nes de caract&#232;res.
+La concat&#233;nation utilise l'op&#233;rateur <code>+</code>:
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">47</span>]: chaine = nom + prenom  <span style="color: #228B22"># concaténation de deux chaînes de caractères</span>
+    ...: chaine
+Out[<span style="color: #B452CD">47</span>]: <span style="color: #CD5555">&#39;TounsiAli&#39;</span>
+</pre></div>
+<p>
+Vous voyez dans cet exemple que le nom et le pr&#233;nom sont coll&#233;. Pour ajouter une espace entre ces deux cha&#238;nes de caract&#232;res:
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">48</span>]: chaine = prenom + <span style="color: #CD5555">&#39; &#39;</span> + nom
+    ...: chaine <span style="color: #228B22"># et voila</span>
+Out[<span style="color: #B452CD">48</span>]: <span style="color: #CD5555">&#39;Ali Tounsi&#39;</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+On peut modifier/ajouter une nouvelle cha&#238;ne &#224; notre variable <code>chaine</code> par:
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">49</span>]: chaine = chaine + <span style="color: #CD5555">&#39; 22 ans&#39;</span>  <span style="color: #228B22"># en plus court : chaine += &#39; 22 ans&#39;</span>
+    ...: chaine
+Out[<span style="color: #B452CD">49</span>]: <span style="color: #CD5555">&#39;Ali Tounsi 22 ans&#39;</span>
+</pre></div>
+<p>
+La fonction <code>len()</code> renvoie la longueur (<em>length</em>) de la cha&#238;ne de caract&#232;res :
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">53</span>]: <span style="color: #658b00">print</span>(nom)
+    ...: <span style="color: #658b00">len</span>(nom)
+Tounsi
+Out[<span style="color: #B452CD">53</span>]: <span style="color: #B452CD">6</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+<b>Indexage et slicing :</b>
+
+<p>
+
+<!-- code=text typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span> +---+---+---+---+---+---+
+|------------------------|
+ | T | o | u | n | s | i |
+ +---+---+---+---+---+---+
+ |------------------------|
+ 0   1   2   3   4   5   6
+ ---&gt;
+-6  -5  -4  -3  -2  -1
+                   &lt;----
+</pre></div>
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">55</span>]: nom[<span style="color: #B452CD">0</span>]  <span style="color: #228B22"># premier caractère (indice 0)</span>
+Out[<span style="color: #B452CD">55</span>]: <span style="color: #CD5555">&#39;T&#39;</span>
+
+In [<span style="color: #B452CD">56</span>]: nom[:] <span style="color: #228B22"># toute la chaine</span>
+Out[<span style="color: #B452CD">56</span>]: <span style="color: #CD5555">&#39;Tounsi&#39;</span>
+
+In [<span style="color: #B452CD">57</span>]: nom[<span style="color: #B452CD">1</span>] <span style="color: #228B22"># deuxième caractère (indice 1)</span>
+Out[<span style="color: #B452CD">57</span>]: <span style="color: #CD5555">&#39;o&#39;</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">58</span>]: nom[<span style="color: #B452CD">1</span>:<span style="color: #B452CD">4</span>]   <span style="color: #228B22"># slicing</span>
+Out[<span style="color: #B452CD">58</span>]: <span style="color: #CD5555">&#39;oun&#39;</span>
+
+In [<span style="color: #B452CD">59</span>]: nom[<span style="color: #B452CD">2</span>:]  <span style="color: #228B22"># slicing</span>
+Out[<span style="color: #B452CD">59</span>]: <span style="color: #CD5555">&#39;unsi&#39;</span>
+
+In [<span style="color: #B452CD">60</span>]: nom[-<span style="color: #B452CD">1</span>]   <span style="color: #228B22"># dernier caractère (indice -1)</span>
+Out[<span style="color: #B452CD">60</span>]: <span style="color: #CD5555">&#39;i&#39;</span>
+
+In [<span style="color: #B452CD">61</span>]: nom[-<span style="color: #B452CD">3</span>:]    <span style="color: #228B22"># slicing</span>
+Out[<span style="color: #B452CD">61</span>]: <span style="color: #CD5555">&#39;nsi&#39;</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+<div class="alert alert-block alert-warning alert-text-normal">
+<b>Warning</b>
+<p>
+
+<p>
+On ne peut pas m&#233;langer le type <code>str</code> et type <code>int</code>.
+
+<p>
+Soit par exemple:
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eee8d5"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">63</span>]: chaine = <span style="color: #CD5555">&#39;22&#39;</span>
+    ...: annee_naissance = <span style="color: #B452CD">2018</span> - chaine
+----------------------------------------------------------
+<span style="color: #008b45; font-weight: bold">TypeError</span>                  Traceback (most recent call last)
+&lt;ipython-<span style="color: #658b00">input</span>-<span style="color: #B452CD">63</span>-<span style="color: #B452CD">8607078</span>f78d2&gt; <span style="color: #8B008B">in</span> &lt;module&gt;()
+      <span style="color: #B452CD">1</span> chaine = <span style="color: #CD5555">&#39;22&#39;</span>
+----&gt; <span style="color: #B452CD">2</span> annee_naissance = <span style="color: #B452CD">2018</span> - chaine
+
+<span style="color: #008b45; font-weight: bold">TypeError</span>: unsupported operand <span style="color: #658b00">type</span>(s) <span style="color: #8B008B; font-weight: bold">for</span> -: <span style="color: #CD5555">&#39;int&#39;</span> <span style="color: #8B008B">and</span> <span style="color: #CD5555">&#39;str&#39;</span>
+</pre></div>
+
+</div>
+
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+Pour corriger cette erreur, la fonction <code>int()</code> permet de convertir un type <code>str</code> en type <code>int</code>:
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">64</span>]: nombre = <span style="color: #658b00">int</span>(chaine)
+In [<span style="color: #B452CD">65</span>]: <span style="color: #658b00">type</span>(nombre) <span style="color: #228B22"># et voila!</span>
+Out[<span style="color: #B452CD">65</span>]: <span style="color: #658b00">int</span>
+</pre></div>
+<p>
+Maintenant on peut trouver <code>annee_naissance</code> sans aucun probl&#232;me:
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">65</span>]: annee_naissance = <span style="color: #B452CD">2018</span> - nombre
+    ...: annee_naissance
+Out[<span style="color: #B452CD">65</span>]: <span style="color: #B452CD">1996</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+<b> Formatage des cha&#238;nes</b>
+
+<p>
+Un probl&#232;me qui se retrouve souvent, c&#8217;est le besoin d&#8217;afficher un message qui contient des valeurs de variables.
+
+<p>
+Soit le message: Bonjour Mr/Mme <code>prenom</code>, votre age est <code>age</code>.
+
+<p>
+La solution est d'utiliser la m&#233;thode <code>format()</code> de l'objet cha&#238;ne <code>str()</code> et le <code>{}</code> pour d&#233;finir la valeur &#224; afficher.
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot; Bonjour Mr/Mme {}, votre age est {}.&quot;</span>.format(prenom, age))
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+<b>Le type list (liste)</b>
+
+<p>
+Une liste est une structure de donn&#233;es.
+
+<p>
+Le premier &#233;l&#233;ment d'une liste poss&#232;de l'indice (l'index) 0.
+
+<p>
+Dans une liste, on peut avoir des &#233;l&#233;ments de plusieurs types.
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">1</span>]: info = [<span style="color: #CD5555">&#39;Tunisie&#39;</span>, <span style="color: #CD5555">&#39;Afrique&#39;</span>, <span style="color: #B452CD">3000</span>, <span style="color: #B452CD">36.8</span>, <span style="color: #B452CD">10.08</span>]
+
+In [<span style="color: #B452CD">2</span>]: <span style="color: #658b00">type</span>(info)
+Out[<span style="color: #B452CD">2</span>]: <span style="color: #658b00">list</span>
+</pre></div>
+<p>
+La liste info contient 5 &#233;l&#233;ments de types str, str, int, float et float
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">3</span>]: info
+Out[<span style="color: #B452CD">3</span>]: [<span style="color: #CD5555">&#39;Tunisie&#39;</span>, <span style="color: #CD5555">&#39;Afrique&#39;</span>, <span style="color: #B452CD">3000</span>, <span style="color: #B452CD">36.8</span>, <span style="color: #B452CD">10.08</span>]
+
+In [<span style="color: #B452CD">4</span>]: <span style="color: #658b00">print</span>(<span style="color: #CD5555">&#39;Pays : &#39;</span>, info[<span style="color: #B452CD">0</span>])    <span style="color: #228B22"># premier élément (indice 0)</span>
+Pays :  Tunisie
+
+In [<span style="color: #B452CD">5</span>]: <span style="color: #658b00">print</span>(<span style="color: #CD5555">&#39;Age : &#39;</span>, info[<span style="color: #B452CD">2</span>])     <span style="color: #228B22"># le troisième élément a l&#39;indice 2</span>
+Age :  <span style="color: #B452CD">3000</span>
+
+In [<span style="color: #B452CD">6</span>]: <span style="color: #658b00">print</span>(<span style="color: #CD5555">&#39;Latitude : &#39;</span>, info[<span style="color: #B452CD">3</span>]) <span style="color: #228B22"># le quatrième élément a l&#39;indice 3</span>
+Latitude :  <span style="color: #B452CD">36.8</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+La fonction <code>range()</code> cr&#233;e une liste d'entiers r&#233;guli&#232;rement espac&#233;s :
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">7</span>]: maliste = <span style="color: #658b00">range</span>(<span style="color: #B452CD">10</span>) <span style="color: #228B22"># équivalent à range(0,10,1)</span>
+   ...: <span style="color: #658b00">type</span>(maliste)
+Out[<span style="color: #B452CD">7</span>]: <span style="color: #658b00">range</span>
+</pre></div>
+<p>
+Pour convertir une range en une liste, on applique la fonction <code>list()</code> &#224; notre variable:
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">8</span>]: <span style="color: #658b00">list</span>(maliste)   <span style="color: #228B22"># pour convertir range en une liste</span>
+Out[<span style="color: #B452CD">8</span>]: [<span style="color: #B452CD">0</span>, <span style="color: #B452CD">1</span>, <span style="color: #B452CD">2</span>, <span style="color: #B452CD">3</span>, <span style="color: #B452CD">4</span>, <span style="color: #B452CD">5</span>, <span style="color: #B452CD">6</span>, <span style="color: #B452CD">7</span>, <span style="color: #B452CD">8</span>, <span style="color: #B452CD">9</span>]
+</pre></div>
+<p>
+On peut sp&#233;cifier le d&#233;but, la fin et l'intervalle d'une range:
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">9</span>]: maliste = <span style="color: #658b00">range</span>(<span style="color: #B452CD">1</span>,<span style="color: #B452CD">10</span>,<span style="color: #B452CD">2</span>)   <span style="color: #228B22"># range(début,fin non comprise,intervalle)</span>
+   ...: <span style="color: #658b00">list</span>(maliste)
+Out[<span style="color: #B452CD">9</span>]: [<span style="color: #B452CD">1</span>, <span style="color: #B452CD">3</span>, <span style="color: #B452CD">5</span>, <span style="color: #B452CD">7</span>, <span style="color: #B452CD">9</span>]
+
+In [<span style="color: #B452CD">10</span>]: maliste[<span style="color: #B452CD">2</span>] <span style="color: #228B22"># le troisième élément a l&#39;indice 2</span>
+Out[<span style="color: #B452CD">10</span>]: <span style="color: #B452CD">5</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+On peut cr&#233;er une liste de listes, qui s'apparente &#224; un tableau &#224; 2 dimensions (ligne, colonne) :
+
+<p>
+
+<!-- code=text typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>0   1   2
+10  11  12
+20  21  22
+</pre></div>
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">11</span>]: maliste = [[<span style="color: #B452CD">0</span>, <span style="color: #B452CD">1</span>, <span style="color: #B452CD">2</span>], [<span style="color: #B452CD">10</span>, <span style="color: #B452CD">11</span>, <span style="color: #B452CD">12</span>], [<span style="color: #B452CD">20</span>, <span style="color: #B452CD">21</span>, <span style="color: #B452CD">22</span>]]
+    ...: maliste[<span style="color: #B452CD">0</span>]
+Out[<span style="color: #B452CD">11</span>]: [<span style="color: #B452CD">0</span>, <span style="color: #B452CD">1</span>, <span style="color: #B452CD">2</span>]
+
+In [<span style="color: #B452CD">12</span>]: maliste[<span style="color: #B452CD">0</span>][<span style="color: #B452CD">0</span>]
+Out[<span style="color: #B452CD">12</span>]: <span style="color: #B452CD">0</span>
+
+In [<span style="color: #B452CD">13</span>]: maliste[<span style="color: #B452CD">2</span>][<span style="color: #B452CD">1</span>] <span style="color: #228B22"># élément à la troisième ligne et deuxième colonne</span>
+Out[<span style="color: #B452CD">13</span>]: <span style="color: #B452CD">21</span>
+
+In [<span style="color: #B452CD">14</span>]: maliste[<span style="color: #B452CD">2</span>][<span style="color: #B452CD">1</span>] = <span style="color: #B452CD">78</span>   <span style="color: #228B22"># nouvelle affectation</span>
+
+In [<span style="color: #B452CD">15</span>]: maliste
+Out[<span style="color: #B452CD">15</span>]: [[<span style="color: #B452CD">0</span>, <span style="color: #B452CD">1</span>, <span style="color: #B452CD">2</span>], [<span style="color: #B452CD">10</span>, <span style="color: #B452CD">11</span>, <span style="color: #B452CD">12</span>], [<span style="color: #B452CD">20</span>, <span style="color: #B452CD">78</span>, <span style="color: #B452CD">22</span>]]
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec19">Le type bool (bool&#233;en) </h3>
+
+<p>
+Deux valeurs sont possibles : <code>True</code> et <code>False</code>
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">16</span>]: choix = <span style="color: #8B008B; font-weight: bold">True</span> <span style="color: #228B22"># NOTE: &quot;True&quot; différent de &quot;true&quot;</span>
+    ...: <span style="color: #658b00">type</span>(choix)
+Out[<span style="color: #B452CD">16</span>]: <span style="color: #658b00">bool</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+Les op&#233;rateurs de comparaison :
+
+<p>
+<table border="1">
+<thead>
+<tr><th align="center">  Op&#233;rateur  </th> <th align="center">       Signification       </th> <th align="center">               Remarques               </th> </tr>
+</thead>
+<tbody>
+<tr><td align="left">   <code>&lt;</code>     </td> <td align="left">   strictement inf&#233;rieur     </td> <td align="left">                                              </td> </tr>
+<tr><td align="left">   <code>&lt;=</code>    </td> <td align="left">   inf&#233;rieur ou &#233;gal    </td> <td align="left">                                              </td> </tr>
+<tr><td align="left">   <code>&gt;</code>     </td> <td align="left">   strictement sup&#233;rieur     </td> <td align="left">                                              </td> </tr>
+<tr><td align="left">   <code>&gt;=</code>    </td> <td align="left">   sup&#233;rieur ou &#233;gal    </td> <td align="left">                                              </td> </tr>
+<tr><td align="left">   <code>==</code>       </td> <td align="left">   &#233;gal                      </td> <td align="left">   Attention : deux signes <code>==</code>    </td> </tr>
+<tr><td align="left">   <code>!=</code>       </td> <td align="left">   diff&#233;rent                 </td> <td align="left">                                              </td> </tr>
+</tbody>
+</table>
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">17</span>]: b = <span style="color: #B452CD">10</span>
+    ...: b &gt; <span style="color: #B452CD">8</span>
+Out[<span style="color: #B452CD">17</span>]: <span style="color: #8B008B; font-weight: bold">True</span>
+
+In [<span style="color: #B452CD">18</span>]: b == <span style="color: #B452CD">5</span>
+Out[<span style="color: #B452CD">18</span>]: <span style="color: #8B008B; font-weight: bold">False</span>
+
+In [<span style="color: #B452CD">19</span>]: b != <span style="color: #B452CD">5</span>
+Out[<span style="color: #B452CD">19</span>]: <span style="color: #8B008B; font-weight: bold">True</span>
+
+In [<span style="color: #B452CD">20</span>]: <span style="color: #B452CD">0</span> &lt;= b &lt;= <span style="color: #B452CD">20</span>
+Out[<span style="color: #B452CD">20</span>]: <span style="color: #8B008B; font-weight: bold">True</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+Les op&#233;rateurs logiques : <code>and</code>, <code>or</code>, <code>not</code>
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">21</span>]: note = <span style="color: #B452CD">13.0</span>
+
+In [<span style="color: #B452CD">22</span>]: mention_ab = note &gt;= <span style="color: #B452CD">12.0</span> <span style="color: #8B008B">and</span> note &lt; <span style="color: #B452CD">14.0</span>
+
+In [<span style="color: #B452CD">23</span>]: <span style="color: #228B22"># ou bien : mention_ab = 12.0 &lt;= note &lt; 14.0</span>
+
+In [<span style="color: #B452CD">24</span>]: mention_ab
+Out[<span style="color: #B452CD">24</span>]: <span style="color: #8B008B; font-weight: bold">True</span>
+</pre></div>
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">25</span>]: <span style="color: #8B008B">not</span> mention_ab
+Out[<span style="color: #B452CD">25</span>]: <span style="color: #8B008B; font-weight: bold">False</span>
+
+In [<span style="color: #B452CD">26</span>]: note == <span style="color: #B452CD">20.0</span> <span style="color: #8B008B">or</span> note == <span style="color: #B452CD">0.0</span>
+Out[<span style="color: #B452CD">26</span>]: <span style="color: #8B008B; font-weight: bold">False</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+L'op&#233;rateur <code>in</code> s'utilise avec des cha&#238;nes (type <code>str</code>) ou des listes (type <code>list</code>).
+
+<p>
+Pour une cha&#238;nes:
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">30</span>]: chaine = <span style="color: #CD5555">&#39;Bonsoir&#39;</span>
+    ...: <span style="color: #228B22">#la sous-chaîne &#39;soir&#39; fait-elle partie de la chaîne &#39;Bonsoir&#39; ?</span>
+
+In [<span style="color: #B452CD">31</span>]: resultat = <span style="color: #CD5555">&#39;soir&#39;</span> <span style="color: #8B008B">in</span> chaine
+    ...: resultat
+Out[<span style="color: #B452CD">31</span>]: <span style="color: #8B008B; font-weight: bold">True</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+Pour une liste:
+
+<p>
+
+<!-- code=python (!bc ipy) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>In [<span style="color: #B452CD">32</span>]: maliste = [<span style="color: #B452CD">4</span>, <span style="color: #B452CD">8</span>, <span style="color: #B452CD">15</span>]
+    ...: <span style="color: #228B22">#le nombre entier 9 est-il dans la liste ?</span>
+
+In [<span style="color: #B452CD">33</span>]: <span style="color: #B452CD">9</span> <span style="color: #8B008B">in</span> maliste
+Out[<span style="color: #B452CD">33</span>]: <span style="color: #8B008B; font-weight: bold">False</span>
+
+In [<span style="color: #B452CD">34</span>]: <span style="color: #B452CD">8</span> <span style="color: #8B008B">in</span> maliste
+Out[<span style="color: #B452CD">34</span>]: <span style="color: #8B008B; font-weight: bold">True</span>
+
+In [<span style="color: #B452CD">35</span>]: <span style="color: #B452CD">14</span> <span style="color: #8B008B">not</span> <span style="color: #8B008B">in</span> maliste
+Out[<span style="color: #B452CD">35</span>]: <span style="color: #8B008B; font-weight: bold">True</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h1 id="___sec20">Les conditions </h1>
+
+<h2 id="___sec21">L'instruction <code>if</code> </h2>
+En programmation, nous avons toujours besoin de la notion de condition pour permettre &#224; un programme de s'adapter &#224; diff&#233;rents cas de figure.
+
+<p>
+<div class="alert alert-block alert-block alert-text-normal">
+<b>Syntaxe</b>
+<p>
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eee8d5"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">if</span> expression: <span style="color: #228B22"># ne pas oublier le signe de ponctuation &#39;:&#39;</span>
+    <span style="color: #CD5555">&quot;bloc d&#39;instructions&quot;</span> <span style="color: #228B22"># attention à l&#39;indentation (1 Tab ou 4 * Espaces)</span>
+<span style="color: #228B22"># suite du programme</span>
+</pre></div>
+<ul>
+<li> Si l'expression est vraie (<code>True</code>) alors le bloc d'instructions est ex&#233;cut&#233;.</li>
+<li> Si l'expression est fausse (<code>False</code>) on passe directement &#224; la suite du programme.</li>
+</ul>
+</div>
+
+
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec22">Exemple 1: Note sur 20 </h3>
+
+Dans cet exemple nous allons tester si la note entr&#233;e par l'utilisateur. Si la note est > 10 on doit recevoir le message: "J'ai la moyenne" sinon il va rien faire.
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>chaine = <span style="color: #658b00">input</span>(<span style="color: #CD5555">&quot;Note sur 20 : &quot;</span>)
+note = <span style="color: #658b00">float</span>(chaine)
+<span style="color: #8B008B; font-weight: bold">if</span> note &gt;= <span style="color: #B452CD">10.0</span>:
+    <span style="color: #228B22"># ce bloc est exécuté si l&#39;expression (note &gt;= 10.0) est vraie</span>
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;J&#39;ai la moyenne&quot;</span>)
+
+<span style="color: #228B22"># suite du programme</span>
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Fin du programme&quot;</span>)
+</pre></div>
+<p>
+<div class="alert alert-block alert-notice alert-text-normal">
+<b>Note</b>
+<p>
+
+<ul>
+<li> Les blocs de code sont d&#233;limit&#233;s par l'indentation.</li>
+<li> L'indentation est obligatoire dans les scripts.</li>
+</ul>
+</div>
+
+
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h2 id="___sec23">L'instruction <code>else</code> </h2>
+
+<p>
+Une instruction <code>else</code> est toujours associ&#233;e &#224; une instruction <code>if</code>.
+
+<p>
+<div class="alert alert-block alert-block alert-text-normal">
+<b>Syntaxe</b>
+<p>
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eee8d5"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">if</span> expression:
+    <span style="color: #CD5555">&quot;bloc d&#39;instructions 1&quot;</span>    <span style="color: #228B22"># attention à l&#39;indentation (1 Tab ou 4 * Espaces)</span>
+<span style="color: #8B008B; font-weight: bold">else</span>:                          <span style="color: #228B22"># else est au même niveau que if</span>
+    <span style="color: #CD5555">&quot;bloc d&#39;instructions 2&quot;</span>    <span style="color: #228B22"># attention à l&#39;indentation</span>
+<span style="color: #228B22"># suite du programme</span>
+</pre></div>
+<ul>
+<li> Si l'expression est vraie (<code>True</code>) alors le bloc d'instructions 1 est ex&#233;cut&#233;.</li>
+<li> Si l'expression est fausse (<code>False</code>) alors c'est le bloc d'instructions 2 qui est ex&#233;cut&#233;.</li>
+</ul>
+</div>
+
+
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec24">Exemple 2 : moyenne </h3>
+
+Dans cet exemple nous allons tester si la note entr&#233;e par l'utilisateur. Si la note est > 10 on doit recevoir le message: "J'ai la moyenne" sinon il va afficher "C'est en dessous de la moyenne".
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>chaine = <span style="color: #658b00">input</span>(<span style="color: #CD5555">&quot;Note sur 20 : &quot;</span>)
+note = <span style="color: #658b00">float</span>(chaine)
+<span style="color: #8B008B; font-weight: bold">if</span> note &gt;= <span style="color: #B452CD">10.0</span>:
+    <span style="color: #228B22"># ce bloc est exécuté si l&#39;expression (note &gt;= 10.0) est vraie</span>
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;J&#39;ai la moyenne&quot;</span>)
+<span style="color: #8B008B; font-weight: bold">else</span>:
+    <span style="color: #228B22"># ce bloc est exécuté si l&#39;expression (note &gt;= 10.0) est fausse</span>
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;C&#39;est en dessous de la moyenne&quot;</span>)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Fin du programme&quot;</span>)
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+Ou bien encore:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>chaine = <span style="color: #658b00">input</span>(<span style="color: #CD5555">&quot;Note sur 20 : &quot;</span>)
+note = <span style="color: #658b00">float</span>(chaine)
+<span style="color: #8B008B; font-weight: bold">if</span> note &gt; <span style="color: #B452CD">20.0</span> <span style="color: #8B008B">or</span> note &lt; <span style="color: #B452CD">0.0</span>:
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Note invalide !&quot;</span>)
+<span style="color: #8B008B; font-weight: bold">else</span>:
+    <span style="color: #8B008B; font-weight: bold">if</span> note &gt;= <span style="color: #B452CD">10.0</span>:
+        <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;J&#39;ai la moyenne&quot;</span>)
+        <span style="color: #8B008B; font-weight: bold">if</span> note == <span style="color: #B452CD">20.0</span>:
+            <span style="color: #228B22"># ce bloc est exécuté si l&#39;expression (note == 20.0) est vraie</span>
+            <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;C&#39;est même excellent !&quot;</span>)
+    <span style="color: #8B008B; font-weight: bold">else</span>:
+        <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;C&#39;est en dessous de la moyenne&quot;</span>)
+        <span style="color: #8B008B; font-weight: bold">if</span> note == <span style="color: #B452CD">0.0</span>:
+            <span style="color: #228B22"># ce bloc est exécuté si l&#39;expression (note == 0.0) est vraie</span>
+            <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;... lamentable !&quot;</span>)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Fin du programme&quot;</span>)
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h2 id="___sec25">L'instruction <code>elif</code> </h2>
+<div class="alert alert-block alert-block alert-text-normal">
+<b>Syntaxe</b>
+<p>
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eee8d5"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">if</span> expression <span style="color: #B452CD">1</span>:
+    <span style="color: #CD5555">&quot;bloc d&#39;instructions 1&quot;</span>
+<span style="color: #8B008B; font-weight: bold">elif</span> expression <span style="color: #B452CD">2</span>:
+    <span style="color: #CD5555">&quot;bloc d&#39;instructions 2&quot;</span>
+<span style="color: #8B008B; font-weight: bold">elif</span> expression <span style="color: #B452CD">3</span>:
+    <span style="color: #CD5555">&quot;bloc d&#39;instructions 3&quot;</span>    <span style="color: #228B22"># ici deux instructions elif, mais il n&#39;y a pas de limitation</span>
+<span style="color: #8B008B; font-weight: bold">else</span>:
+    <span style="color: #CD5555">&quot;bloc d&#39;instructions 4&quot;</span>
+<span style="color: #228B22"># suite du programme</span>
+</pre></div>
+<ul>
+<li> Si l'expression 1 est vraie alors le bloc d'instructions 1 est ex&#233;cut&#233;, et on passe &#224; la suite du programme.</li>
+<li> Si l'expression 1 est fausse alors on teste l'expression 2 :</li>
+<li> si l'expression 2 est vraie on ex&#233;cute le bloc d'instructions 2, et on passe &#224; la suite du programme.</li>
+<li> si l'expression 2 est fausse alors on teste l'expression 3, etc.</li>
+</ul>
+</div>
+
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+Le bloc d'instructions 4 est donc ex&#233;cut&#233; si toutes les expressions sont fausses (c'est le bloc "par d&#233;faut").
+
+<p>
+Parfois il n'y a rien &#224; faire. Dans ce cas, on peut omettre l'instruction <code>else</code> :
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">if</span> expression <span style="color: #B452CD">1</span>:
+    <span style="color: #CD5555">&quot;bloc d&#39;instructions 1&quot;</span>
+<span style="color: #8B008B; font-weight: bold">elif</span> expression <span style="color: #B452CD">2</span>:
+    <span style="color: #CD5555">&quot;bloc d&#39;instructions 2&quot;</span>
+<span style="color: #8B008B; font-weight: bold">elif</span> expression <span style="color: #B452CD">3</span>:
+    <span style="color: #CD5555">&quot;bloc d&#39;instructions 3&quot;</span>
+<span style="color: #228B22"># suite du programme</span>
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+L'instruction <code>elif</code> &#233;vite souvent l'utilisation de conditions imbriqu&#233;es (et souvent compliqu&#233;es).
+
+<h3 id="___sec26">Exemple 3 : moyenne-bis </h3>
+
+On peut tester plusieurs possibilit&#233;s avec une syntaxe beaucoup plus propre avec les instructions <code>if-elif-else</code>:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>note = <span style="color: #658b00">float</span>(<span style="color: #658b00">input</span>(<span style="color: #CD5555">&quot;Note sur 20 : &quot;</span>))
+<span style="color: #8B008B; font-weight: bold">if</span> note == <span style="color: #B452CD">0.0</span>:
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;C&#39;est en dessous de la moyenne&quot;</span>)
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;... lamentable!&quot;</span>)
+<span style="color: #8B008B; font-weight: bold">elif</span> note == <span style="color: #B452CD">20.0</span>:
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;J&#39;ai la moyenne&quot;</span>)
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;C&#39;est même excellent !&quot;</span>)
+<span style="color: #8B008B; font-weight: bold">elif</span> <span style="color: #B452CD">0</span> &lt; note &lt; <span style="color: #B452CD">10</span>:    <span style="color: #228B22"># ou bien : elif 0.0 &lt; note &lt; 10.0:</span>
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;C&#39;est en dessous de la moyenne&quot;</span>)
+<span style="color: #8B008B; font-weight: bold">elif</span> note &gt;= <span style="color: #B452CD">10.0</span> <span style="color: #8B008B">and</span> note &lt; <span style="color: #B452CD">20.0</span>:   <span style="color: #228B22"># ou bien : elif 10.0 &lt;= note &lt; 20.0:</span>
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;J&#39;ai la moyenne&quot;</span>)
+<span style="color: #8B008B; font-weight: bold">else</span>:
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Note invalide !&quot;</span>)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Fin du programme&quot;</span>)
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h1 id="___sec27">Les boucles </h1>
+
+<h2 id="___sec28">L'instruction <code>while</code> </h2>
+
+<p>
+<div class="alert alert-block alert-block alert-text-normal">
+<b>Syntaxe</b>
+<p>
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eee8d5"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">while</span> expression:           <span style="color: #228B22"># ne pas oublier le signe de ponctuation &#39;:&#39;</span>
+    <span style="color: #CD5555">&quot;bloc d&#39;instructions&quot;</span>   <span style="color: #228B22"># attention à l&#39;indentation (1 Tab ou 4 * Espaces)</span>
+<span style="color: #228B22"># suite du programme</span>
+</pre></div>
+<ul>
+<li> Si l'expression est vraie (<code>True</code>) le bloc d'instructions est ex&#233;cut&#233;, puis l'expression est &#224; nouveau &#233;valu&#233;e.</li>
+<li> Le cycle continue jusqu'&#224; ce que l'expression soit fausse (<code>False</code>) : on passe alors &#224; la suite du programme.</li>
+</ul>
+</div>
+
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec29">Exemple 1 : un script qui compte de 1 &#224; 4 </h3>
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #228B22"># initialisation de la variable de comptage</span>
+compteur = <span style="color: #B452CD">0</span>
+<span style="color: #8B008B; font-weight: bold">while</span> compteur &lt; <span style="color: #B452CD">5</span>:
+    <span style="color: #228B22"># ce bloc est exécuté tant que la condition (compteur &lt; 5) est vraie</span>
+    <span style="color: #658b00">print</span>(compteur)
+    compteur +=  <span style="color: #B452CD">1</span>    <span style="color: #228B22"># incrémentation du compteur,  compteur = compteur + 1</span>
+<span style="color: #658b00">print</span>(compteur)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Fin de la boucle&quot;</span>)
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec30">Exemple 2 : Table de multiplication par 8 </h3>
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>compteur = <span style="color: #B452CD">1</span>         <span style="color: #228B22"># initialisation de la variable de comptage</span>
+<span style="color: #8B008B; font-weight: bold">while</span> compteur &lt;= <span style="color: #B452CD">10</span>:
+    <span style="color: #228B22"># ce bloc est exécuté tant que la condition (compteur &lt;= 10) est vraie</span>
+    <span style="color: #658b00">print</span>(compteur, <span style="color: #CD5555">&#39;* 8 =&#39;</span>, compteur*<span style="color: #B452CD">8</span>)
+    compteur += <span style="color: #B452CD">1</span>    <span style="color: #228B22"># incrémentation du compteur, compteur = compteur + 1</span>
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Et voilà !&quot;</span>)
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec31">Exemple 3 : Affichage de l'heure courante </h3>
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">time</span>     <span style="color: #228B22"># importation du module time</span>
+quitter = <span style="color: #CD5555">&#39;n&#39;</span>   <span style="color: #228B22"># initialisation</span>
+<span style="color: #8B008B; font-weight: bold">while</span> quitter != <span style="color: #CD5555">&#39;o&#39;</span>:
+    <span style="color: #228B22"># ce bloc est exécuté tant que la condition est vraie</span>
+    <span style="color: #228B22"># strftime() est une fonction du module time</span>
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&#39;Heure courante &#39;</span>, time.strftime(<span style="color: #CD5555">&#39;%H:%M:%S&#39;</span>))
+    quitter = <span style="color: #658b00">input</span>(<span style="color: #CD5555">&quot;Voulez-vous quitter le programme (o/n) ? &quot;</span>)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;A bientôt&quot;</span>)
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h2 id="___sec32">L'instruction <code>for</code> </h2>
+
+<p>
+<div class="alert alert-block alert-block alert-text-normal">
+<b>Syntaxe</b>
+<p>
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eee8d5"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">for</span> élément <span style="color: #8B008B">in</span> séquence :     <span style="color: #228B22"># ne pas oublier le signe de ponctuation &#39;:&#39;</span>
+    <span style="color: #CD5555">&quot;bloc d&#39;instructions&quot;</span>     <span style="color: #228B22"># attention à l&#39;indentation (1 Tab ou 4 * Espaces)</span>
+<span style="color: #228B22"># suite du programme</span>
+</pre></div>
+
+</div>
+
+
+<p>
+Les &#233;l&#233;ments de la s&#233;quence sont issus d'une cha&#238;ne de caract&#232;res ou bien d'une liste.
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec33">Exemple 1 : s&#233;quence de caract&#232;res </h3>
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>chaine = <span style="color: #CD5555">&#39;Bonsoir&#39;</span>
+<span style="color: #8B008B; font-weight: bold">for</span> lettre <span style="color: #8B008B">in</span> chaine:  <span style="color: #228B22"># lettre est la variable d&#39;itération</span>
+    <span style="color: #658b00">print</span>(lettre)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Fin de la boucle&quot;</span>)
+</pre></div>
+<p>
+La variable lettre est initialis&#233;e avec le premier &#233;l&#233;ment de la s&#233;quence ('B').
+Le bloc d'instructions est alors ex&#233;cut&#233;.
+
+<p>
+Puis la variable lettre est mise &#224; jour avec le second &#233;l&#233;ment de la s&#233;quence ('o') et le bloc d'instructions &#224; nouveau ex&#233;cut&#233;...
+
+<p>
+Le bloc d'instructions est ex&#233;cut&#233; une derni&#232;re fois lorsqu'on arrive au dernier &#233;l&#233;ment de la s&#233;quence ('r').
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec34">Fonction <code>range()</code> </h3>
+
+<p>
+L'association avec la fonction <code>range()</code> est tr&#232;s utile pour cr&#233;er des s&#233;quences automatiques de nombres entiers :
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">for</span> i <span style="color: #8B008B">in</span> <span style="color: #658b00">range</span>(<span style="color: #B452CD">1</span>, <span style="color: #B452CD">5</span>):
+    <span style="color: #658b00">print</span>(i)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Fin de la boucle&quot;</span>)
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec35">Exemple 2 : Table de multiplication </h3>
+
+<p>
+La cr&#233;ation d'une table de multiplication para&#238;t plus simple avec une boucle <code>for</code> qu'avec une boucle <code>while</code> :
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">for</span> compteur <span style="color: #8B008B">in</span> <span style="color: #658b00">range</span>(<span style="color: #B452CD">1</span>,<span style="color: #B452CD">11</span>):
+    <span style="color: #658b00">print</span>(compteur, <span style="color: #CD5555">&#39;* 8 =&#39;</span>, compteur*<span style="color: #B452CD">8</span>)
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Et voilà !&quot;</span>)
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec36">Exemple 3 : calcul d'une somme </h3>
+
+<p>
+Soit, par exemple, l'expression de la somme suivante:
+$$
+s = \sum_{i = 0}^{100} \sqrt{\frac{i \pi}{100}} sin(\frac{i \pi}{100})
+$$
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">math</span> <span style="color: #8B008B; font-weight: bold">import</span> sqrt, sin, pi
+s = <span style="color: #B452CD">0.0</span> <span style="color: #228B22"># # intialisation de s</span>
+<span style="color: #8B008B; font-weight: bold">for</span> i <span style="color: #8B008B">in</span> <span style="color: #658b00">range</span>(<span style="color: #B452CD">101</span>):
+    s+= sqrt(i * pi/<span style="color: #B452CD">100</span>) * sin(i * pi/<span style="color: #B452CD">100</span>)   <span style="color: #228B22"># équivalent à s = s + sqrt(x) * sin(x)</span>
+<span style="color: #228B22"># Affichage de la somme</span>
+<span style="color: #658b00">print</span>(s)
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h2 id="___sec37">L'instruction break </h2>
+
+<p>
+L'instruction break provoque une sortie imm&#233;diate d'une boucle <code>while</code> ou d'une boucle <code>for</code>.
+
+<p>
+Dans l'exemple suivant, l'expression <code>True</code> est toujours ... vraie : on a une boucle sans fin.
+
+<p>
+L'instruction <code>break</code> est donc le seul moyen de sortir de la boucle.
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec38">Exemple : Affichage de l'heure courante </h3>
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">time</span>     <span style="color: #228B22"># importation du module time</span>
+<span style="color: #8B008B; font-weight: bold">while</span> <span style="color: #8B008B; font-weight: bold">True</span>:
+    <span style="color: #228B22"># strftime() est une fonction du module time</span>
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&#39;Heure courante &#39;</span>, time.strftime(<span style="color: #CD5555">&#39;%H:%M:%S&#39;</span>))
+    quitter = <span style="color: #658b00">input</span>(<span style="color: #CD5555">&#39;Voulez-vous quitter le programme (o/n) ? &#39;</span>)
+    <span style="color: #8B008B; font-weight: bold">if</span> quitter == <span style="color: #CD5555">&#39;o&#39;</span>:
+        <span style="color: #8B008B; font-weight: bold">break</span>
+<span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;A bientôt&quot;</span>)
+</pre></div>
+<p>
+<div class="alert alert-block alert-notice alert-text-normal">
+<b>Note</b>
+<p>
+Si vous connaissez le nombre de boucles &#224; effectuer, utiliser une boucle <code>for</code>.
+Autrement, utiliser une boucle <code>while</code> (notamment pour faire des boucles sans fin).
+</div>
+
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h1 id="___sec39">Les fonctions </h1>
+
+<p>
+Nous avons d&#233;j&#224; vu beaucoup de fonctions : <code>print()</code>, <code>type()</code>, <code>len()</code>, <code>input()</code>, <code>range()</code>...
+
+<p>
+Ce sont des fonctions pr&#233;-d&#233;finies (<a href="https://docs.python.org/fr/3/library/functions.html" target="_blank">Fonctions natives</a>).
+
+<p>
+Nous avons aussi la possibilit&#233; de cr&#233;er nos propres fonctions!
+
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h2 id="___sec40">Int&#233;r&#234;t des fonctions </h2>
+
+<p>
+Une fonction est une portion de code que l'on peut appeler au besoin (c'est une sorte de sous-programme).
+
+<p>
+L'utilisation des fonctions &#233;vite des redondances dans le code : on obtient ainsi des programmes plus courts et plus lisibles.
+
+<p>
+Par exemple, nous avons besoin de convertir &#224; plusieurs reprises des degr&#233;s Celsius en degr&#233;s Fahrenheit :
+$$T_F = T_C \times 1,8 + 32 $$
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #658b00">print</span>(<span style="color: #B452CD">100</span> * <span style="color: #B452CD">1.8</span> + <span style="color: #B452CD">32.0</span>)
+</pre></div>
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #658b00">print</span>(<span style="color: #B452CD">37.0</span> * <span style="color: #B452CD">1.8</span> + <span style="color: #B452CD">32.0</span>)
+</pre></div>
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #658b00">print</span>(<span style="color: #B452CD">233.0</span> * <span style="color: #B452CD">1.8</span> + <span style="color: #B452CD">32.0</span>)
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+La m&#234;me chose en utilisant une fonction :
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">fahrenheit</span>(degre_celsius):
+        <span style="color: #CD5555">&quot;&quot;&quot;</span>
+<span style="color: #CD5555">        Conversion degré Celsius en degré Fahrenheit</span>
+<span style="color: #CD5555">        &quot;&quot;&quot;</span>
+        <span style="color: #658b00">print</span>(degre_celsius * <span style="color: #B452CD">1.8</span> + <span style="color: #B452CD">32.0</span>)
+</pre></div>
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>fahrenheit(<span style="color: #B452CD">100</span>)
+</pre></div>
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>fahrenheit(<span style="color: #B452CD">37</span>)
+</pre></div>
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>temperature = <span style="color: #B452CD">220</span>
+fahrenheit(temperature)
+</pre></div>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h2 id="___sec41">L'instruction def </h2>
+
+<p>
+<div class="alert alert-block alert-block alert-text-normal">
+<b>Syntaxe</b>
+<p>
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eee8d5"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">nom_de_la_fonction</span>(parametre1, parametre2, parametre3, ...):
+    <span style="color: #CD5555">&quot;&quot;&quot;</span>
+<span style="color: #CD5555">    Documentation</span>
+<span style="color: #CD5555">    qu&#39;on peut écrire</span>
+<span style="color: #CD5555">    sur plusieurs lignes</span>
+<span style="color: #CD5555">    &quot;&quot;&quot;</span>     <span style="color: #228B22"># docstring entouré de 3 guillemets (ou apostrophes)</span>
+
+    <span style="color: #CD5555">&quot;bloc d&#39;instructions&quot;</span>     <span style="color: #228B22"># attention à l&#39;indentation</span>
+
+    <span style="color: #8B008B; font-weight: bold">return</span> resultat            <span style="color: #228B22"># la fonction retourne le contenu de la variable resultat</span>
+</pre></div>
+
+</div>
+
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h3 id="___sec42">Exemple : ma premi&#232;re fonction </h3>
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">mapremierefonction</span>():         <span style="color: #228B22"># cette fonction n&#39;a pas de paramètre</span>
+    <span style="color: #CD5555">&quot;&quot;&quot;</span>
+<span style="color: #CD5555">    Cette fonction affiche &#39;Bonjour&#39;</span>
+<span style="color: #CD5555">    &quot;&quot;&quot;</span>
+    <span style="color: #658b00">print</span>(<span style="color: #CD5555">&quot;Bonjour&quot;</span>)
+    <span style="color: #8B008B; font-weight: bold">return</span>                         <span style="color: #228B22"># cette fonction ne retourne rien (&#39;None&#39;)</span>
+    <span style="color: #228B22"># l&#39;instruction return est ici facultative</span>
+</pre></div>
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>mapremierefonction()
+</pre></div>
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span>help(mapremierefonction)
 </pre></div>
 <p>
 

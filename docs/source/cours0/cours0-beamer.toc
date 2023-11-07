@@ -7,3 +7,6 @@
 \beamer@sectionintoc {6}{Commentaires}{18}{0}{6}
 \beamer@sectionintoc {7}{Nombres}{20}{0}{7}
 \beamer@sectionintoc {8}{Affectations (ou assignation)}{23}{0}{8}
+\beamer@sectionintoc {9}{Les conditions}{51}{0}{9}
+\beamer@sectionintoc {10}{Les boucles}{60}{0}{10}
+\beamer@sectionintoc {11}{Les fonctions}{72}{0}{11}

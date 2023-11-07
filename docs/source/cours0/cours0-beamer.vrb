@@ -1,21 +1,19 @@
 
+\noindent\textbf{Exemple : ma première fonction.}
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
-In [20]: help("keywords")
+def mapremierefonction():         # cette fonction n'a pas de paramètre
+    """
+    Cette fonction affiche 'Bonjour'
+    """
+    print("Bonjour")
+    return                         # cette fonction ne retourne rien ('None')
+    # l'instruction return est ici facultative
+\end{minted}
 
-Here is a list of the Python keywords.  Enter any keyword to get more help.
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+mapremierefonction()
+\end{minted}
 
-False               def                 if                  raise
-None                del                 import              return
-True                elif                in                  try
-and                 else                is                  while
-as                  except              lambda              with
-assert              finally             nonlocal            yield
-break               for                 not
-class               from                or
-continue            global              pass
-
-# par exemple pour éviter d'écraser le nom réservé lambda
-In [22]: lambda_ = 630e-9
-    ...: lambda_
-Out[22]: 6.3e-07
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+help(mapremierefonction)
 \end{minted}

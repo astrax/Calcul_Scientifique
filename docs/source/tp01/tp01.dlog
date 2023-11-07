@@ -222,3 +222,903 @@ figure file imgs/Signature-01:
     git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
 no lexer for alias 'ipy' found
 output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+*** error: !bsubex-!esubex block is not legal outside an exercise
+    (or problem/project/example) section:
+    If the block is inside an Example, use --examples_as_exercises
+!bsubex
+Compléter le script de la fonction `ajout_monome(P,monome)`, sachant que `P` est un dictionnaire représentant un polynôme. On rappelle que cette méthode ajoute un monôme saisi au clavier (en faisant les contrôles nécessaires) si le paramètre `monome` est
+nul ou ajoute le monôme nommé `monome` sinon.
+10 <<<!!CODE_BLOCK  pycod
+!esubex
+!bsubex
+Écrire le code de la fonction `degree(P)` qui prend en paramètre le polynôme `P` représenté sous forme d'un dictionnaire et renvoie  son degré.
+!esubex
+!bsubex
+Écrire le code de la fonction `call(P,x0)` qui retourne la valeur du polynôme P passé en paramètre sous forme d'un dictionnaire pour un réel \verb|x0| donné.
+!esubex
+!bsubex
+Écrire le code de la fonction `add(P,P1)` qui retourne le polynôme somme des deux polynômes `P` et `P1`.
+!bhint
+aucun monôme nul ne doit apparaître dans le polynôme résultat.
+!ehint
+!esubex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+*** error: !bsubex-!esubex block is not legal outside an exercise
+    (or problem/project/example) section:
+    If the block is inside an Example, use --examples_as_exercises
+!bsubex
+Compléter le script de la fonction `ajout_monome(P,monome)`, sachant que `P` est un dictionnaire représentant un polynôme. On rappelle que cette méthode ajoute un monôme saisi au clavier (en faisant les contrôles nécessaires) si le paramètre `monome` est
+nul ou ajoute le monôme nommé `monome` sinon.
+10 <<<!!CODE_BLOCK  pycod
+!esubex
+!bsubex
+Écrire le code de la fonction `degree(P)` qui prend en paramètre le polynôme `P` représenté sous forme d'un dictionnaire et renvoie  son degré.
+!esubex
+!bsubex
+Écrire le code de la fonction `call(P,x0)` qui retourne la valeur du polynôme P passé en paramètre sous forme d'un dictionnaire pour un réel \verb|x0| donné.
+!esubex
+!bsubex
+Écrire le code de la fonction `add(P,P1)` qui retourne le polynôme somme des deux polynômes `P` et `P1`.
+!bhint
+aucun monôme nul ne doit apparaître dans le polynôme résultat.
+!ehint
+!esubex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+*** error: !bsubex-!esubex block is not legal outside an exercise
+    (or problem/project/example) section:
+    If the block is inside an Example, use --examples_as_exercises
+!bsubex
+Compléter le script de la fonction `ajout_monome(P,monome)`, sachant que `P` est un dictionnaire représentant un polynôme. On rappelle que cette méthode ajoute un monôme saisi au clavier (en faisant les contrôles nécessaires) si le paramètre `monome` est
+nul ou ajoute le monôme nommé `monome` sinon.
+10 <<<!!CODE_BLOCK  pycod
+!esubex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+*** error: !bsubex-!esubex block is not legal outside an exercise
+    (or problem/project/example) section:
+    If the block is inside an Example, use --examples_as_exercises
+!bsubex
+Compléter le script de la fonction `ajout_monome(P,monome)`, sachant que `P` est un dictionnaire représentant un polynôme. On rappelle que cette méthode ajoute un monôme saisi au clavier (en faisant les contrôles nécessaires) si le paramètre `monome` est
+nul ou ajoute le monôme nommé `monome` sinon.
+10 <<<!!CODE_BLOCK  pycod
+!esubex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+*** error: !bsubex-!esubex block is not legal outside an exercise
+    (or problem/project/example) section:
+    If the block is inside an Example, use --examples_as_exercises
+!bsubex
+Compléter le script de la fonction `ajout_monome(P,monome)`, sachant que `P` est un dictionnaire représentant un polynôme. On rappelle que cette méthode ajoute un monôme saisi au clavier (en faisant les contrôles nécessaires) si le paramètre `monome` est nul ou ajoute le monôme nommé `monome` sinon.
+
+10 <<<!!CODE_BLOCK  pycod
+!esubex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+*** error: !bsubex-!esubex block is not legal outside an exercise
+    (or problem/project/example) section:
+    If the block is inside an Example, use --examples_as_exercises
+!bsubex
+Compléter le script de la fonction `ajout_monome(P,monome)`, sachant que `P` est un dictionnaire représentant un polynôme. On rappelle que cette méthode ajoute un monôme saisi au clavier (en faisant les contrôles nécessaires) si le paramètre `monome` est nul ou ajoute le monôme nommé `monome` sinon.
+
+10 <<<!!CODE_BLOCK  pycod
+!esubex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 3 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: latex format will have problem with words
+    containing underscores (this warning is very uncertain, might be wrong too):
+
+T_FT_Ca
+
+    typeset these words with `inline verbatim` or escape with backslash
+    First word appears here:
+, ou l’inverse. La formule de conversion est :
+    T_FT_Ca x^naa \neq 0nn \ge 0na8 x^2-x^4 + 8 x^2 - 5 xx^8 +found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.tex
+Translating doconce text in tp01.do.txt to html
+open file with encoding utf-8
+found info about 4 exercises
+figure file imgs/Signature-01:
+    can use imgs/Signature-01.jpg for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; python setup.py install
+no lexer for alias 'ipy' found
+output in tp01.html

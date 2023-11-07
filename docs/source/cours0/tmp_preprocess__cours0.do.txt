@@ -1,7 +1,7 @@
-TITLE: Introduction à Python I : Présentation & installation
-AUTHOR: UP Mathématiques {copyright|MIT} at ESPRIT.
+TITLE: Introduction à Python
+AUTHOR: UP Mathématiques {copyright|ESPRIT} at École Supérieure PRivée d'Ingénierie et de Technologies (ESPRIT).
 DATE: 2 novembre 2023
-
+FIGURE: [imgs/Signature-01, width=300 frac=0.45]
 TOC: on
 
 !split
@@ -59,10 +59,6 @@ _Avantages_ :
 * De nombreuses bibliothèques standards, et de nombreux packages add-on.
 
 !split
-FIGURE: [imgs/python_easy.png, width=600 frac=0.6]
-
-
-!split
 ======= Installation d'un environnement Python scientifique =======
 
 ===== Installation sur ordinateur =====
@@ -107,6 +103,7 @@ In [2]: print('Hello World!')
 Hello World!
 !ec
 
+!split
 ======= Commentaires =======
 
 Au fur et à mesure que vos programmes deviennent plus grands et plus compliqués, ils deviennent plus difficiles à lire et à regarder un morceau de code et à comprendre ce qu'il fait ou pourquoi. Pour cette raison, il est conseillé d’ajouter des notes à vos programmes pour expliquer en langage naturel ce qu’il fait. Ces notes s'appellent des commentaires et commencent par le symbole `#`.
@@ -119,6 +116,7 @@ Hello World!
 !ec
 Rien ne change dans la sortie? Oui, et c’est très normal, l’interprète Python ignore cette ligne et ne renvoie rien. La raison en est que les commentaires sont écrits pour les humains, pour comprendre leurs codes, et non pour les machines.
 
+!split
 ======= Nombres =======
 
 L'interpréteur Python agit comme une simple calculatrice: vous pouvez y taper une expression et l'interpréteur restituera la valeur. La syntaxe d'expression est simple: les opérateurs +, -, * et / fonctionnent comme dans la plupart des autres langages (par exemple, Pascal ou C); les parenthèses (`()`) peuvent être utilisées pour le regroupement. Par exemple:
@@ -138,6 +136,8 @@ Out[8]: 6.666666666666667
 In [9]: 7 // 2      # une division entière
 Out[9]: 3
 !ec
+
+!split
 On peut noter l’existence de l’opérateur `%` (appelé opérateur modulo). Cet opérateur fournit le reste de la division entière d’un nombre par un autre. Par exemple :
 
 !bc ipy
@@ -160,7 +160,7 @@ Les puissances de dix peuvent être calculées comme suit:
 In [13]: 3 * 2e3   # vaut 3 * 2000
 Out[13]: 6000.0
 !ec
-
+!split
 ======= Affectations (ou assignation) =======
 
 ===== variables =====
@@ -168,15 +168,18 @@ Dans presque tous les programmes Python que vous allez écrire, vous aurez des v
 
 Si une variable est nécessaire, pensez à un nom et commencez à l'utiliser comme une variable, comme dans l'exemple ci-dessous:
 
+!split
 Pour calculer l'aire d'un rectangle par exemple: `largeur` x `hauteur`:
+
 !bc ipy
 In [15]: largeur = 25
-    ...: hauteur = 40
-    ...: largeur    # essayer d'accéder à la valeur de la variable largeur
-Out[15]: 25
+In [16]: hauteur = 40
+In [17]: largeur    # essayer d'accéder à la valeur de la variable largeur
+Out[17]: 25
 !ec
 
 on peut également utiliser la fonction `print()` pour afficher la valeur de la variable `largeur`
+
 !bc ipy
 In [16]: print(largeur)
 25
@@ -186,6 +189,7 @@ Le produit de ces deux variables donne l'aire du rectangle:
 In [17]: largeur * hauteur  # donne l'aire du rectangle
 Out[17]: 1000
 !ec
+!split
 !bnotice
 Notez ici que le signe égal (`=`) dans l'affectation ne doit pas être considéré comme _"est égal à"_. Il doit être _"lu"_ ou interprété comme _"est définie par"_, ce qui signifie dans notre exemple:
 !bquote
@@ -206,18 +210,20 @@ NameError                            Traceback (most recent call last)
 NameError: name 'aire' is not defined
 !ec
 !ewarning
+!split
 
 Laissez-nous résoudre ce problème informatique (ou _bug_ tout simplement)!. En d'autres termes, assignons la variable `aire` à sa valeur.
 
 !bc ipy
 In [19]: aire = largeur * hauteur
-    ...: aire  # et voila!
-Out[19]: 1000
+In [20]: aire  # et voila!
+Out[20]: 1000
 !ec
 
 ===== Noms de variables réservés (keywords) =====
 Certains noms de variables ne sont pas disponibles, ils sont réservés à python lui-même. Les mots-clés suivants (que vous pouvez afficher dans l'interpréteur avec la commande `help("keywords")`) sont réservés et ne peuvent pas être utilisés pour définir vos propres identifiants (variables, noms de fonctions, classes, etc.).
 
+!split
 !bc ipy
 In [20]: help("keywords")
 
@@ -234,11 +240,12 @@ class               from                or
 continue            global              pass
 
 # par exemple pour éviter d'écraser le nom réservé lambda
-In [22]: lambda_ = 630e-9
-    ...: lambda_
-Out[22]: 6.3e-07
+In [22]: Lambda = 630e-9
+In [23]: Lambda
+Out[23]: 6.3e-07
 !ec
 
+!split
 ===== Les types =====
 Les types utilisés dans Python sont: integers, long integers, floats (double prec.), complexes, strings, booleans. La fonction `type()` donne le type de son argument
 === Le type int (integer : nombres entiers) ===
@@ -258,6 +265,8 @@ La fonction `type()` retourne le type de la variable :
 type(age)
 Out[25]: int
 !ec
+
+!split
 === Le type float (nombres en virgule flottante) ===
 
 !bc ipy
@@ -276,6 +285,7 @@ In [29]: a = -1.784892e4
     ...: a
 Out[29]: -17848.92
 !ec
+!split
 === Les fonctions mathématiques ===
 
 Pour utiliser les fonctions mathématiques, il faut commencer par importer le module `math` :
@@ -286,6 +296,8 @@ import math
 La fonction `help()` retourne la liste des fonctions et données d'un module.
 
 Soit par exemple: `help('math')`
+
+!split
 
 Pour appeler une fonction d'un module, la syntaxe est la suivante : `module.fonction(arguments)`
 
@@ -309,6 +321,7 @@ In [36]: math.log(math.e)
 Out[36]: 1.0
 !ec
 
+!split
 === Le type complexe ===
 Python possède par défaut un type pour manipuler les nombres complexes. La partie imaginaire est indiquée grâce à la lettre « `j` » ou « `J` ». La lettre mathématique utilisée habituellement, le « `i` », n’est pas utilisée en Python car la variable i est souvent utilisée dans les boucles.
 
@@ -319,8 +332,8 @@ Out[37]: complex
 In [38]: a
 Out[38]: (2+3j)
 !ec
+!split
 !bwarning
-
 !bc ipy
 In [39]: b = 1 + j
 --------------------------------------------------------------
@@ -338,12 +351,8 @@ Out[41]: (1+1j)
 !ec
 sinon Python va considérer `j` comme variable non définie.
 !ewarning
-On peut faire l'addition des variables complexes:
-!bc ipy
-In [42]: a + b
-Out[42]: (3+4j)
-!ec
 
+!split
 === Le type str (string : chaîne de caractères) ===
 
 !bc ipy
@@ -359,7 +368,7 @@ Out[45]: 'Ali'
 In [46]: print(nom, prenom)  # ne pas oublier la virgule
 Tounsi Ali
 !ec
-
+!split
 La concaténation désigne la mise bout à bout de plusieurs chaînes de caractères.
 La concaténation utilise l'opérateur `+`:
 !bc ipy
@@ -373,6 +382,8 @@ In [48]: chaine = prenom + ' ' + nom
     ...: chaine # et voila
 Out[48]: 'Ali Tounsi'
 !ec
+
+!split
 On peut modifier/ajouter une nouvelle chaîne à notre variable `chaine` par:
 !bc ipy
 In [49]: chaine = chaine + ' 22 ans'  # en plus court : chaine += ' 22 ans'
@@ -388,7 +399,7 @@ In [53]: print(nom)
 Tounsi
 Out[53]: 6
 !ec
-
+!split
 __Indexage et slicing :__
 
 !bc
@@ -402,7 +413,6 @@ __Indexage et slicing :__
 -6  -5  -4  -3  -2  -1
                    <----
 !ec
-
 !bc ipy
 In [55]: nom[0]  # premier caractère (indice 0)
 Out[55]: 'T'
@@ -412,7 +422,9 @@ Out[56]: 'Tounsi'
 
 In [57]: nom[1] # deuxième caractère (indice 1)
 Out[57]: 'o'
-
+!ec
+!split
+!bc ipy
 In [58]: nom[1:4]   # slicing
 Out[58]: 'oun'
 
@@ -426,7 +438,7 @@ In [61]: nom[-3:]    # slicing
 Out[61]: 'nsi'
 
 !ec
-
+!split
 !bwarning
 
 On ne peut pas mélanger le type `str` et type `int`.
@@ -443,37 +455,24 @@ TypeError                  Traceback (most recent call last)
 
 TypeError: unsupported operand type(s) for -: 'int' and 'str'
 !ec
-
+!ewarning
+!split
 Pour corriger cette erreur, la fonction `int()` permet de convertir un type `str` en type `int`:
 
 !bc ipy
 
 In [64]: nombre = int(chaine)
-    ...: type(nombre) # et voila!
-Out[64]: int
+In [65]: type(nombre) # et voila!
+Out[65]: int
 !ec
+
 Maintenant on peut trouver `annee_naissance` sans aucun problème:
 !bc ipy
 In [65]: annee_naissance = 2018 - nombre
     ...: annee_naissance
 Out[65]: 1996
 !ec
-
-!ewarning
-
-__Interaction avec l'utilisateur (la fonction `input()`)__
-
-La fonction `input()` lance une case pour saisir une chaîne de caractères.
-
-!bc ipy
-In [66]: prenom = input('Entrez votre prénom : ')
-    ...: age = input('Entrez votre age : ')
-
-Entrez votre prénom : Foulen
-
-Entrez votre age : 25
-!ec
-
+!split
 __ Formatage des chaînes__
 
 Un problème qui se retrouve souvent, c’est le besoin d’afficher un message qui contient des valeurs de variables.
@@ -486,7 +485,7 @@ La solution est d'utiliser la méthode `format()` de l'objet chaîne `str()` et 
 print(" Bonjour Mr/Mme {}, votre age est {}.".format(prenom, age))
 !ec
 
-
+!split
 __Le type list (liste)__
 
 Une liste est une structure de données.
@@ -517,6 +516,7 @@ In [6]: print('Latitude : ', info[3]) # le quatrième élément a l'indice 3
 Latitude :  36.8
 !ec
 
+!split
 La fonction `range()` crée une liste d'entiers régulièrement espacés :
 
 !bc ipy
@@ -538,7 +538,7 @@ Out[9]: [1, 3, 5, 7, 9]
 In [10]: maliste[2] # le troisième élément a l'indice 2
 Out[10]: 5
 !ec
-
+!split
 On peut créer une liste de listes, qui s'apparente à un tableau à 2 dimensions (ligne, colonne) :
 
 !bc
@@ -563,7 +563,7 @@ In [14]: maliste[2][1] = 78   # nouvelle affectation
 In [15]: maliste
 Out[15]: [[0, 1, 2], [10, 11, 12], [20, 78, 22]]
 !ec
-
+!split
 === Le type bool (booléen) ===
 
 Deux valeurs sont possibles : `True` et `False`
@@ -574,5 +574,466 @@ In [16]: choix = True # NOTE: "True" différent de "true"
 Out[16]: bool
 !ec
 
+!split
 Les opérateurs de comparaison :
 
+
+
+|--------------c------------------------------c------------------------------c---------------|
+| Opérateur                    | Signification                | Remarques                    |
+|--------------l------------------------------l------------------------------l---------------|
+| `<`                          | strictement inférieur        |                              |
+| `<=`                         | inférieur ou égal            |                              |
+| `>`                          | strictement supérieur        |                              |
+| `>=`                         | supérieur ou égal            |                              |
+| `==`                         | égal                         | Attention : deux signes `==` |
+| `!=`                         | différent                    |                              |
+|--------------------------------------------------------------------------------------------|
+
+!bc ipy
+In [17]: b = 10
+    ...: b > 8
+Out[17]: True
+
+In [18]: b == 5
+Out[18]: False
+
+In [19]: b != 5
+Out[19]: True
+
+In [20]: 0 <= b <= 20
+Out[20]: True
+!ec
+!split
+Les opérateurs logiques : `and`, `or`, `not`
+
+!bc ipy
+In [21]: note = 13.0
+
+In [22]: mention_ab = note >= 12.0 and note < 14.0
+
+In [23]: # ou bien : mention_ab = 12.0 <= note < 14.0
+
+In [24]: mention_ab
+Out[24]: True
+!ec
+
+!bc ipy
+In [25]: not mention_ab
+Out[25]: False
+
+In [26]: note == 20.0 or note == 0.0
+Out[26]: False
+!ec
+!split
+L'opérateur `in` s'utilise avec des chaînes (type `str`) ou des listes (type `list`).
+
+Pour une chaînes:
+!bc ipy
+In [30]: chaine = 'Bonsoir'
+    ...: #la sous-chaîne 'soir' fait-elle partie de la chaîne 'Bonsoir' ?
+
+In [31]: resultat = 'soir' in chaine
+    ...: resultat
+Out[31]: True
+!ec
+!split
+Pour une liste:
+
+!bc ipy
+
+In [32]: maliste = [4, 8, 15]
+    ...: #le nombre entier 9 est-il dans la liste ?
+
+In [33]: 9 in maliste
+Out[33]: False
+
+In [34]: 8 in maliste
+Out[34]: True
+
+In [35]: 14 not in maliste
+Out[35]: True
+!ec
+
+!split
+======= Les conditions =======
+===== L'instruction `if` =====
+En programmation, nous avons toujours besoin de la notion de condition pour permettre à un programme de s'adapter à différents cas de figure.
+
+!bblock Syntaxe
+
+!bc pycod-t
+if expression: # ne pas oublier le signe de ponctuation ':'
+    "bloc d'instructions" # attention à l'indentation (1 Tab ou 4 * Espaces)
+# suite du programme
+!ec
+* Si l'expression est vraie (`True`) alors le bloc d'instructions est exécuté.
+* Si l'expression est fausse (`False`) on passe directement à la suite du programme.
+!eblock
+
+
+!split
+=== Exemple 1: Note sur 20 ===
+Dans cet exemple nous allons tester si la note entrée par l'utilisateur. Si la note est > 10 on doit recevoir le message: "J'ai la moyenne" sinon il va rien faire.
+!bc pycod
+chaine = input("Note sur 20 : ")
+note = float(chaine)
+if note >= 10.0:
+    # ce bloc est exécuté si l'expression (note >= 10.0) est vraie
+    print("J'ai la moyenne")
+
+# suite du programme
+print("Fin du programme")
+!ec
+
+!bnotice
+* Les blocs de code sont délimités par l'indentation.
+* L'indentation est obligatoire dans les scripts.
+!enotice
+
+!split
+===== L'instruction `else` =====
+
+Une instruction `else` est toujours associée à une instruction `if`.
+
+!bblock Syntaxe
+
+!bc pycod-t
+if expression:
+    "bloc d'instructions 1"    # attention à l'indentation (1 Tab ou 4 * Espaces)
+else:                          # else est au même niveau que if
+    "bloc d'instructions 2"    # attention à l'indentation
+# suite du programme
+!ec
+* Si l'expression est vraie (`True`) alors le bloc d'instructions 1 est exécuté.
+* Si l'expression est fausse (`False`) alors c'est le bloc d'instructions 2 qui est exécuté.
+!eblock
+
+
+!split
+=== Exemple 2 : moyenne ===
+Dans cet exemple nous allons tester si la note entrée par l'utilisateur. Si la note est > 10 on doit recevoir le message: "J'ai la moyenne" sinon il va afficher "C'est en dessous de la moyenne".
+
+!bc pycod
+chaine = input("Note sur 20 : ")
+note = float(chaine)
+if note >= 10.0:
+    # ce bloc est exécuté si l'expression (note >= 10.0) est vraie
+    print("J'ai la moyenne")
+else:
+    # ce bloc est exécuté si l'expression (note >= 10.0) est fausse
+    print("C'est en dessous de la moyenne")
+print("Fin du programme")
+!ec
+!split
+Ou bien encore:
+!bc pycod
+chaine = input("Note sur 20 : ")
+note = float(chaine)
+if note > 20.0 or note < 0.0:
+    print("Note invalide !")
+else:
+    if note >= 10.0:
+        print("J'ai la moyenne")
+        if note == 20.0:
+            # ce bloc est exécuté si l'expression (note == 20.0) est vraie
+            print("C'est même excellent !")
+    else:
+        print("C'est en dessous de la moyenne")
+        if note == 0.0:
+            # ce bloc est exécuté si l'expression (note == 0.0) est vraie
+            print("... lamentable !")
+print("Fin du programme")
+!ec
+
+!split
+===== L'instruction `elif` =====
+!bblock Syntaxe
+
+!bc pycod-t
+if expression 1:
+    "bloc d'instructions 1"
+elif expression 2:
+    "bloc d'instructions 2"
+elif expression 3:
+    "bloc d'instructions 3"    # ici deux instructions elif, mais il n'y a pas de limitation
+else:
+    "bloc d'instructions 4"
+# suite du programme
+!ec
+* Si l'expression 1 est vraie alors le bloc d'instructions 1 est exécuté, et on passe à la suite du programme.
+* Si l'expression 1 est fausse alors on teste l'expression 2 :
+
+* si l'expression 2 est vraie on exécute le bloc d'instructions 2, et on passe à la suite du programme.
+* si l'expression 2 est fausse alors on teste l'expression 3, etc.
+!eblock
+!split
+Le bloc d'instructions 4 est donc exécuté si toutes les expressions sont fausses (c'est le bloc "par défaut").
+
+Parfois il n'y a rien à faire. Dans ce cas, on peut omettre l'instruction `else` :
+
+!bc pycod-t
+if expression 1:
+    "bloc d'instructions 1"
+elif expression 2:
+    "bloc d'instructions 2"
+elif expression 3:
+    "bloc d'instructions 3"
+# suite du programme
+!ec
+!split
+L'instruction `elif` évite souvent l'utilisation de conditions imbriquées (et souvent compliquées).
+
+=== Exemple 3 : moyenne-bis ===
+On peut tester plusieurs possibilités avec une syntaxe beaucoup plus propre avec les instructions `if-elif-else`:
+!bc pycod
+note = float(input("Note sur 20 : "))
+if note == 0.0:
+    print("C'est en dessous de la moyenne")
+    print("... lamentable!")
+elif note == 20.0:
+    print("J'ai la moyenne")
+    print("C'est même excellent !")
+elif 0 < note < 10:    # ou bien : elif 0.0 < note < 10.0:
+    print("C'est en dessous de la moyenne")
+elif note >= 10.0 and note < 20.0:   # ou bien : elif 10.0 <= note < 20.0:
+    print("J'ai la moyenne")
+else:
+    print("Note invalide !")
+print("Fin du programme")
+!ec
+!split
+======= Les boucles =======
+===== L'instruction `while` =====
+
+!bblock Syntaxe
+
+!bc pycod-t
+while expression:           # ne pas oublier le signe de ponctuation ':'
+    "bloc d'instructions"   # attention à l'indentation (1 Tab ou 4 * Espaces)
+# suite du programme
+!ec
+* Si l'expression est vraie (`True`) le bloc d'instructions est exécuté, puis l'expression est à nouveau évaluée.
+* Le cycle continue jusqu'à ce que l'expression soit fausse (`False`) : on passe alors à la suite du programme.
+!eblock
+!split
+=== Exemple 1 : un script qui compte de 1 à 4 ===
+
+!bc pycod
+# initialisation de la variable de comptage
+compteur = 0
+while compteur < 5:
+    # ce bloc est exécuté tant que la condition (compteur < 5) est vraie
+    print(compteur)
+    compteur +=  1    # incrémentation du compteur,  compteur = compteur + 1
+print(compteur)
+print("Fin de la boucle")
+!ec
+!split
+=== Exemple 2 : Table de multiplication par 8 ===
+
+!bc pycod
+compteur = 1         # initialisation de la variable de comptage
+while compteur <= 10:
+    # ce bloc est exécuté tant que la condition (compteur <= 10) est vraie
+    print(compteur, '* 8 =', compteur*8)
+    compteur += 1    # incrémentation du compteur, compteur = compteur + 1
+print("Et voilà !")
+!ec
+!split
+=== Exemple 3 : Affichage de l'heure courante ===
+
+!bc pycod
+import time     # importation du module time
+quitter = 'n'   # initialisation
+while quitter != 'o':
+    # ce bloc est exécuté tant que la condition est vraie
+    # strftime() est une fonction du module time
+    print('Heure courante ', time.strftime('%H:%M:%S'))
+    quitter = input("Voulez-vous quitter le programme (o/n) ? ")
+print("A bientôt")
+!ec
+!split
+===== L'instruction `for` =====
+
+!bblock Syntaxe
+
+!bc pycod-t
+for élément in séquence :     # ne pas oublier le signe de ponctuation ':'
+    "bloc d'instructions"     # attention à l'indentation (1 Tab ou 4 * Espaces)
+# suite du programme
+!ec
+!eblock
+
+Les éléments de la séquence sont issus d'une chaîne de caractères ou bien d'une liste.
+!split
+=== Exemple 1 : séquence de caractères ===
+
+!bc pycod
+chaine = 'Bonsoir'
+for lettre in chaine:  # lettre est la variable d'itération
+    print(lettre)
+print("Fin de la boucle")
+!ec
+
+La variable lettre est initialisée avec le premier élément de la séquence ('B').
+Le bloc d'instructions est alors exécuté.
+
+Puis la variable lettre est mise à jour avec le second élément de la séquence ('o') et le bloc d'instructions à nouveau exécuté...
+
+Le bloc d'instructions est exécuté une dernière fois lorsqu'on arrive au dernier élément de la séquence ('r').
+!split
+=== Fonction `range()` ===
+
+L'association avec la fonction `range()` est très utile pour créer des séquences automatiques de nombres entiers :
+
+!bc pycod
+for i in range(1, 5):
+    print(i)
+print("Fin de la boucle")
+!ec
+!split
+=== Exemple 2 : Table de multiplication ===
+
+La création d'une table de multiplication paraît plus simple avec une boucle `for` qu'avec une boucle `while` :
+
+!bc pycod
+for compteur in range(1,11):
+    print(compteur, '* 8 =', compteur*8)
+print("Et voilà !")
+!ec
+!split
+=== Exemple 3 : calcul d'une somme ===
+
+Soit, par exemple, l'expression de la somme suivante:
+!bt
+\[
+s = \sum_{i = 0}^{100} \sqrt{\frac{i \pi}{100}} sin(\frac{i \pi}{100})
+\]
+!et
+
+!bc pycod
+from math import sqrt, sin, pi
+s = 0.0 # # intialisation de s
+for i in range(101):
+    s+= sqrt(i * pi/100) * sin(i * pi/100)   # équivalent à s = s + sqrt(x) * sin(x)
+# Affichage de la somme
+print(s)
+!ec
+!split
+===== L'instruction break =====
+
+L'instruction break provoque une sortie immédiate d'une boucle `while` ou d'une boucle `for`.
+
+Dans l'exemple suivant, l'expression `True` est toujours ... vraie : on a une boucle sans fin.
+
+L'instruction `break` est donc le seul moyen de sortir de la boucle.
+!split
+=== Exemple : Affichage de l'heure courante ===
+
+!bc pycod
+import time     # importation du module time
+while True:
+    # strftime() est une fonction du module time
+    print('Heure courante ', time.strftime('%H:%M:%S'))
+    quitter = input('Voulez-vous quitter le programme (o/n) ? ')
+    if quitter == 'o':
+        break
+print("A bientôt")
+!ec
+
+!bnotice
+Si vous connaissez le nombre de boucles à effectuer, utiliser une boucle `for`.
+Autrement, utiliser une boucle `while` (notamment pour faire des boucles sans fin).
+!enotice
+!split
+======= Les fonctions =======
+
+Nous avons déjà vu beaucoup de fonctions : `print()`, `type()`, `len()`, `input()`, `range()`...
+
+Ce sont des fonctions pré-définies ("Fonctions natives": "https://docs.python.org/fr/3/library/functions.html").
+
+Nous avons aussi la possibilité de créer nos propres fonctions!
+
+!split
+===== Intérêt des fonctions =====
+
+Une fonction est une portion de code que l'on peut appeler au besoin (c'est une sorte de sous-programme).
+
+L'utilisation des fonctions évite des redondances dans le code : on obtient ainsi des programmes plus courts et plus lisibles.
+
+Par exemple, nous avons besoin de convertir à plusieurs reprises des degrés Celsius en degrés Fahrenheit :
+$$T_F = T_C \times 1,8 + 32 $$
+
+!bc pycod
+print(100 * 1.8 + 32.0)
+!ec
+
+!bc pycod
+print(37.0 * 1.8 + 32.0)
+!ec
+
+!bc pycod
+print(233.0 * 1.8 + 32.0)
+!ec
+!split
+La même chose en utilisant une fonction :
+
+!bc pycod
+def fahrenheit(degre_celsius):
+        """
+        Conversion degré Celsius en degré Fahrenheit
+        """
+        print(degre_celsius * 1.8 + 32.0)
+!ec
+
+!bc pycod
+fahrenheit(100)
+!ec
+
+!bc pycod
+fahrenheit(37)
+!ec
+
+!bc pycod
+temperature = 220
+fahrenheit(temperature)
+!ec
+!split
+===== L'instruction def =====
+
+!bblock Syntaxe
+
+!bc pycod-t
+def nom_de_la_fonction(parametre1, parametre2, parametre3, ...):
+    """
+    Documentation
+    qu'on peut écrire
+    sur plusieurs lignes
+    """     # docstring entouré de 3 guillemets (ou apostrophes)
+
+    "bloc d'instructions"     # attention à l'indentation
+
+    return resultat            # la fonction retourne le contenu de la variable resultat
+!ec
+!eblock
+!split
+=== Exemple : ma première fonction ===
+
+!bc pycod
+def mapremierefonction():         # cette fonction n'a pas de paramètre
+    """
+    Cette fonction affiche 'Bonjour'
+    """
+    print("Bonjour")
+    return                         # cette fonction ne retourne rien ('None')
+    # l'instruction return est ici facultative
+!ec
+
+!bc pycod
+mapremierefonction()
+!ec
+
+!bc pycod
+help(mapremierefonction)
+!ec

@@ -534,6 +534,162 @@ print(" Bonjour Mr/Mme {}, votre age est {}....".format(...))
 % --- end exercise ---
 
 
+% !split
+
+
+% --- begin exercise ---
+\begin{doconceexercise}
+\refstepcounter{doconceexercisecounter}
+
+\exercisesection{Exercise \thedoconceexercisecounter: Polynômes creux}
+
+
+L'objectif de cet exercice est la manipulation des polynômes creux à une seule variable.
+
+Un polynôme creux est un polynôme dont certains coefficients sont nuls.
+
+Un polynôme est construit à partir de monômes.
+
+Un monôme est une expression de la forme $a x^n$ où $a$ ($a \neq 0$) est le coefficient du monôme et $n$ ($n \ge 0$) son degré.
+
+Un monôme est représenté par un dictionnaire à un élément dont la clé est le degré $n$ et la valeur est le coefficient $a$.
+
+\textbf{Exemple :}
+
+Le monôme $8 x^2$ est représenté par le dictionnaire \Verb!{2:8}!.
+
+Un polynôme creux est alors défini comme une association de monômes de degrés différents.
+
+\textbf{Exemple :}
+
+Le polynôme $-x^4 + 8 x^2 - 5 x$ est représenté par le dictionnaire \Verb!{2:8, 1:-5, 4:-1}!.
+
+Le dictionnaire \Verb!{0:1, 5:1, 8:1}! représente le polynôme $x^8 + x^5 + 1$.
+
+
+\subex{a)}
+Compléter le script de la fonction \Verb!ajout_monome(P,monome)!, sachant que \texttt{P} est un dictionnaire représentant un polynôme. On rappelle que cette méthode ajoute un monôme saisi au clavier (en faisant les contrôles nécessaires) si le paramètre \texttt{monome} est nul ou ajoute le monôme nommé \texttt{monome} sinon.
+
+\begin{cod}{cbg_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+def ajout_monome(P,monome={}):
+    """
+    Cette méthode ajoute un monôme saisi au clavier à P
+    si le paramètre monome est nul ou ajoute le monôme nommé monome sinon
+    """
+    if len(monome)==0:
+        # Partie à compléter
+    else:
+        degre=list(monome.keys())[0]
+        coeff=list(monome.values())[0]
+        assert degre>=0
+        assert type(degre)==int
+        assert type(coeff)==int or type(coeff)==float
+        assert len(monome)==1
+        P.update(monome)
+\end{minted}
+\end{cod}
+\noindent
+
+% --- begin hint in exercise ---
+
+\paragraph{Indication.}
+L'appel à la fonction \Verb!ajout_monome! peut être utilisé comme suivant :
+\begin{cod}{cbg_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+In[1]: P = {0:1, 5:1, 8:1} # x^8 + x^5 + 1
+In[2]: ajout_monome(P)
+donner le degré du monôme : 2
+donner le coefficient du monôme : 1
+
+Out[2]: {0: 1, 5: 1, 8: 1, 2: 1.0}
+\end{minted}
+\end{cod}
+\noindent
+ou bien
+\begin{cod}{cbg_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+In[3]: ajout_monome(P, {2:8})
+Out[3]: {0: 1, 5: 1, 8: 1, 2: 8}
+\end{minted}
+\end{cod}
+\noindent
+
+% --- end hint in exercise ---
+
+
+% removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+
+\subex{b)}
+Écrire le code de la fonction \texttt{degree(P)} qui prend en paramètre le polynôme \texttt{P} représenté sous forme d'un dictionnaire et renvoie  son degré.
+\begin{cod}{cbg_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+def degree(P):
+  # à compléter
+\end{minted}
+\end{cod}
+\noindent
+
+
+% removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+
+\subex{c)}
+Écrire le code de la fonction \texttt{call(P,x0)} qui retourne la valeur du polynôme P passé en paramètre sous forme d'un dictionnaire pour un réel \texttt{x0} donné.
+\begin{cod}{cbg_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+def call(P, x0):
+  # à compléter
+\end{minted}
+\end{cod}
+\noindent
+
+
+% removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+
+\subex{d)}
+Écrire le code de la fonction \texttt{add(P,P1)} qui retourne le polynôme somme des deux polynômes \texttt{P} et \texttt{P1}.
+\begin{cod}{cbg_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+def add(P, P1):
+    # à compléter
+\end{minted}
+\end{cod}
+\noindent
+
+% --- begin hint in exercise ---
+
+\paragraph{Indication.}
+aucun monôme nul ne doit apparaître dans le polynôme résultat.
+
+% --- end hint in exercise ---
+
+
+% removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+
+\subex{e)}
+En déduire une fonction \texttt{diff(P,P1)} qui retourne le polynôme différence des deux polynômes P et P1.
+\textbf{Remarque :} aucun monôme nul ne doit apparaître dans le polynôme résultat.
+
+\subex{f)}
+Écrire le code de la fonction \texttt{mul(P,P1)} qui retourne le polynôme produit de deux polynômes.
+\textbf{Remarque :} aucun monôme nul ne doit apparaître dans le polynôme résultat.
+\subex{g)}
+Écrire le code de la fonction \texttt{derive(P)} qui retourne le polynôme dérivé de P.
+
+\subex{h)}
+Écrire le code de la fonction \verb|affiche(P)| qui retourne la chaîne de caractères représentant l'expression du polynôme ordonné par ordre décroissant.
+
+Pour le polynôme représenté par \Verb!{4:4, 0:4, 12:6, 9:1, 7:-1}!, la chaîne retournée est : \Verb!"6 * X^12 + X^9 - X^7+ 4 * X^4 + 4"!
+
+\subex{i)}
+Écrire le code de la fonction \texttt{primitive(P)}, qui retourne le polynôme  représentant la primitive. On suppose que la constante d'intégration est nulle.
+
+\subex{j)}
+On définit, l'intégrale d'un polynôme creux $P$ en $x$ entre les bornes $a$ et $b$, par :
+$$S = \int_{a}^{b} P dx$$
+Écrire le script de la fonction, nommée \texttt{integrale}, permettant de retourner la valeur de $S$ à partir d'un polynôme $P$, de type \texttt{PolynomeCreux}, et des bornes d'integration $a$ et $b$ réels.
+
+\subex{k)}
+Écrire une fonction \texttt{courbe()} affichant la dans un même repère un polynôme P, sa primitive et sa dérivée.
+
+\end{doconceexercise}
+% --- end exercise ---
+
+
 % ------------------- end of main content ---------------
 
 % #ifdef PREAMBLE

@@ -1,14 +1,47 @@
 \contentsline {section}{\numberline {1}Objectifs g\IeC {\'e}n\IeC {\'e}raux en premier}{2}{section.1}%
 \contentsline {paragraph}{Algorithme}{2}{section*.2}%
 \contentsline {section}{\numberline {2}Situation standard que nous rencontrons quotidiennement}{2}{section.2}%
-\contentsline {section}{\numberline {3}Langage Python}{2}{section.3}%
-\contentsline {section}{\numberline {4}Installation d'un environnement Python scientifique}{3}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Installation sur ordinateur}{3}{subsection.4.1}%
-\contentsline {paragraph}{Qu\IeC {\textquoteright }est ce que Anaconda ?}{3}{section*.3}%
+\contentsline {section}{\numberline {3}Langage Python}{3}{section.3}%
+\contentsline {section}{\numberline {4}Installation d'un environnement Python scientifique}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Installation sur ordinateur}{4}{subsection.4.1}%
+\contentsline {paragraph}{Qu\IeC {\textquoteright }est ce que Anaconda ?}{4}{section*.3}%
 \contentsline {paragraph}{Pr\IeC {\'e}parer la formation: t\IeC {\'e}l\IeC {\'e}chargement d\IeC {\textquoteright }Anaconda.}{4}{section*.4}%
-\contentsline {section}{\numberline {5}Introduction: "Hello World!"}{4}{section.5}%
+\contentsline {section}{\numberline {5}Introduction: "Hello World!"}{5}{section.5}%
 \contentsline {section}{\numberline {6}Commentaires}{5}{section.6}%
 \contentsline {section}{\numberline {7}Nombres}{5}{section.7}%
 \contentsline {section}{\numberline {8}Affectations (ou assignation)}{6}{section.8}%
 \contentsline {subsection}{\numberline {8.1}variables}{6}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Noms de variables r\IeC {\'e}serv\IeC {\'e}s (keywords)}{7}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.2}Noms de variables r\IeC {\'e}serv\IeC {\'e}s (keywords)}{8}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Les types}{8}{subsection.8.3}%
+\contentsline {paragraph}{Le type int (integer : nombres entiers).}{8}{section*.5}%
+\contentsline {paragraph}{Le type float (nombres en virgule flottante).}{9}{section*.6}%
+\contentsline {paragraph}{Les fonctions math\IeC {\'e}matiques.}{9}{section*.7}%
+\contentsline {paragraph}{Le type complexe.}{9}{section*.8}%
+\contentsline {paragraph}{Le type str (string : cha\IeC {\^\i }ne de caract\IeC {\`e}res).}{10}{section*.9}%
+\contentsline {paragraph}{Indexage et slicing :}{11}{section*.10}%
+\contentsline {paragraph}{ Formatage des cha\IeC {\^\i }nes}{12}{section*.11}%
+\contentsline {paragraph}{Le type list (liste)}{12}{section*.12}%
+\contentsline {paragraph}{Le type bool (bool\IeC {\'e}en).}{14}{section*.13}%
+\contentsline {section}{\numberline {9}Les conditions}{15}{section.9}%
+\contentsline {subsection}{\numberline {9.1}L'instruction \texttt {if} }{15}{subsection.9.1}%
+\contentsline {paragraph}{Exemple 1: Note sur 20.}{15}{section*.14}%
+\contentsline {subsection}{\numberline {9.2}L'instruction \texttt {else} }{16}{subsection.9.2}%
+\contentsline {paragraph}{Exemple 2 : moyenne.}{16}{section*.15}%
+\contentsline {subsection}{\numberline {9.3}L'instruction \texttt {elif} }{17}{subsection.9.3}%
+\contentsline {paragraph}{Exemple 3 : moyenne-bis.}{18}{section*.16}%
+\contentsline {section}{\numberline {10}Les boucles}{18}{section.10}%
+\contentsline {subsection}{\numberline {10.1}L'instruction \texttt {while} }{18}{subsection.10.1}%
+\contentsline {paragraph}{Exemple 1 : un script qui compte de 1 \IeC {\`a} 4.}{19}{section*.17}%
+\contentsline {paragraph}{Exemple 2 : Table de multiplication par 8.}{19}{section*.18}%
+\contentsline {paragraph}{Exemple 3 : Affichage de l'heure courante.}{19}{section*.19}%
+\contentsline {subsection}{\numberline {10.2}L'instruction \texttt {for} }{19}{subsection.10.2}%
+\contentsline {paragraph}{Exemple 1 : s\IeC {\'e}quence de caract\IeC {\`e}res.}{19}{section*.20}%
+\contentsline {paragraph}{Fonction \texttt {range()}.}{20}{section*.21}%
+\contentsline {paragraph}{Exemple 2 : Table de multiplication.}{20}{section*.22}%
+\contentsline {paragraph}{Exemple 3 : calcul d'une somme.}{20}{section*.23}%
+\contentsline {subsection}{\numberline {10.3}L'instruction break}{20}{subsection.10.3}%
+\contentsline {paragraph}{Exemple : Affichage de l'heure courante.}{21}{section*.24}%
+\contentsline {section}{\numberline {11}Les fonctions}{21}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Int\IeC {\'e}r\IeC {\^e}t des fonctions}{21}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}L'instruction def}{22}{subsection.11.2}%
+\contentsline {paragraph}{Exemple : ma premi\IeC {\`e}re fonction.}{22}{section*.25}%

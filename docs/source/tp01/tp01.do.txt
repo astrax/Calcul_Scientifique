@@ -186,3 +186,188 @@ print(" Bonjour Mr/Mme {}, votre age est {} et vous êtes né en {}".format(pren
 !ec
 !esol
 !esubex
+
+!split
+===== Exercise: Polynômes creux =====
+L'objectif de cet exercice est la manipulation des polynômes creux à une seule variable.
+
+Un polynôme creux est un polynôme dont certains coefficients sont nuls.
+
+Un polynôme est construit à partir de monômes.
+
+Un monôme est une expression de la forme $a x^n$ où $a$ ($a \neq 0$) est le coefficient du monôme et $n$ ($n \ge 0$) son degré.
+
+Un monôme est représenté par un dictionnaire à un élément dont la clé est le degré $n$ et la valeur est le coefficient $a$.
+
+_Exemple :_
+
+Le monôme $8 x^2$ est représenté par le dictionnaire `{2:8}`.
+
+Un polynôme creux est alors défini comme une association de monômes de degrés différents.
+
+_Exemple :_
+
+Le polynôme $-x^4 + 8 x^2 - 5 x$ est représenté par le dictionnaire `{2:8, 1:-5, 4:-1}`.
+
+Le dictionnaire `{0:1, 5:1, 8:1}` représente le polynôme $x^8 + x^5 + 1$.
+
+
+!bsubex
+Compléter le script de la fonction `ajout_monome(P,monome)`, sachant que `P` est un dictionnaire représentant un polynôme. On rappelle que cette méthode ajoute un monôme saisi au clavier (en faisant les contrôles nécessaires) si le paramètre `monome` est nul ou ajoute le monôme nommé `monome` sinon.
+
+!bc pycod
+def ajout_monome(P,monome={}):
+    """
+    Cette méthode ajoute un monôme saisi au clavier à P
+    si le paramètre monome est nul ou ajoute le monôme nommé monome sinon
+    """
+    if len(monome)==0:
+        # Partie à compléter
+    else:
+        degre=list(monome.keys())[0]
+        coeff=list(monome.values())[0]
+        assert degre>=0
+        assert type(degre)==int
+        assert type(coeff)==int or type(coeff)==float
+        assert len(monome)==1
+        P.update(monome)
+!ec
+!bhint
+L'appel à la fonction `ajout_monome` peut être utilisé comme suivant :
+!bc pycod-t
+In[1]: P = {0:1, 5:1, 8:1} # x^8 + x^5 + 1
+In[2]: ajout_monome(P)
+donner le degré du monôme : 2
+donner le coefficient du monôme : 1
+
+Out[2]: {0: 1, 5: 1, 8: 1, 2: 1.0}
+!ec
+ou bien
+!bc pycod-t
+In[3]: ajout_monome(P, {2:8})
+Out[3]: {0: 1, 5: 1, 8: 1, 2: 8}
+!ec
+!ehint
+!bsol
+
+!bc pycod
+def ajout_monome(P,monome={}):
+    """
+    Cette fonction ajoute un monôme saisi au clavier à P
+    si le paramètre monome est nul ou ajoute le monôme nommé monome sinon
+    """
+    if len(monome)==0:
+        # Réponse à Q1.
+        while True:
+            try:
+                degree = int(input("donner le degré du monôme : "))
+                coeff = float(input("donner le coefficient du monôme : "))
+                if degree >=0:
+                    break
+            except:
+                print("erreur de saisie") # ou pass ou continue
+        P.update({degree:coeff})
+    else: # Si monome est non vide
+        degre=list(monome.keys())[0] # extraction du degré
+        coeff=list(monome.values())[0] # extraction du coefficient
+        assert degre>=0
+        assert type(degre)==int
+        assert type(coeff)==int or type(coeff)==float
+        assert len(monome)==1
+        P.update(monome)
+    return P
+!ec
+!esol
+!esubex
+
+!bsubex
+Écrire le code de la fonction `degree(P)` qui prend en paramètre le polynôme `P` représenté sous forme d'un dictionnaire et renvoie  son degré.
+!bc pycod
+def degree(P):
+  # à compléter
+!ec
+!bsol
+!bc pycod
+def degree(P):
+    return max(P.keys())
+!ec
+!bc ipy
+In[3]: degree(P)
+Out[3]: 8
+!ec
+!esol
+!esubex
+!bsubex
+Écrire le code de la fonction `call(P,x0)` qui retourne la valeur du polynôme P passé en paramètre sous forme d'un dictionnaire pour un réel `x0` donné.
+!bc pycod
+def call(P, x0):
+  # à compléter
+!ec
+!bsol
+!bc pycod
+def call(P, x0):
+    val = 0
+    for degree in P.keys():
+        val += P[degree]*x0**degree
+    return val
+!ec
+!bc ipy
+In[4]: P
+Out[4]: {0: 1, 5: 1, 8: 1, 2: 8}
+In[5]: call(P, 2)
+Out[4]: 321
+!ec
+!esol
+!esubex
+!bsubex
+Écrire le code de la fonction `add(P,P1)` qui retourne le polynôme somme des deux polynômes `P` et `P1`.
+!bc pycod
+def add(P, P1):
+    # à compléter
+!ec
+!bhint
+aucun monôme nul ne doit apparaître dans le polynôme résultat.
+!ehint
+!bsol
+!bc pycod
+def add(P, P1):
+    p = {}
+    for degree in P.keys() :
+        if not (degree in P1.keys()):
+            ajout_monome(p,{degree:P[degree]})
+        elif P[degree] != - P1[degree] :
+            p.update({degree :P[degree] + P1[degree]})
+    for degree in P1.keys():
+        if not (degree in P.keys()):
+            ajout_monome(p,{degree:P1[degree]})
+    return p
+!ec
+!esol
+!esubex
+!bsubex
+En déduire une fonction `diff(P,P1)` qui retourne le polynôme différence des deux polynômes P et P1.
+_Remarque :_ aucun monôme nul ne doit apparaître dans le polynôme résultat.
+!esubex
+!bsubex
+Écrire le code de la fonction `mul(P,P1)` qui retourne le polynôme produit de deux polynômes.
+!esubex
+_Remarque :_ aucun monôme nul ne doit apparaître dans le polynôme résultat.
+!bsubex
+Écrire le code de la fonction `derive(P)` qui retourne le polynôme dérivé de P.
+!esubex
+!bsubex
+Écrire le code de la fonction \verb|affiche(P)| qui retourne la chaîne de caractères représentant l'expression du polynôme ordonné par ordre décroissant.
+
+Pour le polynôme représenté par `{4:4, 0:4, 12:6, 9:1, 7:-1}`, la chaîne retournée est : `"6 * X^12 + X^9 - X^7+ 4 * X^4 + 4"`
+!esubex
+!bsubex
+Écrire le code de la fonction `primitive(P)`, qui retourne le polynôme  représentant la primitive. On suppose que la constante d'intégration est nulle.
+!esubex
+!bsubex
+On définit, l'intégrale d'un polynôme creux $P$ en $x$ entre les bornes $a$ et $b$, par :
+$$S = \int_{a}^{b} P dx$$
+Écrire le script de la fonction, nommée `integrale`, permettant de retourner la valeur de $S$ à partir d'un polynôme $P$, de type `PolynomeCreux`, et des bornes d'integration $a$ et $b$ réels.
+!esubex
+!bsubex
+Écrire une fonction `courbe()` affichant la dans un même repère un polynôme P, sa primitive et sa dérivée.
+!esubex

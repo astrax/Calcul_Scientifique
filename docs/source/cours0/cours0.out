@@ -9,3 +9,15 @@
 \BOOKMARK [1][-]{section.8}{Affectations \(ou assignation\)}{}% 9
 \BOOKMARK [2][-]{subsection.8.1}{variables}{section.8}% 10
 \BOOKMARK [2][-]{subsection.8.2}{Noms de variables r\351serv\351s \(keywords\)}{section.8}% 11
+\BOOKMARK [2][-]{subsection.8.3}{Les types}{section.8}% 12
+\BOOKMARK [1][-]{section.9}{Les conditions}{}% 13
+\BOOKMARK [2][-]{subsection.9.1}{L'instruction if }{section.9}% 14
+\BOOKMARK [2][-]{subsection.9.2}{L'instruction else }{section.9}% 15
+\BOOKMARK [2][-]{subsection.9.3}{L'instruction elif }{section.9}% 16
+\BOOKMARK [1][-]{section.10}{Les boucles}{}% 17
+\BOOKMARK [2][-]{subsection.10.1}{L'instruction while }{section.10}% 18
+\BOOKMARK [2][-]{subsection.10.2}{L'instruction for }{section.10}% 19
+\BOOKMARK [2][-]{subsection.10.3}{L'instruction break}{section.10}% 20
+\BOOKMARK [1][-]{section.11}{Les fonctions}{}% 21
+\BOOKMARK [2][-]{subsection.11.1}{Int\351r\352t des fonctions}{section.11}% 22
+\BOOKMARK [2][-]{subsection.11.2}{L'instruction def}{section.11}% 23

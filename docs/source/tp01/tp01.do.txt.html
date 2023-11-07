@@ -186,4 +186,189 @@ print(&quot; Bonjour Mr/Mme {}, votre age est {} et vous êtes né en {}&quot;.f
 <span style="color: #8B008B; font-weight: bold">!ec</span>
 <span style="color: #8B008B; font-weight: bold">!esol</span>
 <span style="color: #8B008B; font-weight: bold">!esubex</span>
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">===== Exercise: Polynômes creux =====</span>
+L&#39;objectif de cet exercice est la manipulation des polynômes creux à une seule variable.
+
+Un polynôme creux est un polynôme dont certains coefficients sont nuls.
+
+Un polynôme est construit à partir de monômes.
+
+Un monôme est une expression de la forme $a x^n$ où $a$ ($a \neq 0$) est le coefficient du monôme et $n$ ($n \ge 0$) son degré.
+
+Un monôme est représenté par un dictionnaire à un élément dont la clé est le degré $n$ et la valeur est le coefficient $a$.
+
+_Exemple :_
+
+Le monôme $8 x^2$ est représenté par le dictionnaire `{2:8}`.
+
+Un polynôme creux est alors défini comme une association de monômes de degrés différents.
+
+_Exemple :_
+
+Le polynôme $-x^4 + 8 x^2 - 5 x$ est représenté par le dictionnaire `{2:8, 1:-5, 4:-1}`.
+
+Le dictionnaire `{0:1, 5:1, 8:1}` représente le polynôme $x^8 + x^5 + 1$.
+
+
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Compléter le script de la fonction `ajout_monome(P,monome)`, sachant que `P` est un dictionnaire représentant un polynôme. On rappelle que cette méthode ajoute un monôme saisi au clavier (en faisant les contrôles nécessaires) si le paramètre `monome` est nul ou ajoute le monôme nommé `monome` sinon.
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+def ajout_monome(P,monome={}):
+    &quot;&quot;&quot;
+    Cette méthode ajoute un monôme saisi au clavier à P
+    si le paramètre monome est nul ou ajoute le monôme nommé monome sinon
+    &quot;&quot;&quot;
+    if len(monome)==0:
+        # Partie à compléter
+    else:
+        degre=list(monome.keys())[0]
+        coeff=list(monome.values())[0]
+        assert degre&gt;=0
+        assert type(degre)==int
+        assert type(coeff)==int or type(coeff)==float
+        assert len(monome)==1
+        P.update(monome)
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!bhint</span>
+L&#39;appel à la fonction `ajout_monome` peut être utilisé comme suivant :
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+In[1]: P = {0:1, 5:1, 8:1} # x^8 + x^5 + 1
+In[2]: ajout_monome(P)
+donner le degré du monôme : 2
+donner le coefficient du monôme : 1
+
+Out[2]: {0: 1, 5: 1, 8: 1, 2: 1.0}
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+ou bien
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+In[3]: ajout_monome(P, {2:8})
+Out[3]: {0: 1, 5: 1, 8: 1, 2: 8}
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!ehint</span>
+<span style="color: #8B008B; font-weight: bold">!bsol</span>
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+def ajout_monome(P,monome={}):
+    &quot;&quot;&quot;
+    Cette fonction ajoute un monôme saisi au clavier à P
+    si le paramètre monome est nul ou ajoute le monôme nommé monome sinon
+    &quot;&quot;&quot;
+    if len(monome)==0:
+        # Réponse à Q1.
+        while True:
+            try:
+                degree = int(input(&quot;donner le degré du monôme : &quot;))
+                coeff = float(input(&quot;donner le coefficient du monôme : &quot;))
+                if degree &gt;=0:
+                    break
+            except:
+                print(&quot;erreur de saisie&quot;) # ou pass ou continue
+        P.update({degree:coeff})
+    else: # Si monome est non vide
+        degre=list(monome.keys())[0] # extraction du degré
+        coeff=list(monome.values())[0] # extraction du coefficient
+        assert degre&gt;=0
+        assert type(degre)==int
+        assert type(coeff)==int or type(coeff)==float
+        assert len(monome)==1
+        P.update(monome)
+    return P
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!esol</span>
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Écrire le code de la fonction `degree(P)` qui prend en paramètre le polynôme `P` représenté sous forme d&#39;un dictionnaire et renvoie  son degré.
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+def degree(P):
+  # à compléter
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!bsol</span>
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+def degree(P):
+    return max(P.keys())
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In[3]: degree(P)
+Out[3]: 8
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!esol</span>
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Écrire le code de la fonction `call(P,x0)` qui retourne la valeur du polynôme P passé en paramètre sous forme d&#39;un dictionnaire pour un réel `x0` donné.
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+def call(P, x0):
+  # à compléter
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!bsol</span>
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+def call(P, x0):
+    val = 0
+    for degree in P.keys():
+        val += P[degree]*x0**degree
+    return val
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!bc</span> ipy
+In[4]: P
+Out[4]: {0: 1, 5: 1, 8: 1, 2: 8}
+In[5]: call(P, 2)
+Out[4]: 321
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!esol</span>
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Écrire le code de la fonction `add(P,P1)` qui retourne le polynôme somme des deux polynômes `P` et `P1`.
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+def add(P, P1):
+    # à compléter
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!bhint</span>
+aucun monôme nul ne doit apparaître dans le polynôme résultat.
+<span style="color: #8B008B; font-weight: bold">!ehint</span>
+<span style="color: #8B008B; font-weight: bold">!bsol</span>
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
+def add(P, P1):
+    p = {}
+    for degree in P.keys() :
+        if not (degree in P1.keys()):
+            ajout_monome(p,{degree:P[degree]})
+        elif P[degree] != - P1[degree] :
+            p.update({degree :P[degree] + P1[degree]})
+    for degree in P1.keys():
+        if not (degree in P.keys()):
+            ajout_monome(p,{degree:P1[degree]})
+    return p
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!esol</span>
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+En déduire une fonction `diff(P,P1)` qui retourne le polynôme différence des deux polynômes P et P1.
+_Remarque :_ aucun monôme nul ne doit apparaître dans le polynôme résultat.
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Écrire le code de la fonction `mul(P,P1)` qui retourne le polynôme produit de deux polynômes.
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+_Remarque :_ aucun monôme nul ne doit apparaître dans le polynôme résultat.
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Écrire le code de la fonction `derive(P)` qui retourne le polynôme dérivé de P.
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Écrire le code de la fonction \verb|affiche(P)| qui retourne la chaîne de caractères représentant l&#39;expression du polynôme ordonné par ordre décroissant.
+
+Pour le polynôme représenté par `{4:4, 0:4, 12:6, 9:1, 7:-1}`, la chaîne retournée est : `&quot;6 * X^12 + X^9 - X^7+ 4 * X^4 + 4&quot;`
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Écrire le code de la fonction `primitive(P)`, qui retourne le polynôme  représentant la primitive. On suppose que la constante d&#39;intégration est nulle.
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+On définit, l&#39;intégrale d&#39;un polynôme creux $P$ en $x$ entre les bornes $a$ et $b$, par :
+$$S = \int_{a}^{b} P dx$$
+Écrire le script de la fonction, nommée `integrale`, permettant de retourner la valeur de $S$ à partir d&#39;un polynôme $P$, de type `PolynomeCreux`, et des bornes d&#39;integration $a$ et $b$ réels.
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
+<span style="color: #8B008B; font-weight: bold">!bsubex</span>
+Écrire une fonction `courbe()` affichant la dans un même repère un polynôme P, sa primitive et sa dérivée.
+<span style="color: #8B008B; font-weight: bold">!esubex</span>
 </pre></div>
